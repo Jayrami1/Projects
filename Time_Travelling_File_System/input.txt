@@ -1,0 +1,35 @@
+CREATE fileA.txt
+INSERT fileA.txt Alpha
+SNAPSHOT fileA.txt Init snapshot
+INSERT fileA.txt Beta
+SNAPSHOT fileA.txt Added Beta
+UPDATE fileA.txt Gamma
+SNAPSHOT fileA.txt Replaced with Gamma
+ROLLBACK fileA.txt 1
+INSERT fileA.txt Delta
+SNAPSHOT fileA.txt Forked from Beta
+CREATE fileB.txt
+INSERT fileB.txt One
+SNAPSHOT fileB.txt First snapshot
+UPDATE fileB.txt Two
+SNAPSHOT fileB.txt Second snapshot
+ROLLBACK fileB.txt
+INSERT fileB.txt Three
+SNAPSHOT fileB.txt Third snapshot
+CREATE fileC.txt
+INSERT fileC.txt Root
+SNAPSHOT fileC.txt Base snapshot
+UPDATE fileC.txt Branch1
+SNAPSHOT fileC.txt Branch1 snapshot
+ROLLBACK fileC.txt 0
+INSERT fileC.txt Branch2
+SNAPSHOT fileC.txt Branch2 snapshot
+READ fileA.txt
+READ fileB.txt
+READ fileC.txt
+HISTORY fileA.txt
+HISTORY fileB.txt
+HISTORY fileC.txt
+RECENT_FILES 3
+BIGGEST_TREES 2
+EXIT
