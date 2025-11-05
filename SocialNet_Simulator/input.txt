@@ -1,28 +1,4142 @@
-ADD_USER a
-ADD_USER n
-ADD_FRIEND a n
-ADD_POST a Hi
-ADD_POST n Hello
-ADD_USER y
-ADD_USER d
-ADD_USER r
-ADD_USER j
-ADD_FRIEND j r
-ADD_FRIEND j y
-ADD_FRIEND j d
-ADD_FRIEND r d
-ADD_FRIEND a y
-ADD_POST j Hey
-ADD_POST d hola
-ADD_POST y Good day!
-ADD_POST j Morning
-ADD_POST y Yeah!
-SUGGEST_FRIENDS d 0
-LIST_FRIENDS j
-DEGREES_OF_SEPARATION r a
-OUTPUT_POSTS j -1
-OUTPUT_POSTS d -1
-OUTPUT_POSTS y -1
-OUTPUT_POSTS a 1
-OUTPUT_POSTS n 1
+ADD_USER alpha_user_0
+ADD_USER beta_user_1
+ADD_USER gamma_user_2
+ADD_USER alpha_user_3
+ADD_USER beta_user_4
+ADD_USER gamma_user_5
+ADD_USER alpha_user_6
+ADD_USER beta_user_7
+ADD_USER gamma_user_8
+ADD_USER alpha_user_9
+ADD_USER beta_user_10
+ADD_USER gamma_user_11
+ADD_USER alpha_user_12
+ADD_USER beta_user_13
+ADD_USER gamma_user_14
+ADD_USER alpha_user_15
+ADD_USER beta_user_16
+ADD_USER gamma_user_17
+ADD_USER alpha_user_18
+ADD_USER beta_user_19
+DEGREES_OF_SEPARATION alpha_user_3 gamma_user_8
+SUGGEST_FRIENDS gamma_user_5 1
+DEGREES_OF_SEPARATION alpha_user_12 gamma_user_5
+OUTPUT_POSTS beta_user_16 0
+ADD_FRIEND alpha_user_0 beta_user_19
+DEGREES_OF_SEPARATION beta_user_13 gamma_user_11
+ADD_USER gamma_user_20
+ADD_FRIEND gamma_user_11 gamma_user_5
+DEGREES_OF_SEPARATION gamma_user_5 beta_user_13
+ADD_USER alpha_user_21
+LIST_FRIENDS gamma_user_11
+ADD_FRIEND gamma_user_17 gamma_user_5
+ADD_POST gamma_user_8 "another post"
+LIST_FRIENDS alpha_user_6
+ADD_USER beta_user_22
+SUGGEST_FRIENDS gamma_user_14 7
+OUTPUT_POSTS alpha_user_18 9
+OUTPUT_POSTS beta_user_16 7
+ADD_POST gamma_user_20 "A long post with multiple words to test parsing."
+ADD_USER gamma_user_23
+ADD_FRIEND gamma_user_11 beta_user_19
+ADD_USER alpha_user_24
+ADD_FRIEND alpha_user_6 alpha_user_15
+ADD_POST gamma_user_20 "Hello world"
+OUTPUT_POSTS alpha_user_12 1
+LIST_FRIENDS gamma_user_20
+OUTPUT_POSTS beta_user_19 9
+SUGGEST_FRIENDS beta_user_16 9
+ADD_FRIEND beta_user_16 alpha_user_21
+DEGREES_OF_SEPARATION alpha_user_24 beta_user_10
+LIST_FRIENDS beta_user_1
+ADD_USER beta_user_25
+ADD_USER gamma_user_26
+SUGGEST_FRIENDS gamma_user_14 6
+ADD_USER alpha_user_27
+ADD_USER beta_user_28
+ADD_POST alpha_user_3 "Suggesting friends is a cool feature."
+ADD_POST alpha_user_21 "Suggesting friends is a cool feature."
+OUTPUT_POSTS alpha_user_9 6
+DEGREES_OF_SEPARATION beta_user_22 alpha_user_15
+OUTPUT_POSTS alpha_user_15 1
+ADD_FRIEND beta_user_10 gamma_user_17
+DEGREES_OF_SEPARATION gamma_user_23 alpha_user_0
+ADD_FRIEND gamma_user_14 alpha_user_18
+OUTPUT_POSTS beta_user_28 13
+OUTPUT_POSTS alpha_user_3 14
+ADD_FRIEND gamma_user_8 beta_user_7
+ADD_USER gamma_user_29
+OUTPUT_POSTS beta_user_10 -1
+ADD_USER alpha_user_30
+ADD_USER beta_user_31
+ADD_POST gamma_user_26 "My AVL tree is perfectly balanced."
+ADD_USER gamma_user_32
+SUGGEST_FRIENDS alpha_user_18 9
+LIST_FRIENDS gamma_user_26
+ADD_USER alpha_user_33
+ADD_USER beta_user_34
+LIST_FRIENDS beta_user_28
+ADD_FRIEND alpha_user_6 gamma_user_11
+ADD_USER gamma_user_35
+ADD_USER alpha_user_36
+LIST_FRIENDS alpha_user_15
+OUTPUT_POSTS beta_user_4 12
+LIST_FRIENDS alpha_user_36
+ADD_POST alpha_user_12 "My AVL tree is perfectly balanced."
+ADD_FRIEND alpha_user_33 beta_user_31
+ADD_USER beta_user_37
+ADD_POST gamma_user_29 "This is a test post."
+ADD_FRIEND gamma_user_8 gamma_user_5
+DEGREES_OF_SEPARATION alpha_user_36 beta_user_13
+OUTPUT_POSTS beta_user_31 4
+ADD_USER gamma_user_38
+ADD_FRIEND beta_user_1 beta_user_7
+DEGREES_OF_SEPARATION alpha_user_33 gamma_user_23
+LIST_FRIENDS beta_user_4
+ADD_POST alpha_user_3 "Hello world"
+ADD_FRIEND beta_user_31 beta_user_34
+ADD_USER alpha_user_39
+OUTPUT_POSTS beta_user_10 10
+DEGREES_OF_SEPARATION gamma_user_5 alpha_user_30
+ADD_USER beta_user_40
+ADD_FRIEND beta_user_31 beta_user_13
+ADD_USER gamma_user_41
+LIST_FRIENDS beta_user_16
+DEGREES_OF_SEPARATION beta_user_19 alpha_user_30
+OUTPUT_POSTS gamma_user_38 8
+ADD_FRIEND gamma_user_26 beta_user_40
+DEGREES_OF_SEPARATION gamma_user_20 beta_user_4
+ADD_USER alpha_user_42
+ADD_USER beta_user_43
+DEGREES_OF_SEPARATION gamma_user_29 alpha_user_24
+SUGGEST_FRIENDS alpha_user_6 3
+OUTPUT_POSTS gamma_user_8 13
+SUGGEST_FRIENDS alpha_user_36 9
+ADD_FRIEND gamma_user_14 alpha_user_39
+ADD_FRIEND beta_user_25 gamma_user_32
+ADD_FRIEND alpha_user_24 gamma_user_5
+LIST_FRIENDS gamma_user_11
+DEGREES_OF_SEPARATION beta_user_10 gamma_user_29
+SUGGEST_FRIENDS beta_user_25 3
+OUTPUT_POSTS alpha_user_6 4
+OUTPUT_POSTS beta_user_37 0
+ADD_USER gamma_user_44
+ADD_FRIEND alpha_user_33 gamma_user_11
+DEGREES_OF_SEPARATION alpha_user_9 alpha_user_24
+OUTPUT_POSTS gamma_user_38 5
+OUTPUT_POSTS gamma_user_5 1
+OUTPUT_POSTS alpha_user_39 7
+ADD_USER alpha_user_45
+ADD_USER beta_user_46
+ADD_USER gamma_user_47
+LIST_FRIENDS alpha_user_36
+ADD_FRIEND alpha_user_9 beta_user_28
+ADD_USER alpha_user_48
+ADD_FRIEND alpha_user_24 beta_user_46
+SUGGEST_FRIENDS beta_user_43 7
+OUTPUT_POSTS beta_user_28 0
+ADD_POST gamma_user_2 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_45 11
+ADD_FRIEND alpha_user_3 beta_user_43
+ADD_USER beta_user_49
+SUGGEST_FRIENDS gamma_user_17 9
+ADD_USER gamma_user_50
+ADD_USER alpha_user_51
+ADD_POST beta_user_43 "Suggesting friends is a cool feature."
+ADD_USER beta_user_52
+ADD_USER gamma_user_53
+LIST_FRIENDS beta_user_46
+OUTPUT_POSTS beta_user_37 7
+OUTPUT_POSTS beta_user_7 13
+ADD_USER alpha_user_54
+SUGGEST_FRIENDS alpha_user_39 9
+OUTPUT_POSTS alpha_user_36 8
+LIST_FRIENDS gamma_user_23
+ADD_POST gamma_user_29 "another post"
+LIST_FRIENDS beta_user_40
+ADD_USER beta_user_55
+OUTPUT_POSTS alpha_user_21 -1
+OUTPUT_POSTS alpha_user_9 3
+OUTPUT_POSTS alpha_user_15 11
+ADD_USER gamma_user_56
+LIST_FRIENDS beta_user_55
+SUGGEST_FRIENDS alpha_user_21 7
+OUTPUT_POSTS gamma_user_26 4
+OUTPUT_POSTS beta_user_13 8
+ADD_USER alpha_user_57
+ADD_POST alpha_user_9 "Hello world"
+ADD_FRIEND gamma_user_20 gamma_user_41
+DEGREES_OF_SEPARATION gamma_user_35 alpha_user_39
+OUTPUT_POSTS alpha_user_27 9
+ADD_USER beta_user_58
+ADD_POST alpha_user_30 "Suggesting friends is a cool feature."
+DEGREES_OF_SEPARATION gamma_user_44 alpha_user_0
+LIST_FRIENDS alpha_user_54
+ADD_FRIEND alpha_user_51 gamma_user_47
+ADD_USER gamma_user_59
+ADD_USER alpha_user_60
+ADD_USER beta_user_61
+OUTPUT_POSTS gamma_user_20 9
+ADD_USER gamma_user_62
+ADD_FRIEND gamma_user_50 gamma_user_29
+ADD_USER alpha_user_63
+DEGREES_OF_SEPARATION alpha_user_0 beta_user_1
+SUGGEST_FRIENDS beta_user_49 7
+ADD_FRIEND alpha_user_0 gamma_user_29
+SUGGEST_FRIENDS alpha_user_36 4
+LIST_FRIENDS alpha_user_15
+LIST_FRIENDS gamma_user_41
+OUTPUT_POSTS gamma_user_35 14
+DEGREES_OF_SEPARATION beta_user_43 alpha_user_48
+OUTPUT_POSTS gamma_user_2 13
+ADD_FRIEND alpha_user_3 alpha_user_9
+ADD_USER beta_user_64
+DEGREES_OF_SEPARATION gamma_user_14 beta_user_52
+OUTPUT_POSTS alpha_user_12 7
+SUGGEST_FRIENDS beta_user_22 5
+SUGGEST_FRIENDS gamma_user_50 6
+DEGREES_OF_SEPARATION alpha_user_15 beta_user_58
+LIST_FRIENDS beta_user_4
+DEGREES_OF_SEPARATION gamma_user_59 gamma_user_32
+OUTPUT_POSTS alpha_user_48 8
+OUTPUT_POSTS beta_user_19 15
+OUTPUT_POSTS beta_user_13 11
+ADD_USER gamma_user_65
+ADD_USER alpha_user_66
+LIST_FRIENDS gamma_user_32
+SUGGEST_FRIENDS alpha_user_51 9
+ADD_FRIEND gamma_user_35 gamma_user_44
+ADD_FRIEND alpha_user_6 beta_user_34
+LIST_FRIENDS alpha_user_21
+ADD_USER beta_user_67
+OUTPUT_POSTS alpha_user_33 15
+ADD_FRIEND beta_user_55 alpha_user_33
+ADD_USER gamma_user_68
+ADD_USER alpha_user_69
+OUTPUT_POSTS beta_user_7 13
+DEGREES_OF_SEPARATION beta_user_40 alpha_user_3
+OUTPUT_POSTS alpha_user_12 8
+OUTPUT_POSTS gamma_user_26 7
+OUTPUT_POSTS beta_user_1 10
+ADD_USER beta_user_70
+OUTPUT_POSTS alpha_user_51 13
+ADD_FRIEND gamma_user_14 gamma_user_35
+ADD_USER gamma_user_71
+OUTPUT_POSTS alpha_user_21 0
+DEGREES_OF_SEPARATION alpha_user_30 alpha_user_39
+OUTPUT_POSTS gamma_user_47 -1
+DEGREES_OF_SEPARATION gamma_user_71 beta_user_58
+ADD_USER alpha_user_72
+ADD_USER beta_user_73
+ADD_POST alpha_user_0 "Hello world"
+OUTPUT_POSTS alpha_user_42 14
+ADD_POST alpha_user_72 "Graphs are fascinating data structures."
+OUTPUT_POSTS gamma_user_8 10
+ADD_POST beta_user_34 "Suggesting friends is a cool feature."
+OUTPUT_POSTS beta_user_13 13
+ADD_USER gamma_user_74
+ADD_USER alpha_user_75
+OUTPUT_POSTS beta_user_28 11
+ADD_USER beta_user_76
+ADD_POST beta_user_37 "Suggesting friends is a cool feature."
+ADD_USER gamma_user_77
+ADD_FRIEND gamma_user_2 alpha_user_21
+ADD_FRIEND alpha_user_15 alpha_user_12
+ADD_USER alpha_user_78
+ADD_POST gamma_user_59 "This is a test post."
+ADD_USER beta_user_79
+LIST_FRIENDS alpha_user_51
+ADD_POST gamma_user_50 "Hello world"
+ADD_FRIEND alpha_user_36 alpha_user_0
+LIST_FRIENDS gamma_user_71
+ADD_USER gamma_user_80
+DEGREES_OF_SEPARATION beta_user_49 gamma_user_44
+OUTPUT_POSTS alpha_user_54 6
+ADD_USER alpha_user_81
+ADD_FRIEND alpha_user_21 alpha_user_6
+DEGREES_OF_SEPARATION alpha_user_81 alpha_user_69
+ADD_FRIEND gamma_user_2 gamma_user_17
+ADD_POST beta_user_31 "Thinking about degrees of separation."
+LIST_FRIENDS gamma_user_11
+ADD_USER beta_user_82
+ADD_POST alpha_user_6 "Suggesting friends is a cool feature."
+DEGREES_OF_SEPARATION beta_user_64 gamma_user_62
+ADD_USER gamma_user_83
+ADD_USER alpha_user_84
+DEGREES_OF_SEPARATION gamma_user_2 beta_user_19
+ADD_USER beta_user_85
+OUTPUT_POSTS gamma_user_11 10
+ADD_USER gamma_user_86
+SUGGEST_FRIENDS gamma_user_23 10
+ADD_FRIEND alpha_user_72 beta_user_31
+ADD_USER alpha_user_87
+SUGGEST_FRIENDS beta_user_22 8
+SUGGEST_FRIENDS alpha_user_66 3
+LIST_FRIENDS alpha_user_51
+ADD_USER beta_user_88
+ADD_USER gamma_user_89
+LIST_FRIENDS alpha_user_81
+ADD_USER alpha_user_90
+ADD_USER beta_user_91
+ADD_USER gamma_user_92
+ADD_FRIEND beta_user_55 beta_user_76
+ADD_USER alpha_user_93
+ADD_POST alpha_user_24 "Just finished the COL106 assignment!"
+ADD_USER beta_user_94
+ADD_POST beta_user_76 "Hello world"
+LIST_FRIENDS gamma_user_26
+ADD_USER gamma_user_95
+SUGGEST_FRIENDS alpha_user_66 10
+OUTPUT_POSTS gamma_user_89 2
+OUTPUT_POSTS alpha_user_54 2
+SUGGEST_FRIENDS beta_user_10 1
+LIST_FRIENDS gamma_user_29
+ADD_FRIEND beta_user_10 gamma_user_56
+ADD_USER alpha_user_96
+ADD_POST beta_user_55 "Graphs are fascinating data structures."
+LIST_FRIENDS beta_user_40
+ADD_USER beta_user_97
+ADD_FRIEND alpha_user_24 gamma_user_50
+OUTPUT_POSTS alpha_user_12 5
+ADD_FRIEND beta_user_31 beta_user_76
+ADD_POST gamma_user_38 "Hello world"
+SUGGEST_FRIENDS beta_user_94 1
+ADD_FRIEND beta_user_67 alpha_user_12
+ADD_FRIEND gamma_user_41 alpha_user_30
+ADD_USER gamma_user_98
+ADD_POST alpha_user_63 "This is a test post."
+ADD_POST beta_user_67 "another post"
+ADD_USER alpha_user_99
+ADD_USER beta_user_100
+OUTPUT_POSTS alpha_user_96 8
+ADD_POST alpha_user_78 "Suggesting friends is a cool feature."
+OUTPUT_POSTS beta_user_61 -1
+ADD_USER gamma_user_101
+ADD_USER alpha_user_102
+ADD_USER beta_user_103
+ADD_USER gamma_user_104
+ADD_USER alpha_user_105
+SUGGEST_FRIENDS alpha_user_93 7
+OUTPUT_POSTS gamma_user_8 14
+ADD_FRIEND alpha_user_90 gamma_user_92
+SUGGEST_FRIENDS alpha_user_102 3
+LIST_FRIENDS alpha_user_87
+LIST_FRIENDS alpha_user_93
+OUTPUT_POSTS alpha_user_60 12
+ADD_USER beta_user_106
+ADD_USER gamma_user_107
+LIST_FRIENDS gamma_user_26
+DEGREES_OF_SEPARATION gamma_user_65 gamma_user_17
+LIST_FRIENDS gamma_user_104
+ADD_POST gamma_user_5 "This is a test post."
+ADD_FRIEND gamma_user_77 beta_user_55
+DEGREES_OF_SEPARATION gamma_user_71 alpha_user_54
+ADD_POST beta_user_7 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_28 1
+SUGGEST_FRIENDS beta_user_76 6
+SUGGEST_FRIENDS gamma_user_11 1
+DEGREES_OF_SEPARATION alpha_user_57 gamma_user_5
+ADD_FRIEND gamma_user_104 beta_user_49
+OUTPUT_POSTS beta_user_22 3
+LIST_FRIENDS gamma_user_5
+LIST_FRIENDS alpha_user_33
+DEGREES_OF_SEPARATION beta_user_52 gamma_user_35
+OUTPUT_POSTS alpha_user_75 4
+ADD_POST alpha_user_63 "Suggesting friends is a cool feature."
+LIST_FRIENDS alpha_user_6
+ADD_USER alpha_user_108
+ADD_FRIEND gamma_user_26 alpha_user_33
+OUTPUT_POSTS alpha_user_24 -1
+ADD_USER beta_user_109
+ADD_USER gamma_user_110
+ADD_USER alpha_user_111
+OUTPUT_POSTS gamma_user_104 0
+ADD_USER beta_user_112
+ADD_POST beta_user_19 "Just finished the COL106 assignment!"
+OUTPUT_POSTS alpha_user_57 -1
+OUTPUT_POSTS gamma_user_20 5
+ADD_USER gamma_user_113
+OUTPUT_POSTS alpha_user_66 10
+ADD_USER alpha_user_114
+ADD_FRIEND alpha_user_108 beta_user_100
+LIST_FRIENDS beta_user_100
+ADD_USER beta_user_115
+ADD_FRIEND alpha_user_51 alpha_user_69
+OUTPUT_POSTS beta_user_7 -1
+ADD_FRIEND gamma_user_86 beta_user_109
+OUTPUT_POSTS beta_user_40 3
+ADD_USER gamma_user_116
+ADD_USER alpha_user_117
+OUTPUT_POSTS alpha_user_12 3
+LIST_FRIENDS gamma_user_38
+DEGREES_OF_SEPARATION alpha_user_21 beta_user_40
+LIST_FRIENDS gamma_user_71
+ADD_USER beta_user_118
+SUGGEST_FRIENDS alpha_user_66 2
+ADD_USER gamma_user_119
+ADD_FRIEND gamma_user_113 gamma_user_65
+ADD_USER alpha_user_120
+DEGREES_OF_SEPARATION alpha_user_96 beta_user_109
+OUTPUT_POSTS beta_user_46 3
+ADD_FRIEND gamma_user_74 gamma_user_53
+ADD_FRIEND alpha_user_51 beta_user_28
+ADD_USER beta_user_121
+SUGGEST_FRIENDS gamma_user_26 4
+ADD_FRIEND gamma_user_11 alpha_user_93
+ADD_FRIEND gamma_user_104 alpha_user_117
+ADD_FRIEND beta_user_10 gamma_user_50
+ADD_USER gamma_user_122
+LIST_FRIENDS alpha_user_51
+ADD_FRIEND gamma_user_8 gamma_user_104
+OUTPUT_POSTS alpha_user_102 11
+ADD_FRIEND beta_user_28 gamma_user_116
+OUTPUT_POSTS gamma_user_5 0
+ADD_POST alpha_user_0 "Suggesting friends is a cool feature."
+ADD_USER alpha_user_123
+DEGREES_OF_SEPARATION gamma_user_20 gamma_user_92
+ADD_FRIEND alpha_user_39 gamma_user_113
+OUTPUT_POSTS beta_user_7 8
+ADD_POST beta_user_109 "A long post with multiple words to test parsing."
+ADD_POST gamma_user_65 "Hello world"
+OUTPUT_POSTS beta_user_28 12
+ADD_USER beta_user_124
+SUGGEST_FRIENDS beta_user_73 7
+DEGREES_OF_SEPARATION gamma_user_11 alpha_user_36
+ADD_FRIEND alpha_user_6 gamma_user_122
+ADD_USER gamma_user_125
+ADD_POST alpha_user_63 "Hello world"
+ADD_FRIEND gamma_user_95 gamma_user_116
+OUTPUT_POSTS gamma_user_119 14
+ADD_USER alpha_user_126
+OUTPUT_POSTS beta_user_22 -1
+ADD_FRIEND beta_user_22 beta_user_61
+OUTPUT_POSTS beta_user_49 10
+ADD_FRIEND gamma_user_95 beta_user_103
+ADD_POST beta_user_64 "Suggesting friends is a cool feature."
+ADD_USER beta_user_127
+ADD_FRIEND alpha_user_42 beta_user_22
+ADD_FRIEND alpha_user_117 beta_user_31
+ADD_FRIEND gamma_user_20 beta_user_49
+ADD_USER gamma_user_128
+SUGGEST_FRIENDS beta_user_22 6
+DEGREES_OF_SEPARATION alpha_user_30 beta_user_28
+ADD_POST gamma_user_35 "another post"
+LIST_FRIENDS gamma_user_119
+ADD_POST gamma_user_38 "This is a test post."
+ADD_FRIEND beta_user_79 gamma_user_26
+ADD_FRIEND beta_user_121 beta_user_43
+ADD_USER alpha_user_129
+LIST_FRIENDS gamma_user_116
+ADD_USER beta_user_130
+OUTPUT_POSTS beta_user_25 14
+ADD_USER gamma_user_131
+DEGREES_OF_SEPARATION alpha_user_66 gamma_user_86
+OUTPUT_POSTS beta_user_82 6
+ADD_FRIEND gamma_user_20 gamma_user_17
+OUTPUT_POSTS alpha_user_129 1
+LIST_FRIENDS beta_user_31
+DEGREES_OF_SEPARATION beta_user_28 beta_user_103
+SUGGEST_FRIENDS gamma_user_74 7
+LIST_FRIENDS alpha_user_96
+DEGREES_OF_SEPARATION alpha_user_3 gamma_user_26
+OUTPUT_POSTS gamma_user_59 14
+ADD_POST alpha_user_39 "Hello world"
+OUTPUT_POSTS gamma_user_65 12
+OUTPUT_POSTS alpha_user_87 0
+DEGREES_OF_SEPARATION alpha_user_93 alpha_user_18
+ADD_FRIEND alpha_user_120 beta_user_64
+OUTPUT_POSTS gamma_user_107 10
+ADD_POST gamma_user_86 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_126 alpha_user_120
+LIST_FRIENDS beta_user_10
+ADD_POST gamma_user_113 "Thinking about degrees of separation."
+LIST_FRIENDS beta_user_106
+DEGREES_OF_SEPARATION beta_user_76 gamma_user_11
+LIST_FRIENDS gamma_user_113
+DEGREES_OF_SEPARATION alpha_user_72 gamma_user_38
+ADD_FRIEND gamma_user_23 gamma_user_8
+ADD_USER alpha_user_132
+OUTPUT_POSTS beta_user_1 8
+ADD_FRIEND beta_user_1 gamma_user_77
+ADD_FRIEND beta_user_46 beta_user_37
+OUTPUT_POSTS gamma_user_59 3
+OUTPUT_POSTS gamma_user_98 9
+ADD_USER beta_user_133
+ADD_FRIEND alpha_user_60 alpha_user_6
+ADD_USER gamma_user_134
+OUTPUT_POSTS gamma_user_14 12
+ADD_POST gamma_user_59 "Graphs are fascinating data structures."
+ADD_POST alpha_user_0 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_30 beta_user_16
+ADD_USER alpha_user_135
+ADD_USER beta_user_136
+ADD_FRIEND beta_user_70 alpha_user_36
+ADD_USER gamma_user_137
+ADD_USER alpha_user_138
+ADD_USER beta_user_139
+ADD_POST beta_user_121 "Graphs are fascinating data structures."
+ADD_USER gamma_user_140
+ADD_POST beta_user_16 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_120 alpha_user_51
+ADD_FRIEND beta_user_91 gamma_user_41
+LIST_FRIENDS beta_user_127
+ADD_FRIEND alpha_user_132 gamma_user_107
+ADD_FRIEND beta_user_136 gamma_user_122
+ADD_USER alpha_user_141
+ADD_USER beta_user_142
+ADD_POST alpha_user_132 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS beta_user_1 6
+ADD_POST beta_user_7 "A long post with multiple words to test parsing."
+ADD_POST gamma_user_56 "random thoughts 123 !@#"
+ADD_USER gamma_user_143
+ADD_USER alpha_user_144
+ADD_USER beta_user_145
+OUTPUT_POSTS alpha_user_60 5
+ADD_USER gamma_user_146
+ADD_POST beta_user_127 "Thinking about degrees of separation."
+ADD_USER alpha_user_147
+ADD_USER beta_user_148
+DEGREES_OF_SEPARATION gamma_user_104 alpha_user_30
+OUTPUT_POSTS alpha_user_57 10
+DEGREES_OF_SEPARATION alpha_user_21 alpha_user_60
+SUGGEST_FRIENDS gamma_user_122 9
+ADD_POST beta_user_130 "Graphs are fascinating data structures."
+ADD_POST beta_user_34 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION alpha_user_78 alpha_user_126
+ADD_USER gamma_user_149
+OUTPUT_POSTS alpha_user_63 2
+ADD_FRIEND gamma_user_116 beta_user_94
+ADD_FRIEND beta_user_25 beta_user_13
+OUTPUT_POSTS beta_user_127 12
+OUTPUT_POSTS beta_user_46 2
+ADD_POST alpha_user_120 "Hello world"
+ADD_POST gamma_user_2 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION beta_user_13 alpha_user_126
+ADD_POST alpha_user_57 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_140 beta_user_55
+OUTPUT_POSTS beta_user_124 15
+LIST_FRIENDS gamma_user_83
+ADD_USER alpha_user_150
+LIST_FRIENDS beta_user_7
+OUTPUT_POSTS gamma_user_143 8
+ADD_FRIEND gamma_user_38 alpha_user_42
+ADD_POST beta_user_70 "Graphs are fascinating data structures."
+ADD_USER beta_user_151
+LIST_FRIENDS alpha_user_75
+ADD_FRIEND gamma_user_38 beta_user_100
+ADD_FRIEND beta_user_25 beta_user_88
+SUGGEST_FRIENDS gamma_user_77 7
+LIST_FRIENDS gamma_user_140
+SUGGEST_FRIENDS gamma_user_77 1
+LIST_FRIENDS alpha_user_18
+LIST_FRIENDS gamma_user_56
+LIST_FRIENDS alpha_user_93
+ADD_USER gamma_user_152
+ADD_FRIEND alpha_user_135 gamma_user_53
+ADD_FRIEND gamma_user_11 beta_user_94
+ADD_USER alpha_user_153
+SUGGEST_FRIENDS beta_user_97 1
+OUTPUT_POSTS gamma_user_62 9
+ADD_POST gamma_user_14 "another post"
+ADD_USER beta_user_154
+OUTPUT_POSTS gamma_user_140 3
+ADD_USER gamma_user_155
+ADD_POST gamma_user_110 "This is a test post."
+ADD_POST beta_user_82 "This is a test post."
+OUTPUT_POSTS alpha_user_102 0
+ADD_FRIEND gamma_user_71 alpha_user_150
+SUGGEST_FRIENDS beta_user_76 3
+ADD_USER alpha_user_156
+ADD_FRIEND gamma_user_101 gamma_user_143
+SUGGEST_FRIENDS gamma_user_26 10
+OUTPUT_POSTS beta_user_82 13
+ADD_FRIEND gamma_user_104 gamma_user_71
+ADD_USER beta_user_157
+ADD_USER gamma_user_158
+ADD_USER alpha_user_159
+ADD_POST beta_user_34 "Hello world"
+LIST_FRIENDS gamma_user_26
+DEGREES_OF_SEPARATION gamma_user_68 gamma_user_14
+LIST_FRIENDS beta_user_133
+OUTPUT_POSTS beta_user_148 5
+ADD_FRIEND alpha_user_114 gamma_user_158
+OUTPUT_POSTS beta_user_124 6
+ADD_USER beta_user_160
+ADD_FRIEND gamma_user_140 beta_user_67
+SUGGEST_FRIENDS beta_user_157 2
+ADD_FRIEND alpha_user_72 beta_user_112
+ADD_USER gamma_user_161
+ADD_USER alpha_user_162
+OUTPUT_POSTS alpha_user_3 8
+ADD_FRIEND beta_user_124 alpha_user_141
+ADD_USER beta_user_163
+ADD_FRIEND gamma_user_68 alpha_user_135
+ADD_USER gamma_user_164
+SUGGEST_FRIENDS beta_user_127 3
+ADD_FRIEND alpha_user_120 beta_user_70
+OUTPUT_POSTS beta_user_19 8
+DEGREES_OF_SEPARATION beta_user_43 alpha_user_87
+ADD_FRIEND beta_user_139 gamma_user_140
+ADD_POST gamma_user_143 "random thoughts 123 !@#"
+ADD_POST alpha_user_27 "random thoughts 123 !@#"
+LIST_FRIENDS beta_user_112
+SUGGEST_FRIENDS alpha_user_24 10
+OUTPUT_POSTS alpha_user_66 5
+ADD_FRIEND gamma_user_149 alpha_user_102
+OUTPUT_POSTS beta_user_28 0
+ADD_FRIEND beta_user_118 alpha_user_69
+ADD_POST beta_user_28 "Suggesting friends is a cool feature."
+ADD_POST alpha_user_102 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION alpha_user_87 gamma_user_116
+OUTPUT_POSTS beta_user_1 8
+ADD_FRIEND gamma_user_26 beta_user_28
+OUTPUT_POSTS beta_user_43 -1
+ADD_USER alpha_user_165
+DEGREES_OF_SEPARATION gamma_user_11 gamma_user_80
+ADD_FRIEND alpha_user_159 gamma_user_152
+ADD_USER beta_user_166
+ADD_FRIEND beta_user_142 gamma_user_62
+ADD_POST beta_user_160 "random thoughts 123 !@#"
+ADD_POST beta_user_100 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_6 11
+OUTPUT_POSTS beta_user_37 14
+DEGREES_OF_SEPARATION alpha_user_108 beta_user_61
+DEGREES_OF_SEPARATION gamma_user_23 gamma_user_152
+ADD_FRIEND gamma_user_77 gamma_user_107
+ADD_USER gamma_user_167
+ADD_FRIEND alpha_user_129 beta_user_76
+ADD_FRIEND alpha_user_75 gamma_user_53
+SUGGEST_FRIENDS gamma_user_92 4
+ADD_USER alpha_user_168
+ADD_USER beta_user_169
+ADD_USER gamma_user_170
+ADD_POST alpha_user_105 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION gamma_user_134 alpha_user_30
+DEGREES_OF_SEPARATION alpha_user_39 alpha_user_42
+ADD_USER alpha_user_171
+LIST_FRIENDS alpha_user_117
+ADD_FRIEND beta_user_109 beta_user_127
+ADD_USER beta_user_172
+ADD_USER gamma_user_173
+ADD_POST beta_user_25 "Graphs are fascinating data structures."
+ADD_POST alpha_user_144 "Thinking about degrees of separation."
+OUTPUT_POSTS gamma_user_167 -1
+ADD_USER alpha_user_174
+DEGREES_OF_SEPARATION gamma_user_89 gamma_user_101
+LIST_FRIENDS beta_user_103
+OUTPUT_POSTS beta_user_139 1
+LIST_FRIENDS alpha_user_60
+LIST_FRIENDS beta_user_64
+DEGREES_OF_SEPARATION alpha_user_21 beta_user_16
+ADD_USER beta_user_175
+DEGREES_OF_SEPARATION beta_user_163 gamma_user_155
+ADD_USER gamma_user_176
+ADD_FRIEND gamma_user_50 beta_user_4
+ADD_FRIEND beta_user_151 beta_user_148
+OUTPUT_POSTS beta_user_109 -1
+SUGGEST_FRIENDS gamma_user_65 1
+ADD_FRIEND gamma_user_134 alpha_user_120
+OUTPUT_POSTS gamma_user_86 6
+SUGGEST_FRIENDS alpha_user_27 4
+ADD_USER alpha_user_177
+OUTPUT_POSTS gamma_user_11 2
+ADD_USER beta_user_178
+ADD_FRIEND gamma_user_44 beta_user_52
+ADD_USER gamma_user_179
+LIST_FRIENDS alpha_user_69
+ADD_USER alpha_user_180
+OUTPUT_POSTS gamma_user_155 -1
+ADD_USER beta_user_181
+ADD_FRIEND alpha_user_21 alpha_user_180
+OUTPUT_POSTS gamma_user_83 8
+ADD_USER gamma_user_182
+SUGGEST_FRIENDS alpha_user_24 1
+OUTPUT_POSTS alpha_user_78 3
+ADD_USER alpha_user_183
+ADD_USER beta_user_184
+ADD_FRIEND beta_user_61 beta_user_136
+DEGREES_OF_SEPARATION gamma_user_86 beta_user_154
+OUTPUT_POSTS beta_user_1 12
+LIST_FRIENDS beta_user_160
+ADD_POST gamma_user_176 "A long post with multiple words to test parsing."
+ADD_POST alpha_user_177 "another post"
+ADD_POST beta_user_40 "Graphs are fascinating data structures."
+ADD_USER gamma_user_185
+ADD_USER alpha_user_186
+ADD_USER beta_user_187
+ADD_FRIEND beta_user_133 beta_user_148
+LIST_FRIENDS alpha_user_108
+OUTPUT_POSTS gamma_user_170 2
+OUTPUT_POSTS gamma_user_68 8
+ADD_FRIEND gamma_user_149 alpha_user_186
+SUGGEST_FRIENDS alpha_user_69 8
+OUTPUT_POSTS gamma_user_14 3
+ADD_FRIEND gamma_user_5 alpha_user_48
+ADD_USER gamma_user_188
+SUGGEST_FRIENDS alpha_user_129 2
+ADD_FRIEND alpha_user_69 gamma_user_131
+ADD_POST alpha_user_45 "My AVL tree is perfectly balanced."
+SUGGEST_FRIENDS gamma_user_71 7
+ADD_USER alpha_user_189
+ADD_USER beta_user_190
+ADD_USER gamma_user_191
+SUGGEST_FRIENDS gamma_user_77 2
+ADD_FRIEND beta_user_4 beta_user_64
+OUTPUT_POSTS alpha_user_111 13
+LIST_FRIENDS alpha_user_150
+OUTPUT_POSTS gamma_user_86 7
+ADD_POST alpha_user_108 "This is a test post."
+ADD_FRIEND gamma_user_5 alpha_user_165
+ADD_USER alpha_user_192
+LIST_FRIENDS gamma_user_11
+DEGREES_OF_SEPARATION gamma_user_125 beta_user_16
+ADD_FRIEND gamma_user_71 beta_user_118
+DEGREES_OF_SEPARATION alpha_user_48 beta_user_19
+ADD_USER beta_user_193
+DEGREES_OF_SEPARATION beta_user_103 beta_user_22
+OUTPUT_POSTS beta_user_127 0
+OUTPUT_POSTS beta_user_190 15
+OUTPUT_POSTS gamma_user_86 6
+OUTPUT_POSTS gamma_user_119 9
+ADD_USER gamma_user_194
+ADD_FRIEND beta_user_22 beta_user_43
+OUTPUT_POSTS beta_user_67 2
+OUTPUT_POSTS gamma_user_65 13
+OUTPUT_POSTS beta_user_52 0
+DEGREES_OF_SEPARATION beta_user_181 beta_user_4
+LIST_FRIENDS alpha_user_189
+ADD_USER alpha_user_195
+ADD_USER beta_user_196
+ADD_FRIEND beta_user_4 beta_user_97
+ADD_FRIEND beta_user_52 gamma_user_158
+OUTPUT_POSTS gamma_user_89 4
+ADD_USER gamma_user_197
+LIST_FRIENDS beta_user_49
+OUTPUT_POSTS beta_user_31 0
+ADD_POST alpha_user_33 "another post"
+ADD_POST gamma_user_80 "Just finished the COL106 assignment!"
+ADD_USER alpha_user_198
+ADD_FRIEND beta_user_61 beta_user_145
+SUGGEST_FRIENDS gamma_user_113 1
+ADD_FRIEND alpha_user_90 beta_user_190
+ADD_FRIEND alpha_user_72 gamma_user_5
+OUTPUT_POSTS beta_user_67 2
+DEGREES_OF_SEPARATION gamma_user_83 gamma_user_188
+LIST_FRIENDS gamma_user_20
+LIST_FRIENDS alpha_user_24
+ADD_USER beta_user_199
+ADD_USER gamma_user_200
+OUTPUT_POSTS alpha_user_102 11
+DEGREES_OF_SEPARATION alpha_user_6 alpha_user_108
+ADD_USER alpha_user_201
+ADD_USER beta_user_202
+ADD_FRIEND gamma_user_80 beta_user_133
+OUTPUT_POSTS alpha_user_3 9
+LIST_FRIENDS beta_user_181
+ADD_USER gamma_user_203
+ADD_FRIEND beta_user_199 alpha_user_129
+ADD_FRIEND alpha_user_93 alpha_user_81
+DEGREES_OF_SEPARATION beta_user_28 alpha_user_30
+ADD_USER alpha_user_204
+DEGREES_OF_SEPARATION alpha_user_27 alpha_user_27
+DEGREES_OF_SEPARATION gamma_user_41 alpha_user_108
+OUTPUT_POSTS gamma_user_182 0
+ADD_FRIEND gamma_user_26 gamma_user_2
+ADD_USER beta_user_205
+ADD_USER gamma_user_206
+ADD_USER alpha_user_207
+ADD_USER beta_user_208
+LIST_FRIENDS alpha_user_102
+ADD_POST alpha_user_183 "Graphs are fascinating data structures."
+SUGGEST_FRIENDS gamma_user_125 9
+ADD_FRIEND beta_user_202 gamma_user_62
+SUGGEST_FRIENDS gamma_user_173 1
+SUGGEST_FRIENDS alpha_user_165 9
+ADD_USER gamma_user_209
+LIST_FRIENDS alpha_user_90
+DEGREES_OF_SEPARATION beta_user_19 beta_user_115
+DEGREES_OF_SEPARATION alpha_user_114 beta_user_25
+LIST_FRIENDS gamma_user_20
+DEGREES_OF_SEPARATION alpha_user_186 beta_user_118
+OUTPUT_POSTS gamma_user_11 4
+LIST_FRIENDS beta_user_196
+ADD_FRIEND alpha_user_147 alpha_user_195
+SUGGEST_FRIENDS alpha_user_42 8
+ADD_FRIEND alpha_user_57 alpha_user_45
+ADD_USER alpha_user_210
+LIST_FRIENDS gamma_user_107
+DEGREES_OF_SEPARATION beta_user_28 beta_user_55
+DEGREES_OF_SEPARATION beta_user_121 beta_user_19
+ADD_FRIEND alpha_user_102 gamma_user_185
+DEGREES_OF_SEPARATION beta_user_61 beta_user_67
+ADD_FRIEND alpha_user_12 gamma_user_200
+OUTPUT_POSTS alpha_user_72 6
+ADD_POST gamma_user_86 "Just finished the COL106 assignment!"
+ADD_USER beta_user_211
+ADD_USER gamma_user_212
+SUGGEST_FRIENDS gamma_user_155 10
+ADD_USER alpha_user_213
+ADD_USER beta_user_214
+DEGREES_OF_SEPARATION alpha_user_183 alpha_user_27
+ADD_FRIEND gamma_user_122 gamma_user_92
+ADD_FRIEND beta_user_163 alpha_user_99
+LIST_FRIENDS alpha_user_63
+OUTPUT_POSTS beta_user_127 7
+OUTPUT_POSTS alpha_user_108 4
+ADD_FRIEND beta_user_133 gamma_user_170
+LIST_FRIENDS gamma_user_83
+ADD_POST beta_user_139 "Suggesting friends is a cool feature."
+ADD_USER gamma_user_215
+DEGREES_OF_SEPARATION gamma_user_146 gamma_user_41
+LIST_FRIENDS beta_user_175
+ADD_FRIEND gamma_user_80 beta_user_52
+ADD_USER alpha_user_216
+ADD_FRIEND gamma_user_5 gamma_user_59
+SUGGEST_FRIENDS alpha_user_126 9
+LIST_FRIENDS beta_user_214
+OUTPUT_POSTS beta_user_163 10
+ADD_USER beta_user_217
+ADD_FRIEND gamma_user_143 alpha_user_210
+ADD_FRIEND alpha_user_132 alpha_user_63
+OUTPUT_POSTS beta_user_64 7
+ADD_USER gamma_user_218
+SUGGEST_FRIENDS gamma_user_197 5
+DEGREES_OF_SEPARATION gamma_user_176 alpha_user_45
+OUTPUT_POSTS alpha_user_93 14
+ADD_FRIEND alpha_user_210 alpha_user_81
+LIST_FRIENDS alpha_user_99
+OUTPUT_POSTS gamma_user_197 -1
+OUTPUT_POSTS alpha_user_201 8
+ADD_USER alpha_user_219
+ADD_USER beta_user_220
+OUTPUT_POSTS beta_user_7 8
+ADD_FRIEND gamma_user_164 beta_user_25
+ADD_USER gamma_user_221
+ADD_USER alpha_user_222
+ADD_POST beta_user_25 "another post"
+ADD_FRIEND gamma_user_11 gamma_user_206
+ADD_FRIEND alpha_user_99 gamma_user_98
+ADD_FRIEND alpha_user_201 alpha_user_222
+ADD_POST beta_user_46 "This is a test post."
+ADD_USER beta_user_223
+ADD_FRIEND gamma_user_149 gamma_user_53
+ADD_FRIEND beta_user_28 beta_user_157
+OUTPUT_POSTS alpha_user_57 5
+ADD_FRIEND alpha_user_174 beta_user_76
+DEGREES_OF_SEPARATION alpha_user_102 alpha_user_126
+ADD_USER gamma_user_224
+ADD_USER alpha_user_225
+SUGGEST_FRIENDS alpha_user_174 9
+ADD_POST alpha_user_93 "My AVL tree is perfectly balanced."
+LIST_FRIENDS beta_user_91
+LIST_FRIENDS alpha_user_171
+OUTPUT_POSTS gamma_user_68 4
+DEGREES_OF_SEPARATION gamma_user_128 gamma_user_110
+OUTPUT_POSTS gamma_user_62 7
+ADD_POST alpha_user_126 "Thinking about degrees of separation."
+DEGREES_OF_SEPARATION alpha_user_183 gamma_user_185
+ADD_USER beta_user_226
+ADD_FRIEND beta_user_130 alpha_user_201
+OUTPUT_POSTS alpha_user_45 -1
+LIST_FRIENDS beta_user_7
+OUTPUT_POSTS alpha_user_54 11
+OUTPUT_POSTS alpha_user_144 -1
+SUGGEST_FRIENDS gamma_user_17 1
+ADD_USER gamma_user_227
+DEGREES_OF_SEPARATION alpha_user_72 alpha_user_213
+DEGREES_OF_SEPARATION beta_user_154 gamma_user_107
+ADD_POST alpha_user_45 "another post"
+DEGREES_OF_SEPARATION gamma_user_86 beta_user_154
+DEGREES_OF_SEPARATION beta_user_166 beta_user_22
+ADD_USER alpha_user_228
+ADD_USER beta_user_229
+LIST_FRIENDS alpha_user_228
+ADD_POST alpha_user_114 "Thinking about degrees of separation."
+OUTPUT_POSTS alpha_user_111 3
+OUTPUT_POSTS beta_user_88 0
+ADD_USER gamma_user_230
+DEGREES_OF_SEPARATION alpha_user_123 alpha_user_27
+LIST_FRIENDS beta_user_181
+ADD_POST beta_user_229 "This is a test post."
+DEGREES_OF_SEPARATION gamma_user_86 alpha_user_90
+DEGREES_OF_SEPARATION gamma_user_113 gamma_user_185
+LIST_FRIENDS alpha_user_138
+DEGREES_OF_SEPARATION gamma_user_92 alpha_user_159
+LIST_FRIENDS beta_user_67
+SUGGEST_FRIENDS gamma_user_227 8
+OUTPUT_POSTS beta_user_148 3
+SUGGEST_FRIENDS gamma_user_224 5
+SUGGEST_FRIENDS alpha_user_81 4
+ADD_POST alpha_user_87 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION beta_user_16 alpha_user_213
+ADD_USER alpha_user_231
+LIST_FRIENDS alpha_user_222
+ADD_FRIEND gamma_user_29 gamma_user_8
+ADD_USER beta_user_232
+ADD_FRIEND alpha_user_168 beta_user_196
+ADD_FRIEND gamma_user_185 alpha_user_174
+OUTPUT_POSTS alpha_user_54 4
+ADD_FRIEND beta_user_208 alpha_user_60
+ADD_USER gamma_user_233
+DEGREES_OF_SEPARATION gamma_user_212 beta_user_127
+ADD_FRIEND gamma_user_161 beta_user_88
+ADD_FRIEND gamma_user_65 beta_user_124
+ADD_FRIEND alpha_user_186 beta_user_190
+ADD_POST beta_user_64 "Graphs are fascinating data structures."
+LIST_FRIENDS gamma_user_164
+ADD_USER alpha_user_234
+ADD_USER beta_user_235
+SUGGEST_FRIENDS beta_user_109 9
+ADD_POST beta_user_196 "another post"
+ADD_USER gamma_user_236
+OUTPUT_POSTS gamma_user_116 10
+ADD_USER alpha_user_237
+LIST_FRIENDS gamma_user_62
+ADD_USER beta_user_238
+ADD_POST gamma_user_35 "Graphs are fascinating data structures."
+ADD_USER gamma_user_239
+ADD_USER alpha_user_240
+ADD_USER beta_user_241
+LIST_FRIENDS beta_user_19
+ADD_FRIEND alpha_user_213 gamma_user_155
+ADD_USER gamma_user_242
+LIST_FRIENDS alpha_user_219
+ADD_FRIEND beta_user_118 beta_user_46
+ADD_USER alpha_user_243
+ADD_USER beta_user_244
+ADD_POST alpha_user_219 "A long post with multiple words to test parsing."
+OUTPUT_POSTS alpha_user_243 3
+OUTPUT_POSTS beta_user_205 3
+ADD_USER gamma_user_245
+ADD_FRIEND alpha_user_12 gamma_user_233
+ADD_FRIEND beta_user_169 beta_user_205
+ADD_FRIEND gamma_user_140 gamma_user_212
+SUGGEST_FRIENDS gamma_user_107 3
+ADD_USER alpha_user_246
+LIST_FRIENDS beta_user_148
+OUTPUT_POSTS gamma_user_137 13
+OUTPUT_POSTS alpha_user_24 6
+OUTPUT_POSTS beta_user_13 5
+LIST_FRIENDS gamma_user_227
+LIST_FRIENDS beta_user_151
+ADD_USER beta_user_247
+ADD_USER gamma_user_248
+SUGGEST_FRIENDS beta_user_220 3
+ADD_FRIEND alpha_user_210 gamma_user_80
+LIST_FRIENDS beta_user_16
+ADD_USER alpha_user_249
+SUGGEST_FRIENDS alpha_user_0 5
+ADD_USER beta_user_250
+OUTPUT_POSTS beta_user_235 14
+OUTPUT_POSTS beta_user_142 13
+ADD_USER gamma_user_251
+LIST_FRIENDS alpha_user_42
+ADD_USER alpha_user_252
+ADD_USER beta_user_253
+OUTPUT_POSTS alpha_user_93 4
+ADD_USER gamma_user_254
+SUGGEST_FRIENDS gamma_user_221 10
+SUGGEST_FRIENDS gamma_user_146 2
+ADD_USER alpha_user_255
+ADD_FRIEND alpha_user_93 beta_user_52
+ADD_FRIEND alpha_user_57 gamma_user_125
+SUGGEST_FRIENDS beta_user_88 4
+SUGGEST_FRIENDS beta_user_31 1
+ADD_FRIEND alpha_user_99 beta_user_214
+ADD_USER beta_user_256
+OUTPUT_POSTS alpha_user_153 1
+ADD_USER gamma_user_257
+LIST_FRIENDS beta_user_136
+DEGREES_OF_SEPARATION gamma_user_83 gamma_user_5
+ADD_FRIEND alpha_user_90 gamma_user_170
+ADD_FRIEND beta_user_181 beta_user_205
+SUGGEST_FRIENDS gamma_user_74 4
+ADD_USER alpha_user_258
+SUGGEST_FRIENDS alpha_user_150 3
+ADD_USER beta_user_259
+ADD_POST beta_user_88 "random thoughts 123 !@#"
+OUTPUT_POSTS alpha_user_63 1
+ADD_FRIEND gamma_user_8 gamma_user_35
+ADD_FRIEND beta_user_154 beta_user_31
+ADD_USER gamma_user_260
+OUTPUT_POSTS beta_user_94 10
+OUTPUT_POSTS alpha_user_249 9
+ADD_USER alpha_user_261
+ADD_FRIEND alpha_user_87 gamma_user_56
+OUTPUT_POSTS beta_user_169 6
+ADD_USER beta_user_262
+ADD_USER gamma_user_263
+DEGREES_OF_SEPARATION alpha_user_168 gamma_user_101
+ADD_USER alpha_user_264
+OUTPUT_POSTS alpha_user_180 15
+ADD_USER beta_user_265
+DEGREES_OF_SEPARATION beta_user_181 beta_user_28
+ADD_FRIEND alpha_user_102 gamma_user_173
+ADD_FRIEND beta_user_64 gamma_user_14
+OUTPUT_POSTS alpha_user_213 9
+SUGGEST_FRIENDS beta_user_217 5
+DEGREES_OF_SEPARATION gamma_user_167 gamma_user_38
+LIST_FRIENDS beta_user_130
+ADD_USER gamma_user_266
+ADD_USER alpha_user_267
+ADD_USER beta_user_268
+DEGREES_OF_SEPARATION gamma_user_26 beta_user_136
+ADD_USER gamma_user_269
+ADD_FRIEND alpha_user_144 gamma_user_245
+ADD_USER alpha_user_270
+OUTPUT_POSTS gamma_user_83 0
+ADD_POST beta_user_10 "Hello world"
+ADD_FRIEND alpha_user_96 beta_user_163
+SUGGEST_FRIENDS alpha_user_216 8
+LIST_FRIENDS beta_user_34
+SUGGEST_FRIENDS gamma_user_56 6
+LIST_FRIENDS gamma_user_146
+ADD_USER beta_user_271
+SUGGEST_FRIENDS beta_user_190 1
+OUTPUT_POSTS alpha_user_138 1
+SUGGEST_FRIENDS alpha_user_246 9
+SUGGEST_FRIENDS alpha_user_66 5
+ADD_FRIEND alpha_user_105 alpha_user_210
+OUTPUT_POSTS beta_user_259 13
+ADD_USER gamma_user_272
+ADD_FRIEND gamma_user_17 beta_user_244
+SUGGEST_FRIENDS alpha_user_183 8
+ADD_USER alpha_user_273
+ADD_USER beta_user_274
+OUTPUT_POSTS gamma_user_29 12
+ADD_FRIEND alpha_user_72 beta_user_136
+ADD_FRIEND gamma_user_227 alpha_user_162
+ADD_POST beta_user_52 "Hello world"
+ADD_USER gamma_user_275
+OUTPUT_POSTS gamma_user_197 11
+ADD_USER alpha_user_276
+ADD_FRIEND beta_user_163 beta_user_205
+ADD_POST gamma_user_209 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS beta_user_232 6
+ADD_USER beta_user_277
+ADD_FRIEND beta_user_13 beta_user_52
+SUGGEST_FRIENDS alpha_user_102 1
+OUTPUT_POSTS gamma_user_134 9
+ADD_FRIEND alpha_user_252 gamma_user_53
+OUTPUT_POSTS gamma_user_179 12
+OUTPUT_POSTS gamma_user_32 0
+ADD_USER gamma_user_278
+ADD_FRIEND gamma_user_197 beta_user_55
+OUTPUT_POSTS gamma_user_47 8
+ADD_USER alpha_user_279
+ADD_FRIEND gamma_user_254 gamma_user_218
+ADD_POST beta_user_37 "Hello world"
+ADD_USER beta_user_280
+SUGGEST_FRIENDS gamma_user_41 1
+OUTPUT_POSTS beta_user_229 0
+OUTPUT_POSTS beta_user_91 14
+ADD_USER gamma_user_281
+OUTPUT_POSTS gamma_user_167 15
+SUGGEST_FRIENDS gamma_user_224 2
+ADD_FRIEND gamma_user_5 gamma_user_38
+OUTPUT_POSTS alpha_user_129 0
+SUGGEST_FRIENDS gamma_user_71 7
+DEGREES_OF_SEPARATION alpha_user_264 beta_user_100
+OUTPUT_POSTS beta_user_103 11
+ADD_POST alpha_user_225 "Hello world"
+ADD_USER alpha_user_282
+ADD_USER beta_user_283
+DEGREES_OF_SEPARATION gamma_user_269 gamma_user_245
+ADD_USER gamma_user_284
+LIST_FRIENDS gamma_user_137
+LIST_FRIENDS gamma_user_200
+ADD_POST beta_user_4 "another post"
+OUTPUT_POSTS alpha_user_174 3
+ADD_FRIEND gamma_user_104 alpha_user_114
+OUTPUT_POSTS beta_user_214 10
+OUTPUT_POSTS gamma_user_14 4
+ADD_USER alpha_user_285
+ADD_FRIEND gamma_user_104 alpha_user_81
+LIST_FRIENDS alpha_user_96
+LIST_FRIENDS gamma_user_137
+LIST_FRIENDS alpha_user_219
+LIST_FRIENDS gamma_user_194
+OUTPUT_POSTS gamma_user_86 2
+ADD_USER beta_user_286
+ADD_USER gamma_user_287
+ADD_FRIEND beta_user_253 gamma_user_2
+ADD_USER alpha_user_288
+ADD_USER beta_user_289
+LIST_FRIENDS alpha_user_135
+OUTPUT_POSTS beta_user_283 15
+OUTPUT_POSTS gamma_user_26 3
+ADD_FRIEND alpha_user_33 alpha_user_123
+DEGREES_OF_SEPARATION alpha_user_153 gamma_user_131
+SUGGEST_FRIENDS gamma_user_230 8
+ADD_FRIEND alpha_user_45 gamma_user_131
+DEGREES_OF_SEPARATION beta_user_25 beta_user_4
+ADD_POST gamma_user_5 "My AVL tree is perfectly balanced."
+ADD_FRIEND alpha_user_237 beta_user_202
+ADD_FRIEND gamma_user_152 beta_user_277
+SUGGEST_FRIENDS alpha_user_141 10
+DEGREES_OF_SEPARATION gamma_user_272 alpha_user_240
+DEGREES_OF_SEPARATION alpha_user_129 beta_user_244
+LIST_FRIENDS beta_user_19
+LIST_FRIENDS beta_user_196
+ADD_POST alpha_user_183 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_17 alpha_user_45
+ADD_FRIEND alpha_user_99 beta_user_13
+SUGGEST_FRIENDS gamma_user_89 6
+SUGGEST_FRIENDS gamma_user_50 9
+LIST_FRIENDS beta_user_112
+ADD_USER gamma_user_290
+ADD_USER alpha_user_291
+ADD_USER beta_user_292
+SUGGEST_FRIENDS gamma_user_50 10
+OUTPUT_POSTS alpha_user_222 15
+DEGREES_OF_SEPARATION alpha_user_219 beta_user_64
+DEGREES_OF_SEPARATION gamma_user_113 beta_user_271
+ADD_FRIEND gamma_user_5 beta_user_271
+OUTPUT_POSTS beta_user_268 -1
+OUTPUT_POSTS beta_user_229 11
+LIST_FRIENDS beta_user_55
+ADD_USER gamma_user_293
+ADD_POST alpha_user_231 "Suggesting friends is a cool feature."
+DEGREES_OF_SEPARATION gamma_user_35 alpha_user_0
+LIST_FRIENDS alpha_user_9
+ADD_POST gamma_user_89 "Thinking about degrees of separation."
+SUGGEST_FRIENDS gamma_user_233 4
+SUGGEST_FRIENDS beta_user_76 3
+ADD_USER alpha_user_294
+ADD_POST alpha_user_171 "A long post with multiple words to test parsing."
+ADD_USER beta_user_295
+ADD_USER gamma_user_296
+ADD_FRIEND gamma_user_227 beta_user_178
+ADD_USER alpha_user_297
+ADD_FRIEND gamma_user_44 alpha_user_21
+OUTPUT_POSTS gamma_user_173 5
+ADD_USER beta_user_298
+ADD_POST beta_user_226 "Graphs are fascinating data structures."
+ADD_USER gamma_user_299
+OUTPUT_POSTS alpha_user_273 7
+ADD_POST gamma_user_41 "Graphs are fascinating data structures."
+ADD_POST beta_user_19 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS beta_user_13 4
+LIST_FRIENDS alpha_user_234
+ADD_FRIEND alpha_user_69 gamma_user_257
+ADD_FRIEND beta_user_118 alpha_user_117
+ADD_USER alpha_user_300
+ADD_USER beta_user_301
+OUTPUT_POSTS gamma_user_146 5
+ADD_USER gamma_user_302
+SUGGEST_FRIENDS gamma_user_17 10
+ADD_USER alpha_user_303
+OUTPUT_POSTS alpha_user_270 3
+OUTPUT_POSTS alpha_user_6 2
+DEGREES_OF_SEPARATION alpha_user_57 beta_user_136
+OUTPUT_POSTS alpha_user_78 1
+ADD_USER beta_user_304
+DEGREES_OF_SEPARATION beta_user_274 beta_user_145
+ADD_USER gamma_user_305
+OUTPUT_POSTS beta_user_19 3
+OUTPUT_POSTS gamma_user_167 9
+DEGREES_OF_SEPARATION gamma_user_98 gamma_user_59
+DEGREES_OF_SEPARATION gamma_user_8 gamma_user_230
+ADD_FRIEND beta_user_235 alpha_user_15
+OUTPUT_POSTS gamma_user_92 15
+ADD_USER alpha_user_306
+OUTPUT_POSTS gamma_user_50 7
+ADD_USER beta_user_307
+ADD_USER gamma_user_308
+OUTPUT_POSTS gamma_user_74 7
+ADD_FRIEND alpha_user_57 gamma_user_275
+SUGGEST_FRIENDS alpha_user_279 8
+ADD_USER alpha_user_309
+DEGREES_OF_SEPARATION alpha_user_42 gamma_user_155
+ADD_USER beta_user_310
+OUTPUT_POSTS gamma_user_293 11
+LIST_FRIENDS beta_user_1
+SUGGEST_FRIENDS alpha_user_87 9
+OUTPUT_POSTS alpha_user_258 1
+ADD_FRIEND beta_user_229 gamma_user_194
+DEGREES_OF_SEPARATION gamma_user_185 gamma_user_167
+SUGGEST_FRIENDS alpha_user_216 8
+ADD_USER gamma_user_311
+DEGREES_OF_SEPARATION beta_user_220 gamma_user_38
+SUGGEST_FRIENDS gamma_user_209 10
+DEGREES_OF_SEPARATION gamma_user_140 beta_user_163
+ADD_USER alpha_user_312
+DEGREES_OF_SEPARATION gamma_user_236 beta_user_112
+ADD_POST gamma_user_233 "Just finished the COL106 assignment!"
+ADD_FRIEND gamma_user_62 beta_user_49
+OUTPUT_POSTS beta_user_301 1
+ADD_USER beta_user_313
+SUGGEST_FRIENDS beta_user_58 1
+ADD_POST beta_user_46 "Thinking about degrees of separation."
+ADD_USER gamma_user_314
+OUTPUT_POSTS alpha_user_66 6
+OUTPUT_POSTS alpha_user_78 15
+ADD_USER alpha_user_315
+OUTPUT_POSTS gamma_user_152 0
+SUGGEST_FRIENDS alpha_user_45 1
+OUTPUT_POSTS gamma_user_116 9
+OUTPUT_POSTS gamma_user_230 14
+ADD_POST beta_user_268 "Thinking about degrees of separation."
+ADD_USER beta_user_316
+LIST_FRIENDS gamma_user_146
+ADD_USER gamma_user_317
+DEGREES_OF_SEPARATION alpha_user_306 beta_user_67
+ADD_USER alpha_user_318
+DEGREES_OF_SEPARATION gamma_user_242 alpha_user_123
+ADD_USER beta_user_319
+ADD_POST alpha_user_252 "Suggesting friends is a cool feature."
+ADD_USER gamma_user_320
+OUTPUT_POSTS beta_user_175 8
+OUTPUT_POSTS gamma_user_95 4
+LIST_FRIENDS alpha_user_306
+ADD_FRIEND gamma_user_269 alpha_user_255
+ADD_USER alpha_user_321
+LIST_FRIENDS gamma_user_260
+ADD_POST gamma_user_38 "another post"
+DEGREES_OF_SEPARATION beta_user_91 alpha_user_69
+SUGGEST_FRIENDS beta_user_76 6
+ADD_FRIEND alpha_user_183 gamma_user_275
+OUTPUT_POSTS beta_user_64 10
+LIST_FRIENDS alpha_user_87
+ADD_FRIEND beta_user_229 gamma_user_293
+ADD_FRIEND beta_user_235 alpha_user_102
+ADD_USER beta_user_322
+ADD_FRIEND beta_user_178 beta_user_298
+OUTPUT_POSTS alpha_user_195 2
+OUTPUT_POSTS alpha_user_318 12
+LIST_FRIENDS gamma_user_8
+ADD_USER gamma_user_323
+DEGREES_OF_SEPARATION gamma_user_155 beta_user_190
+ADD_USER alpha_user_324
+ADD_POST alpha_user_87 "A long post with multiple words to test parsing."
+ADD_FRIEND alpha_user_54 alpha_user_27
+ADD_FRIEND beta_user_163 alpha_user_213
+ADD_USER beta_user_325
+DEGREES_OF_SEPARATION gamma_user_29 alpha_user_228
+ADD_USER gamma_user_326
+OUTPUT_POSTS gamma_user_23 14
+SUGGEST_FRIENDS beta_user_103 8
+ADD_FRIEND gamma_user_176 gamma_user_44
+OUTPUT_POSTS gamma_user_203 13
+ADD_USER alpha_user_327
+SUGGEST_FRIENDS beta_user_169 4
+OUTPUT_POSTS gamma_user_308 12
+LIST_FRIENDS beta_user_94
+SUGGEST_FRIENDS alpha_user_15 2
+ADD_USER beta_user_328
+ADD_USER gamma_user_329
+ADD_USER alpha_user_330
+LIST_FRIENDS alpha_user_207
+ADD_USER beta_user_331
+OUTPUT_POSTS beta_user_199 10
+ADD_POST gamma_user_248 "random thoughts 123 !@#"
+OUTPUT_POSTS gamma_user_275 -1
+ADD_FRIEND beta_user_262 alpha_user_240
+LIST_FRIENDS gamma_user_83
+ADD_USER gamma_user_332
+SUGGEST_FRIENDS beta_user_58 1
+ADD_POST gamma_user_86 "My AVL tree is perfectly balanced."
+SUGGEST_FRIENDS beta_user_121 10
+OUTPUT_POSTS gamma_user_104 12
+ADD_USER alpha_user_333
+ADD_FRIEND beta_user_94 beta_user_247
+ADD_POST beta_user_172 "another post"
+ADD_FRIEND alpha_user_84 beta_user_253
+ADD_USER beta_user_334
+ADD_POST alpha_user_285 "This is a test post."
+DEGREES_OF_SEPARATION gamma_user_107 beta_user_127
+LIST_FRIENDS beta_user_319
+OUTPUT_POSTS alpha_user_90 7
+ADD_FRIEND beta_user_301 beta_user_73
+ADD_POST alpha_user_33 "A long post with multiple words to test parsing."
+SUGGEST_FRIENDS alpha_user_90 3
+DEGREES_OF_SEPARATION beta_user_220 beta_user_16
+ADD_USER gamma_user_335
+SUGGEST_FRIENDS gamma_user_326 4
+ADD_USER alpha_user_336
+DEGREES_OF_SEPARATION beta_user_313 beta_user_115
+OUTPUT_POSTS alpha_user_336 1
+OUTPUT_POSTS gamma_user_158 1
+LIST_FRIENDS alpha_user_195
+ADD_FRIEND beta_user_64 gamma_user_122
+OUTPUT_POSTS gamma_user_290 4
+ADD_USER beta_user_337
+ADD_USER gamma_user_338
+ADD_USER alpha_user_339
+OUTPUT_POSTS gamma_user_251 -1
+SUGGEST_FRIENDS gamma_user_257 6
+LIST_FRIENDS beta_user_19
+ADD_USER beta_user_340
+OUTPUT_POSTS alpha_user_126 14
+ADD_USER gamma_user_341
+ADD_USER alpha_user_342
+ADD_USER beta_user_343
+ADD_USER gamma_user_344
+ADD_POST beta_user_274 "Hello world"
+OUTPUT_POSTS alpha_user_18 -1
+ADD_FRIEND gamma_user_95 gamma_user_137
+OUTPUT_POSTS alpha_user_204 4
+ADD_FRIEND beta_user_253 beta_user_292
+SUGGEST_FRIENDS alpha_user_336 3
+LIST_FRIENDS gamma_user_317
+ADD_USER alpha_user_345
+ADD_FRIEND gamma_user_257 gamma_user_101
+DEGREES_OF_SEPARATION alpha_user_258 alpha_user_117
+ADD_USER beta_user_346
+OUTPUT_POSTS beta_user_217 15
+OUTPUT_POSTS gamma_user_266 9
+ADD_USER gamma_user_347
+OUTPUT_POSTS alpha_user_24 7
+ADD_FRIEND alpha_user_117 alpha_user_264
+ADD_POST alpha_user_222 "My AVL tree is perfectly balanced."
+LIST_FRIENDS alpha_user_261
+OUTPUT_POSTS gamma_user_224 6
+ADD_USER alpha_user_348
+OUTPUT_POSTS alpha_user_108 12
+DEGREES_OF_SEPARATION gamma_user_233 beta_user_337
+DEGREES_OF_SEPARATION alpha_user_192 alpha_user_171
+ADD_POST alpha_user_147 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS alpha_user_18 14
+ADD_FRIEND alpha_user_186 gamma_user_293
+ADD_FRIEND alpha_user_321 alpha_user_327
+OUTPUT_POSTS alpha_user_183 6
+ADD_POST gamma_user_323 "Just finished the COL106 assignment!"
+ADD_USER beta_user_349
+OUTPUT_POSTS alpha_user_228 13
+ADD_USER gamma_user_350
+ADD_USER alpha_user_351
+ADD_POST gamma_user_38 "My AVL tree is perfectly balanced."
+ADD_POST beta_user_202 "Just finished the COL106 assignment!"
+OUTPUT_POSTS gamma_user_92 0
+ADD_FRIEND alpha_user_93 alpha_user_63
+ADD_POST alpha_user_132 "A long post with multiple words to test parsing."
+OUTPUT_POSTS alpha_user_144 3
+ADD_FRIEND gamma_user_26 gamma_user_2
+ADD_USER beta_user_352
+LIST_FRIENDS gamma_user_206
+ADD_USER gamma_user_353
+ADD_USER alpha_user_354
+DEGREES_OF_SEPARATION alpha_user_111 gamma_user_344
+ADD_USER beta_user_355
+ADD_FRIEND alpha_user_192 alpha_user_285
+ADD_USER gamma_user_356
+ADD_USER alpha_user_357
+OUTPUT_POSTS gamma_user_59 7
+ADD_USER beta_user_358
+ADD_USER gamma_user_359
+ADD_USER alpha_user_360
+OUTPUT_POSTS gamma_user_161 8
+OUTPUT_POSTS alpha_user_201 13
+SUGGEST_FRIENDS alpha_user_138 10
+OUTPUT_POSTS alpha_user_258 4
+OUTPUT_POSTS alpha_user_3 9
+SUGGEST_FRIENDS alpha_user_351 2
+ADD_USER beta_user_361
+DEGREES_OF_SEPARATION gamma_user_341 gamma_user_179
+ADD_FRIEND alpha_user_267 beta_user_145
+ADD_FRIEND gamma_user_197 alpha_user_252
+ADD_FRIEND beta_user_229 beta_user_10
+ADD_POST alpha_user_315 "another post"
+DEGREES_OF_SEPARATION alpha_user_231 alpha_user_315
+LIST_FRIENDS gamma_user_122
+ADD_FRIEND beta_user_151 gamma_user_248
+LIST_FRIENDS gamma_user_149
+ADD_POST alpha_user_300 "Graphs are fascinating data structures."
+ADD_USER gamma_user_362
+DEGREES_OF_SEPARATION gamma_user_17 gamma_user_161
+ADD_POST alpha_user_75 "Graphs are fascinating data structures."
+ADD_POST alpha_user_12 "Suggesting friends is a cool feature."
+OUTPUT_POSTS beta_user_166 6
+OUTPUT_POSTS alpha_user_93 8
+OUTPUT_POSTS alpha_user_108 11
+OUTPUT_POSTS beta_user_124 0
+ADD_USER alpha_user_363
+ADD_USER beta_user_364
+OUTPUT_POSTS beta_user_94 6
+DEGREES_OF_SEPARATION beta_user_190 alpha_user_126
+ADD_FRIEND beta_user_148 gamma_user_179
+ADD_USER gamma_user_365
+DEGREES_OF_SEPARATION gamma_user_248 alpha_user_96
+ADD_USER alpha_user_366
+ADD_POST alpha_user_144 "A long post with multiple words to test parsing."
+DEGREES_OF_SEPARATION gamma_user_35 gamma_user_176
+OUTPUT_POSTS gamma_user_218 13
+ADD_FRIEND alpha_user_129 gamma_user_203
+OUTPUT_POSTS alpha_user_279 11
+OUTPUT_POSTS gamma_user_251 9
+ADD_FRIEND beta_user_304 gamma_user_209
+OUTPUT_POSTS gamma_user_11 10
+ADD_USER beta_user_367
+ADD_USER gamma_user_368
+SUGGEST_FRIENDS gamma_user_347 6
+SUGGEST_FRIENDS beta_user_175 6
+ADD_FRIEND alpha_user_18 beta_user_265
+ADD_USER alpha_user_369
+ADD_POST gamma_user_110 "A long post with multiple words to test parsing."
+OUTPUT_POSTS gamma_user_257 1
+ADD_USER beta_user_370
+OUTPUT_POSTS alpha_user_117 14
+DEGREES_OF_SEPARATION gamma_user_200 beta_user_73
+ADD_FRIEND alpha_user_357 gamma_user_278
+ADD_USER gamma_user_371
+ADD_USER alpha_user_372
+SUGGEST_FRIENDS gamma_user_188 4
+ADD_USER beta_user_373
+ADD_FRIEND beta_user_130 gamma_user_269
+ADD_USER gamma_user_374
+ADD_FRIEND alpha_user_201 alpha_user_312
+OUTPUT_POSTS gamma_user_53 8
+SUGGEST_FRIENDS alpha_user_120 1
+ADD_POST gamma_user_308 "Graphs are fascinating data structures."
+ADD_FRIEND beta_user_19 gamma_user_107
+ADD_FRIEND beta_user_265 alpha_user_276
+ADD_POST beta_user_25 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS alpha_user_285 5
+ADD_FRIEND beta_user_193 gamma_user_200
+ADD_FRIEND beta_user_118 gamma_user_296
+DEGREES_OF_SEPARATION beta_user_160 gamma_user_191
+ADD_FRIEND gamma_user_41 alpha_user_129
+OUTPUT_POSTS beta_user_346 4
+ADD_POST gamma_user_254 "Just finished the COL106 assignment!"
+ADD_USER alpha_user_375
+OUTPUT_POSTS alpha_user_357 5
+ADD_USER beta_user_376
+OUTPUT_POSTS gamma_user_296 5
+ADD_FRIEND beta_user_91 gamma_user_266
+ADD_USER gamma_user_377
+LIST_FRIENDS gamma_user_122
+OUTPUT_POSTS alpha_user_333 15
+ADD_FRIEND beta_user_70 gamma_user_323
+DEGREES_OF_SEPARATION alpha_user_273 beta_user_136
+ADD_FRIEND gamma_user_299 beta_user_49
+OUTPUT_POSTS beta_user_355 7
+OUTPUT_POSTS alpha_user_180 12
+ADD_USER alpha_user_378
+OUTPUT_POSTS gamma_user_44 -1
+ADD_USER beta_user_379
+LIST_FRIENDS alpha_user_96
+ADD_POST beta_user_229 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_260 gamma_user_287
+OUTPUT_POSTS beta_user_292 12
+DEGREES_OF_SEPARATION gamma_user_257 alpha_user_156
+OUTPUT_POSTS beta_user_10 0
+OUTPUT_POSTS beta_user_121 9
+ADD_FRIEND gamma_user_86 beta_user_298
+ADD_FRIEND gamma_user_122 gamma_user_170
+OUTPUT_POSTS alpha_user_279 9
+LIST_FRIENDS beta_user_214
+OUTPUT_POSTS alpha_user_78 11
+ADD_USER gamma_user_380
+ADD_USER alpha_user_381
+ADD_FRIEND alpha_user_93 alpha_user_126
+DEGREES_OF_SEPARATION gamma_user_110 beta_user_43
+DEGREES_OF_SEPARATION gamma_user_71 gamma_user_146
+ADD_POST gamma_user_26 "Graphs are fascinating data structures."
+OUTPUT_POSTS gamma_user_248 14
+ADD_USER beta_user_382
+LIST_FRIENDS beta_user_100
+LIST_FRIENDS beta_user_163
+ADD_USER gamma_user_383
+ADD_USER alpha_user_384
+LIST_FRIENDS alpha_user_81
+ADD_USER beta_user_385
+ADD_FRIEND beta_user_250 beta_user_286
+ADD_USER gamma_user_386
+ADD_USER alpha_user_387
+OUTPUT_POSTS beta_user_190 8
+ADD_USER beta_user_388
+SUGGEST_FRIENDS gamma_user_89 4
+ADD_FRIEND gamma_user_182 beta_user_337
+OUTPUT_POSTS beta_user_73 11
+OUTPUT_POSTS gamma_user_296 1
+DEGREES_OF_SEPARATION alpha_user_0 beta_user_133
+DEGREES_OF_SEPARATION gamma_user_131 gamma_user_116
+OUTPUT_POSTS beta_user_319 7
+ADD_USER gamma_user_389
+ADD_POST alpha_user_99 "random thoughts 123 !@#"
+DEGREES_OF_SEPARATION gamma_user_68 alpha_user_246
+SUGGEST_FRIENDS gamma_user_347 8
+OUTPUT_POSTS beta_user_67 7
+ADD_USER alpha_user_390
+DEGREES_OF_SEPARATION beta_user_292 alpha_user_327
+ADD_USER beta_user_391
+ADD_USER gamma_user_392
+ADD_FRIEND gamma_user_224 alpha_user_138
+ADD_USER alpha_user_393
+OUTPUT_POSTS beta_user_52 6
+DEGREES_OF_SEPARATION beta_user_136 beta_user_10
+ADD_FRIEND gamma_user_128 alpha_user_81
+ADD_POST beta_user_325 "A long post with multiple words to test parsing."
+ADD_FRIEND beta_user_223 gamma_user_209
+OUTPUT_POSTS alpha_user_150 10
+OUTPUT_POSTS gamma_user_8 14
+LIST_FRIENDS beta_user_286
+ADD_FRIEND gamma_user_332 gamma_user_338
+ADD_USER beta_user_394
+ADD_POST alpha_user_384 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_110 alpha_user_90
+SUGGEST_FRIENDS beta_user_310 2
+ADD_USER gamma_user_395
+ADD_FRIEND beta_user_349 gamma_user_332
+LIST_FRIENDS beta_user_142
+SUGGEST_FRIENDS alpha_user_114 10
+ADD_FRIEND alpha_user_291 beta_user_25
+SUGGEST_FRIENDS gamma_user_275 10
+ADD_POST gamma_user_32 "Hello world"
+SUGGEST_FRIENDS beta_user_256 5
+ADD_FRIEND alpha_user_264 alpha_user_51
+OUTPUT_POSTS beta_user_235 0
+SUGGEST_FRIENDS beta_user_184 9
+ADD_USER alpha_user_396
+ADD_USER beta_user_397
+ADD_USER gamma_user_398
+ADD_FRIEND alpha_user_228 alpha_user_219
+OUTPUT_POSTS gamma_user_71 -1
+LIST_FRIENDS gamma_user_389
+ADD_USER alpha_user_399
+ADD_FRIEND alpha_user_84 beta_user_22
+ADD_FRIEND gamma_user_266 alpha_user_204
+ADD_USER beta_user_400
+SUGGEST_FRIENDS beta_user_223 9
+OUTPUT_POSTS gamma_user_260 14
+ADD_USER gamma_user_401
+ADD_FRIEND beta_user_232 gamma_user_80
+ADD_FRIEND gamma_user_335 alpha_user_63
+ADD_USER alpha_user_402
+ADD_FRIEND beta_user_145 alpha_user_135
+ADD_USER beta_user_403
+OUTPUT_POSTS gamma_user_134 6
+ADD_FRIEND alpha_user_216 gamma_user_221
+LIST_FRIENDS beta_user_73
+ADD_FRIEND alpha_user_339 alpha_user_18
+ADD_USER gamma_user_404
+SUGGEST_FRIENDS alpha_user_108 7
+OUTPUT_POSTS beta_user_106 15
+ADD_USER alpha_user_405
+OUTPUT_POSTS beta_user_61 3
+ADD_POST gamma_user_32 "Graphs are fascinating data structures."
+ADD_USER beta_user_406
+ADD_USER gamma_user_407
+DEGREES_OF_SEPARATION beta_user_379 gamma_user_338
+ADD_USER alpha_user_408
+ADD_FRIEND alpha_user_78 gamma_user_371
+OUTPUT_POSTS gamma_user_137 6
+ADD_USER beta_user_409
+LIST_FRIENDS beta_user_376
+OUTPUT_POSTS gamma_user_281 1
+ADD_POST beta_user_361 "Thinking about degrees of separation."
+SUGGEST_FRIENDS gamma_user_86 8
+LIST_FRIENDS alpha_user_126
+ADD_USER gamma_user_410
+ADD_USER alpha_user_411
+ADD_USER beta_user_412
+SUGGEST_FRIENDS beta_user_397 8
+LIST_FRIENDS alpha_user_237
+OUTPUT_POSTS gamma_user_326 9
+ADD_USER gamma_user_413
+ADD_USER alpha_user_414
+OUTPUT_POSTS beta_user_85 -1
+DEGREES_OF_SEPARATION beta_user_409 gamma_user_257
+ADD_FRIEND gamma_user_368 beta_user_25
+ADD_USER beta_user_415
+ADD_FRIEND beta_user_40 gamma_user_356
+DEGREES_OF_SEPARATION alpha_user_321 beta_user_316
+ADD_USER gamma_user_416
+OUTPUT_POSTS beta_user_139 -1
+OUTPUT_POSTS alpha_user_336 7
+ADD_USER alpha_user_417
+ADD_USER beta_user_418
+ADD_POST beta_user_145 "Just finished the COL106 assignment!"
+LIST_FRIENDS beta_user_175
+OUTPUT_POSTS beta_user_52 14
+ADD_FRIEND alpha_user_171 beta_user_91
+ADD_POST gamma_user_2 "This is a test post."
+ADD_POST alpha_user_198 "A long post with multiple words to test parsing."
+ADD_USER gamma_user_419
+ADD_FRIEND alpha_user_165 gamma_user_380
+ADD_FRIEND beta_user_385 alpha_user_243
+ADD_USER alpha_user_420
+DEGREES_OF_SEPARATION gamma_user_14 gamma_user_146
+LIST_FRIENDS beta_user_304
+SUGGEST_FRIENDS beta_user_79 8
+ADD_POST beta_user_19 "Graphs are fascinating data structures."
+SUGGEST_FRIENDS beta_user_118 6
+LIST_FRIENDS alpha_user_303
+ADD_FRIEND alpha_user_348 alpha_user_243
+ADD_FRIEND gamma_user_191 gamma_user_236
+ADD_USER beta_user_421
+ADD_POST alpha_user_114 "Thinking about degrees of separation."
+OUTPUT_POSTS gamma_user_305 14
+ADD_USER gamma_user_422
+ADD_USER alpha_user_423
+DEGREES_OF_SEPARATION beta_user_178 beta_user_154
+ADD_USER beta_user_424
+LIST_FRIENDS alpha_user_30
+ADD_USER gamma_user_425
+ADD_USER alpha_user_426
+DEGREES_OF_SEPARATION gamma_user_68 gamma_user_260
+OUTPUT_POSTS alpha_user_189 -1
+ADD_POST gamma_user_188 "another post"
+ADD_FRIEND gamma_user_404 gamma_user_353
+ADD_FRIEND gamma_user_167 alpha_user_36
+OUTPUT_POSTS gamma_user_278 11
+ADD_USER beta_user_427
+SUGGEST_FRIENDS beta_user_328 2
+ADD_USER gamma_user_428
+ADD_USER alpha_user_429
+ADD_FRIEND beta_user_340 alpha_user_246
+ADD_FRIEND beta_user_412 gamma_user_71
+ADD_POST gamma_user_422 "Hello world"
+ADD_USER beta_user_430
+DEGREES_OF_SEPARATION beta_user_256 alpha_user_270
+OUTPUT_POSTS beta_user_370 13
+ADD_USER gamma_user_431
+ADD_POST gamma_user_260 "A long post with multiple words to test parsing."
+ADD_FRIEND beta_user_337 gamma_user_11
+ADD_USER alpha_user_432
+ADD_POST gamma_user_101 "random thoughts 123 !@#"
+LIST_FRIENDS gamma_user_242
+ADD_FRIEND alpha_user_264 alpha_user_183
+ADD_FRIEND alpha_user_333 alpha_user_213
+ADD_POST beta_user_295 "A long post with multiple words to test parsing."
+ADD_USER beta_user_433
+ADD_USER gamma_user_434
+LIST_FRIENDS gamma_user_293
+OUTPUT_POSTS gamma_user_332 -1
+ADD_POST alpha_user_24 "another post"
+ADD_USER alpha_user_435
+LIST_FRIENDS alpha_user_276
+SUGGEST_FRIENDS gamma_user_254 5
+ADD_FRIEND beta_user_361 alpha_user_129
+ADD_USER beta_user_436
+SUGGEST_FRIENDS alpha_user_354 8
+SUGGEST_FRIENDS gamma_user_173 9
+OUTPUT_POSTS gamma_user_407 14
+OUTPUT_POSTS beta_user_223 -1
+ADD_USER gamma_user_437
+OUTPUT_POSTS alpha_user_291 10
+ADD_FRIEND alpha_user_282 alpha_user_213
+ADD_FRIEND gamma_user_38 beta_user_361
+ADD_USER alpha_user_438
+OUTPUT_POSTS beta_user_328 13
+ADD_USER beta_user_439
+ADD_USER gamma_user_440
+OUTPUT_POSTS beta_user_34 5
+LIST_FRIENDS beta_user_271
+OUTPUT_POSTS alpha_user_420 13
+DEGREES_OF_SEPARATION gamma_user_296 beta_user_262
+ADD_FRIEND alpha_user_288 gamma_user_23
+LIST_FRIENDS alpha_user_300
+ADD_USER alpha_user_441
+DEGREES_OF_SEPARATION gamma_user_86 beta_user_412
+OUTPUT_POSTS alpha_user_186 11
+ADD_FRIEND alpha_user_261 alpha_user_144
+ADD_FRIEND gamma_user_326 beta_user_271
+ADD_USER beta_user_442
+ADD_USER gamma_user_443
+OUTPUT_POSTS alpha_user_186 14
+ADD_USER alpha_user_444
+OUTPUT_POSTS beta_user_100 11
+OUTPUT_POSTS alpha_user_402 4
+ADD_USER beta_user_445
+LIST_FRIENDS beta_user_22
+OUTPUT_POSTS beta_user_58 4
+ADD_FRIEND beta_user_109 alpha_user_153
+ADD_FRIEND gamma_user_440 beta_user_352
+ADD_USER gamma_user_446
+ADD_FRIEND gamma_user_212 alpha_user_54
+ADD_USER alpha_user_447
+ADD_FRIEND beta_user_349 gamma_user_347
+OUTPUT_POSTS alpha_user_345 14
+OUTPUT_POSTS beta_user_19 0
+OUTPUT_POSTS gamma_user_209 3
+ADD_POST beta_user_154 "Just finished the COL106 assignment!"
+OUTPUT_POSTS alpha_user_126 9
+LIST_FRIENDS gamma_user_437
+OUTPUT_POSTS alpha_user_240 12
+DEGREES_OF_SEPARATION beta_user_346 alpha_user_150
+SUGGEST_FRIENDS alpha_user_363 8
+ADD_FRIEND gamma_user_209 gamma_user_443
+DEGREES_OF_SEPARATION beta_user_73 alpha_user_171
+OUTPUT_POSTS gamma_user_44 11
+SUGGEST_FRIENDS beta_user_388 6
+ADD_USER beta_user_448
+ADD_FRIEND beta_user_109 beta_user_37
+ADD_USER gamma_user_449
+LIST_FRIENDS beta_user_304
+DEGREES_OF_SEPARATION beta_user_244 gamma_user_425
+LIST_FRIENDS gamma_user_446
+ADD_POST gamma_user_86 "Graphs are fascinating data structures."
+LIST_FRIENDS alpha_user_9
+ADD_USER alpha_user_450
+ADD_USER beta_user_451
+DEGREES_OF_SEPARATION gamma_user_239 gamma_user_17
+ADD_POST gamma_user_137 "Just finished the COL106 assignment!"
+LIST_FRIENDS alpha_user_120
+ADD_POST beta_user_58 "another post"
+ADD_USER gamma_user_452
+ADD_FRIEND gamma_user_446 beta_user_34
+ADD_POST alpha_user_174 "Graphs are fascinating data structures."
+ADD_USER alpha_user_453
+ADD_USER beta_user_454
+OUTPUT_POSTS beta_user_124 13
+OUTPUT_POSTS gamma_user_395 6
+ADD_USER gamma_user_455
+DEGREES_OF_SEPARATION gamma_user_131 beta_user_334
+ADD_FRIEND alpha_user_30 beta_user_241
+ADD_USER alpha_user_456
+ADD_USER beta_user_457
+ADD_POST gamma_user_200 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS gamma_user_377 2
+ADD_USER gamma_user_458
+LIST_FRIENDS beta_user_268
+ADD_FRIEND beta_user_43 alpha_user_21
+ADD_USER alpha_user_459
+DEGREES_OF_SEPARATION alpha_user_129 alpha_user_3
+OUTPUT_POSTS alpha_user_195 4
+DEGREES_OF_SEPARATION alpha_user_186 gamma_user_365
+ADD_POST alpha_user_390 "This is a test post."
+ADD_FRIEND alpha_user_423 gamma_user_458
+ADD_USER beta_user_460
+OUTPUT_POSTS alpha_user_186 13
+SUGGEST_FRIENDS alpha_user_402 1
+OUTPUT_POSTS alpha_user_375 7
+ADD_POST gamma_user_131 "Just finished the COL106 assignment!"
+OUTPUT_POSTS beta_user_196 8
+SUGGEST_FRIENDS alpha_user_288 2
+ADD_USER gamma_user_461
+ADD_USER alpha_user_462
+DEGREES_OF_SEPARATION gamma_user_131 alpha_user_288
+ADD_FRIEND alpha_user_297 beta_user_241
+ADD_FRIEND gamma_user_389 alpha_user_117
+ADD_USER beta_user_463
+ADD_POST beta_user_67 "Graphs are fascinating data structures."
+ADD_USER gamma_user_464
+ADD_FRIEND alpha_user_273 gamma_user_365
+ADD_USER alpha_user_465
+ADD_USER beta_user_466
+ADD_FRIEND alpha_user_348 alpha_user_462
+ADD_USER gamma_user_467
+ADD_FRIEND beta_user_196 alpha_user_93
+ADD_USER alpha_user_468
+SUGGEST_FRIENDS beta_user_328 4
+ADD_FRIEND beta_user_28 alpha_user_375
+ADD_USER beta_user_469
+DEGREES_OF_SEPARATION beta_user_139 gamma_user_32
+ADD_POST beta_user_49 "Suggesting friends is a cool feature."
+ADD_FRIEND gamma_user_239 alpha_user_306
+ADD_USER gamma_user_470
+ADD_POST beta_user_169 "My AVL tree is perfectly balanced."
+ADD_USER alpha_user_471
+ADD_USER beta_user_472
+OUTPUT_POSTS alpha_user_309 5
+ADD_FRIEND beta_user_160 beta_user_94
+LIST_FRIENDS alpha_user_258
+OUTPUT_POSTS alpha_user_327 3
+OUTPUT_POSTS alpha_user_342 14
+SUGGEST_FRIENDS gamma_user_47 2
+ADD_USER gamma_user_473
+ADD_USER alpha_user_474
+SUGGEST_FRIENDS alpha_user_108 1
+ADD_USER beta_user_475
+LIST_FRIENDS beta_user_466
+ADD_FRIEND alpha_user_456 beta_user_13
+ADD_USER gamma_user_476
+OUTPUT_POSTS beta_user_88 13
+ADD_USER alpha_user_477
+ADD_FRIEND gamma_user_302 alpha_user_102
+ADD_FRIEND alpha_user_252 beta_user_16
+DEGREES_OF_SEPARATION gamma_user_140 gamma_user_395
+ADD_USER beta_user_478
+DEGREES_OF_SEPARATION alpha_user_396 alpha_user_27
+ADD_FRIEND alpha_user_6 gamma_user_407
+ADD_USER gamma_user_479
+ADD_USER alpha_user_480
+ADD_USER beta_user_481
+OUTPUT_POSTS gamma_user_317 6
+DEGREES_OF_SEPARATION alpha_user_405 beta_user_166
+LIST_FRIENDS gamma_user_293
+LIST_FRIENDS beta_user_43
+ADD_USER gamma_user_482
+ADD_POST alpha_user_306 "Thinking about degrees of separation."
+LIST_FRIENDS alpha_user_63
+ADD_USER alpha_user_483
+DEGREES_OF_SEPARATION beta_user_1 alpha_user_72
+OUTPUT_POSTS gamma_user_197 1
+LIST_FRIENDS beta_user_40
+ADD_FRIEND gamma_user_455 gamma_user_128
+OUTPUT_POSTS alpha_user_300 6
+ADD_USER beta_user_484
+ADD_USER gamma_user_485
+LIST_FRIENDS gamma_user_137
+DEGREES_OF_SEPARATION beta_user_169 beta_user_1
+ADD_FRIEND alpha_user_174 beta_user_337
+ADD_POST beta_user_304 "Thinking about degrees of separation."
+ADD_USER alpha_user_486
+SUGGEST_FRIENDS alpha_user_318 4
+ADD_USER beta_user_487
+OUTPUT_POSTS alpha_user_408 9
+OUTPUT_POSTS beta_user_256 12
+ADD_USER gamma_user_488
+ADD_USER alpha_user_489
+ADD_FRIEND gamma_user_95 beta_user_118
+DEGREES_OF_SEPARATION gamma_user_338 beta_user_85
+LIST_FRIENDS gamma_user_68
+ADD_USER beta_user_490
+ADD_FRIEND alpha_user_132 gamma_user_203
+ADD_FRIEND gamma_user_236 gamma_user_368
+OUTPUT_POSTS beta_user_319 1
+ADD_USER gamma_user_491
+ADD_POST gamma_user_326 "Hello world"
+OUTPUT_POSTS alpha_user_309 11
+OUTPUT_POSTS gamma_user_383 6
+SUGGEST_FRIENDS gamma_user_395 10
+LIST_FRIENDS gamma_user_323
+DEGREES_OF_SEPARATION alpha_user_3 alpha_user_351
+DEGREES_OF_SEPARATION beta_user_370 gamma_user_29
+ADD_FRIEND beta_user_451 beta_user_238
+SUGGEST_FRIENDS gamma_user_107 9
+OUTPUT_POSTS gamma_user_110 -1
+ADD_USER alpha_user_492
+ADD_POST alpha_user_195 "Suggesting friends is a cool feature."
+ADD_USER beta_user_493
+ADD_USER gamma_user_494
+ADD_USER alpha_user_495
+ADD_FRIEND beta_user_73 beta_user_10
+OUTPUT_POSTS gamma_user_479 -1
+ADD_USER beta_user_496
+DEGREES_OF_SEPARATION beta_user_100 alpha_user_351
+ADD_FRIEND alpha_user_420 alpha_user_222
+OUTPUT_POSTS alpha_user_324 8
+ADD_POST beta_user_112 "This is a test post."
+ADD_USER gamma_user_497
+OUTPUT_POSTS gamma_user_347 10
+ADD_USER alpha_user_498
+ADD_USER beta_user_499
+LIST_FRIENDS gamma_user_203
+OUTPUT_POSTS beta_user_247 8
+OUTPUT_POSTS alpha_user_468 4
+ADD_FRIEND gamma_user_395 beta_user_349
+DEGREES_OF_SEPARATION beta_user_247 gamma_user_239
+ADD_POST alpha_user_69 "Suggesting friends is a cool feature."
+LIST_FRIENDS beta_user_310
+LIST_FRIENDS alpha_user_306
+ADD_POST alpha_user_288 "Thinking about degrees of separation."
+OUTPUT_POSTS beta_user_448 15
+OUTPUT_POSTS alpha_user_87 2
+OUTPUT_POSTS gamma_user_344 -1
+ADD_POST gamma_user_47 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS gamma_user_182 10
+ADD_FRIEND alpha_user_186 alpha_user_423
+SUGGEST_FRIENDS beta_user_205 6
+SUGGEST_FRIENDS beta_user_100 10
+SUGGEST_FRIENDS alpha_user_387 8
+ADD_FRIEND gamma_user_257 beta_user_67
+ADD_FRIEND beta_user_133 gamma_user_140
+DEGREES_OF_SEPARATION alpha_user_123 alpha_user_492
+LIST_FRIENDS beta_user_244
+ADD_POST gamma_user_326 "A long post with multiple words to test parsing."
+SUGGEST_FRIENDS beta_user_475 5
+ADD_POST alpha_user_111 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION beta_user_388 gamma_user_365
+DEGREES_OF_SEPARATION gamma_user_35 alpha_user_486
+DEGREES_OF_SEPARATION alpha_user_462 alpha_user_129
+ADD_POST alpha_user_366 "My AVL tree is perfectly balanced."
+SUGGEST_FRIENDS alpha_user_324 5
+ADD_FRIEND gamma_user_461 alpha_user_411
+OUTPUT_POSTS beta_user_127 14
+DEGREES_OF_SEPARATION beta_user_226 gamma_user_38
+ADD_FRIEND beta_user_262 alpha_user_423
+DEGREES_OF_SEPARATION beta_user_283 alpha_user_306
+LIST_FRIENDS gamma_user_128
+ADD_POST beta_user_472 "A long post with multiple words to test parsing."
+OUTPUT_POSTS beta_user_268 6
+ADD_FRIEND alpha_user_186 beta_user_49
+ADD_POST gamma_user_359 "another post"
+DEGREES_OF_SEPARATION alpha_user_21 beta_user_94
+ADD_FRIEND alpha_user_9 alpha_user_408
+DEGREES_OF_SEPARATION alpha_user_279 alpha_user_426
+LIST_FRIENDS gamma_user_479
+LIST_FRIENDS alpha_user_54
+OUTPUT_POSTS beta_user_280 -1
+DEGREES_OF_SEPARATION alpha_user_180 gamma_user_329
+OUTPUT_POSTS gamma_user_125 -1
+ADD_FRIEND gamma_user_332 gamma_user_491
+OUTPUT_POSTS gamma_user_344 10
+LIST_FRIENDS beta_user_331
+LIST_FRIENDS gamma_user_161
+OUTPUT_POSTS alpha_user_153 6
+OUTPUT_POSTS alpha_user_483 11
+ADD_POST gamma_user_101 "another post"
+ADD_FRIEND beta_user_466 gamma_user_140
+DEGREES_OF_SEPARATION beta_user_256 alpha_user_12
+ADD_FRIEND alpha_user_489 gamma_user_35
+OUTPUT_POSTS alpha_user_429 11
+ADD_FRIEND gamma_user_395 gamma_user_113
+ADD_FRIEND gamma_user_290 gamma_user_146
+DEGREES_OF_SEPARATION beta_user_28 beta_user_163
+DEGREES_OF_SEPARATION alpha_user_399 beta_user_493
+LIST_FRIENDS alpha_user_456
+DEGREES_OF_SEPARATION beta_user_202 gamma_user_62
+OUTPUT_POSTS beta_user_340 4
+OUTPUT_POSTS alpha_user_309 10
+ADD_FRIEND beta_user_277 beta_user_370
+SUGGEST_FRIENDS alpha_user_369 10
+ADD_FRIEND alpha_user_330 beta_user_403
+OUTPUT_POSTS beta_user_361 9
+ADD_FRIEND alpha_user_417 gamma_user_410
+DEGREES_OF_SEPARATION gamma_user_224 beta_user_85
+DEGREES_OF_SEPARATION beta_user_85 alpha_user_57
+OUTPUT_POSTS beta_user_424 15
+SUGGEST_FRIENDS alpha_user_330 3
+ADD_POST beta_user_37 "another post"
+ADD_FRIEND beta_user_370 gamma_user_239
+LIST_FRIENDS alpha_user_90
+OUTPUT_POSTS beta_user_475 5
+DEGREES_OF_SEPARATION alpha_user_351 beta_user_340
+OUTPUT_POSTS gamma_user_194 -1
+ADD_FRIEND gamma_user_461 gamma_user_140
+SUGGEST_FRIENDS gamma_user_392 4
+ADD_POST gamma_user_458 "My AVL tree is perfectly balanced."
+ADD_FRIEND beta_user_16 gamma_user_392
+SUGGEST_FRIENDS beta_user_391 2
+ADD_FRIEND gamma_user_176 gamma_user_128
+OUTPUT_POSTS alpha_user_384 3
+SUGGEST_FRIENDS alpha_user_339 8
+SUGGEST_FRIENDS gamma_user_140 3
+SUGGEST_FRIENDS gamma_user_155 6
+LIST_FRIENDS beta_user_199
+SUGGEST_FRIENDS alpha_user_27 2
+DEGREES_OF_SEPARATION alpha_user_33 beta_user_454
+ADD_POST beta_user_427 "another post"
+LIST_FRIENDS alpha_user_318
+SUGGEST_FRIENDS alpha_user_204 7
+DEGREES_OF_SEPARATION beta_user_448 beta_user_55
+ADD_FRIEND alpha_user_315 gamma_user_164
+ADD_FRIEND gamma_user_50 beta_user_382
+OUTPUT_POSTS beta_user_277 7
+ADD_FRIEND alpha_user_384 gamma_user_14
+OUTPUT_POSTS gamma_user_110 9
+ADD_FRIEND gamma_user_110 alpha_user_102
+DEGREES_OF_SEPARATION beta_user_256 beta_user_175
+ADD_POST gamma_user_491 "Just finished the COL106 assignment!"
+OUTPUT_POSTS alpha_user_63 11
+DEGREES_OF_SEPARATION gamma_user_20 gamma_user_461
+ADD_FRIEND beta_user_382 gamma_user_242
+SUGGEST_FRIENDS gamma_user_302 2
+DEGREES_OF_SEPARATION beta_user_394 beta_user_43
+SUGGEST_FRIENDS gamma_user_62 2
+ADD_FRIEND gamma_user_455 beta_user_115
+DEGREES_OF_SEPARATION gamma_user_74 gamma_user_155
+OUTPUT_POSTS alpha_user_81 11
+OUTPUT_POSTS beta_user_238 13
+DEGREES_OF_SEPARATION gamma_user_272 alpha_user_210
+OUTPUT_POSTS beta_user_181 6
+ADD_FRIEND beta_user_271 gamma_user_134
+LIST_FRIENDS beta_user_109
+OUTPUT_POSTS alpha_user_471 10
+DEGREES_OF_SEPARATION beta_user_232 beta_user_208
+ADD_FRIEND alpha_user_51 beta_user_490
+DEGREES_OF_SEPARATION beta_user_178 gamma_user_311
+LIST_FRIENDS alpha_user_285
+LIST_FRIENDS beta_user_310
+SUGGEST_FRIENDS beta_user_253 9
+OUTPUT_POSTS alpha_user_459 -1
+SUGGEST_FRIENDS gamma_user_173 9
+DEGREES_OF_SEPARATION alpha_user_354 gamma_user_335
+ADD_FRIEND beta_user_43 gamma_user_317
+ADD_FRIEND beta_user_337 alpha_user_372
+LIST_FRIENDS beta_user_445
+OUTPUT_POSTS beta_user_130 3
+ADD_FRIEND gamma_user_83 beta_user_424
+ADD_FRIEND beta_user_154 gamma_user_443
+LIST_FRIENDS beta_user_358
+DEGREES_OF_SEPARATION gamma_user_266 gamma_user_179
+ADD_FRIEND gamma_user_470 gamma_user_431
+ADD_FRIEND alpha_user_303 gamma_user_410
+ADD_FRIEND beta_user_211 beta_user_400
+DEGREES_OF_SEPARATION beta_user_313 beta_user_196
+LIST_FRIENDS gamma_user_26
+DEGREES_OF_SEPARATION beta_user_157 beta_user_319
+SUGGEST_FRIENDS beta_user_190 1
+ADD_FRIEND gamma_user_470 alpha_user_45
+ADD_FRIEND beta_user_7 alpha_user_408
+ADD_FRIEND alpha_user_150 alpha_user_282
+ADD_FRIEND alpha_user_207 beta_user_64
+ADD_POST beta_user_175 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_90 14
+SUGGEST_FRIENDS gamma_user_95 10
+OUTPUT_POSTS gamma_user_113 5
+ADD_POST alpha_user_174 "My AVL tree is perfectly balanced."
+ADD_FRIEND gamma_user_347 alpha_user_483
+OUTPUT_POSTS gamma_user_314 5
+OUTPUT_POSTS gamma_user_2 6
+SUGGEST_FRIENDS alpha_user_228 1
+OUTPUT_POSTS beta_user_208 4
+ADD_FRIEND beta_user_382 gamma_user_200
+OUTPUT_POSTS beta_user_274 11
+ADD_POST gamma_user_482 "A long post with multiple words to test parsing."
+OUTPUT_POSTS alpha_user_207 3
+LIST_FRIENDS gamma_user_398
+LIST_FRIENDS gamma_user_203
+ADD_POST gamma_user_137 "Thinking about degrees of separation."
+LIST_FRIENDS alpha_user_360
+DEGREES_OF_SEPARATION beta_user_79 gamma_user_359
+ADD_FRIEND alpha_user_162 beta_user_163
+ADD_POST alpha_user_69 "another post"
+ADD_POST gamma_user_323 "another post"
+DEGREES_OF_SEPARATION gamma_user_278 beta_user_466
+OUTPUT_POSTS gamma_user_173 14
+SUGGEST_FRIENDS beta_user_226 6
+DEGREES_OF_SEPARATION alpha_user_405 beta_user_250
+ADD_FRIEND beta_user_169 alpha_user_492
+DEGREES_OF_SEPARATION beta_user_394 alpha_user_87
+ADD_FRIEND beta_user_442 alpha_user_309
+ADD_FRIEND beta_user_31 gamma_user_332
+OUTPUT_POSTS beta_user_148 3
+ADD_POST beta_user_253 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_101 gamma_user_182
+SUGGEST_FRIENDS beta_user_136 6
+OUTPUT_POSTS alpha_user_111 1
+OUTPUT_POSTS beta_user_427 -1
+OUTPUT_POSTS gamma_user_164 5
+OUTPUT_POSTS gamma_user_122 3
+ADD_FRIEND alpha_user_132 beta_user_127
+OUTPUT_POSTS beta_user_328 -1
+OUTPUT_POSTS beta_user_436 15
+ADD_POST beta_user_82 "another post"
+ADD_FRIEND gamma_user_137 alpha_user_210
+ADD_FRIEND alpha_user_459 alpha_user_318
+OUTPUT_POSTS gamma_user_116 5
+OUTPUT_POSTS beta_user_55 -1
+DEGREES_OF_SEPARATION alpha_user_105 beta_user_343
+OUTPUT_POSTS gamma_user_170 13
+OUTPUT_POSTS gamma_user_308 15
+SUGGEST_FRIENDS beta_user_178 2
+DEGREES_OF_SEPARATION beta_user_91 beta_user_328
+OUTPUT_POSTS alpha_user_165 8
+DEGREES_OF_SEPARATION beta_user_70 beta_user_187
+LIST_FRIENDS gamma_user_461
+SUGGEST_FRIENDS beta_user_451 2
+OUTPUT_POSTS alpha_user_171 5
+ADD_FRIEND gamma_user_323 alpha_user_324
+LIST_FRIENDS gamma_user_353
+ADD_FRIEND beta_user_337 gamma_user_356
+LIST_FRIENDS beta_user_400
+ADD_FRIEND gamma_user_338 alpha_user_141
+ADD_FRIEND alpha_user_198 alpha_user_228
+LIST_FRIENDS gamma_user_179
+ADD_POST gamma_user_473 "Just finished the COL106 assignment!"
+ADD_FRIEND alpha_user_87 beta_user_220
+OUTPUT_POSTS gamma_user_200 14
+ADD_POST gamma_user_173 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_498 alpha_user_189
+DEGREES_OF_SEPARATION gamma_user_200 alpha_user_249
+ADD_POST beta_user_100 "random thoughts 123 !@#"
+OUTPUT_POSTS gamma_user_311 3
+ADD_FRIEND gamma_user_53 alpha_user_237
+ADD_FRIEND alpha_user_471 beta_user_118
+DEGREES_OF_SEPARATION alpha_user_9 beta_user_202
+DEGREES_OF_SEPARATION gamma_user_194 alpha_user_15
+ADD_FRIEND beta_user_4 gamma_user_440
+ADD_FRIEND gamma_user_479 alpha_user_282
+SUGGEST_FRIENDS alpha_user_453 5
+OUTPUT_POSTS gamma_user_77 10
+LIST_FRIENDS beta_user_175
+ADD_POST alpha_user_132 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION alpha_user_486 beta_user_322
+SUGGEST_FRIENDS gamma_user_497 1
+OUTPUT_POSTS beta_user_322 1
+ADD_FRIEND gamma_user_392 gamma_user_194
+DEGREES_OF_SEPARATION gamma_user_197 gamma_user_122
+LIST_FRIENDS alpha_user_243
+ADD_POST gamma_user_371 "My AVL tree is perfectly balanced."
+ADD_FRIEND beta_user_334 beta_user_85
+ADD_FRIEND alpha_user_297 alpha_user_75
+DEGREES_OF_SEPARATION alpha_user_360 beta_user_184
+DEGREES_OF_SEPARATION alpha_user_405 beta_user_199
+LIST_FRIENDS gamma_user_107
+DEGREES_OF_SEPARATION alpha_user_240 gamma_user_260
+DEGREES_OF_SEPARATION alpha_user_468 alpha_user_315
+DEGREES_OF_SEPARATION beta_user_82 alpha_user_120
+ADD_FRIEND gamma_user_347 gamma_user_278
+SUGGEST_FRIENDS gamma_user_59 7
+SUGGEST_FRIENDS alpha_user_207 7
+ADD_POST gamma_user_146 "Hello world"
+DEGREES_OF_SEPARATION beta_user_82 gamma_user_323
+LIST_FRIENDS gamma_user_140
+SUGGEST_FRIENDS alpha_user_78 10
+ADD_FRIEND gamma_user_338 gamma_user_119
+ADD_FRIEND gamma_user_464 gamma_user_53
+OUTPUT_POSTS alpha_user_336 11
+ADD_POST gamma_user_104 "A long post with multiple words to test parsing."
+OUTPUT_POSTS beta_user_223 5
+LIST_FRIENDS beta_user_361
+ADD_FRIEND alpha_user_117 alpha_user_411
+SUGGEST_FRIENDS alpha_user_186 5
+OUTPUT_POSTS alpha_user_351 4
+SUGGEST_FRIENDS alpha_user_228 10
+LIST_FRIENDS gamma_user_368
+ADD_FRIEND beta_user_79 beta_user_331
+ADD_POST beta_user_166 "Hello world"
+LIST_FRIENDS beta_user_193
+OUTPUT_POSTS gamma_user_131 2
+LIST_FRIENDS alpha_user_228
+ADD_FRIEND gamma_user_344 beta_user_253
+ADD_FRIEND beta_user_85 beta_user_115
+OUTPUT_POSTS alpha_user_381 15
+SUGGEST_FRIENDS gamma_user_476 4
+LIST_FRIENDS gamma_user_413
+ADD_FRIEND gamma_user_245 beta_user_106
+DEGREES_OF_SEPARATION beta_user_10 beta_user_310
+OUTPUT_POSTS alpha_user_315 14
+ADD_FRIEND beta_user_118 gamma_user_155
+LIST_FRIENDS beta_user_4
+ADD_POST gamma_user_59 "Just finished the COL106 assignment!"
+ADD_FRIEND gamma_user_38 beta_user_151
+ADD_FRIEND beta_user_106 beta_user_121
+LIST_FRIENDS alpha_user_258
+SUGGEST_FRIENDS beta_user_124 7
+DEGREES_OF_SEPARATION alpha_user_408 beta_user_361
+ADD_FRIEND beta_user_136 beta_user_205
+ADD_FRIEND beta_user_85 alpha_user_492
+DEGREES_OF_SEPARATION alpha_user_309 gamma_user_26
+OUTPUT_POSTS beta_user_268 6
+DEGREES_OF_SEPARATION alpha_user_225 alpha_user_153
+SUGGEST_FRIENDS beta_user_22 7
+DEGREES_OF_SEPARATION gamma_user_230 alpha_user_276
+OUTPUT_POSTS alpha_user_291 0
+OUTPUT_POSTS gamma_user_407 6
+ADD_FRIEND beta_user_415 beta_user_4
+ADD_FRIEND gamma_user_230 beta_user_463
+LIST_FRIENDS gamma_user_116
+LIST_FRIENDS beta_user_40
+ADD_FRIEND gamma_user_119 beta_user_235
+OUTPUT_POSTS alpha_user_312 4
+OUTPUT_POSTS alpha_user_243 -1
+SUGGEST_FRIENDS beta_user_196 7
+OUTPUT_POSTS gamma_user_242 8
+SUGGEST_FRIENDS beta_user_148 6
+ADD_POST alpha_user_309 "Hello world"
+OUTPUT_POSTS beta_user_376 0
+DEGREES_OF_SEPARATION gamma_user_158 beta_user_364
+OUTPUT_POSTS alpha_user_162 5
+ADD_FRIEND alpha_user_486 beta_user_202
+ADD_FRIEND alpha_user_471 gamma_user_461
+ADD_FRIEND alpha_user_441 alpha_user_366
+LIST_FRIENDS alpha_user_219
+DEGREES_OF_SEPARATION beta_user_64 gamma_user_68
+ADD_POST gamma_user_47 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_45 8
+LIST_FRIENDS alpha_user_396
+ADD_FRIEND alpha_user_495 beta_user_268
+ADD_POST gamma_user_98 "This is a test post."
+ADD_FRIEND beta_user_490 beta_user_250
+ADD_POST alpha_user_264 "Hello world"
+OUTPUT_POSTS gamma_user_320 7
+LIST_FRIENDS gamma_user_395
+ADD_FRIEND beta_user_13 gamma_user_128
+ADD_POST alpha_user_282 "A long post with multiple words to test parsing."
+ADD_POST beta_user_133 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_219 gamma_user_485
+OUTPUT_POSTS gamma_user_365 12
+ADD_FRIEND alpha_user_51 beta_user_145
+ADD_FRIEND beta_user_217 gamma_user_11
+LIST_FRIENDS gamma_user_23
+OUTPUT_POSTS gamma_user_419 2
+ADD_POST beta_user_394 "random thoughts 123 !@#"
+ADD_POST alpha_user_291 "Hello world"
+ADD_FRIEND beta_user_109 beta_user_475
+LIST_FRIENDS alpha_user_408
+OUTPUT_POSTS beta_user_73 10
+ADD_FRIEND beta_user_406 beta_user_445
+DEGREES_OF_SEPARATION beta_user_442 alpha_user_333
+SUGGEST_FRIENDS gamma_user_170 10
+OUTPUT_POSTS beta_user_130 9
+OUTPUT_POSTS gamma_user_158 1
+ADD_FRIEND alpha_user_126 alpha_user_411
+DEGREES_OF_SEPARATION beta_user_310 gamma_user_458
+ADD_POST alpha_user_420 "random thoughts 123 !@#"
+ADD_POST gamma_user_446 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION gamma_user_116 alpha_user_381
+OUTPUT_POSTS alpha_user_288 4
+SUGGEST_FRIENDS beta_user_133 8
+ADD_POST gamma_user_245 "Graphs are fascinating data structures."
+ADD_FRIEND alpha_user_318 alpha_user_444
+LIST_FRIENDS alpha_user_291
+OUTPUT_POSTS beta_user_280 11
+ADD_FRIEND alpha_user_264 beta_user_121
+OUTPUT_POSTS gamma_user_104 1
+ADD_FRIEND beta_user_289 gamma_user_317
+ADD_FRIEND gamma_user_149 gamma_user_86
+DEGREES_OF_SEPARATION gamma_user_482 gamma_user_245
+LIST_FRIENDS beta_user_370
+OUTPUT_POSTS gamma_user_329 11
+DEGREES_OF_SEPARATION alpha_user_258 beta_user_88
+ADD_FRIEND gamma_user_299 gamma_user_467
+SUGGEST_FRIENDS alpha_user_369 2
+SUGGEST_FRIENDS beta_user_235 9
+SUGGEST_FRIENDS alpha_user_18 8
+OUTPUT_POSTS beta_user_151 1
+ADD_FRIEND alpha_user_252 alpha_user_0
+OUTPUT_POSTS beta_user_451 13
+SUGGEST_FRIENDS beta_user_382 3
+ADD_FRIEND alpha_user_405 alpha_user_117
+OUTPUT_POSTS beta_user_424 5
+DEGREES_OF_SEPARATION gamma_user_380 beta_user_112
+OUTPUT_POSTS beta_user_73 14
+ADD_POST beta_user_457 "another post"
+ADD_POST alpha_user_51 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION beta_user_34 alpha_user_270
+ADD_FRIEND beta_user_292 alpha_user_0
+OUTPUT_POSTS gamma_user_155 15
+ADD_FRIEND gamma_user_239 beta_user_286
+SUGGEST_FRIENDS alpha_user_486 7
+OUTPUT_POSTS alpha_user_282 8
+DEGREES_OF_SEPARATION alpha_user_261 gamma_user_245
+OUTPUT_POSTS beta_user_307 13
+DEGREES_OF_SEPARATION alpha_user_480 gamma_user_155
+LIST_FRIENDS beta_user_328
+SUGGEST_FRIENDS alpha_user_495 7
+SUGGEST_FRIENDS alpha_user_291 8
+ADD_POST alpha_user_117 "This is a test post."
+ADD_POST beta_user_67 "This is a test post."
+ADD_FRIEND gamma_user_167 beta_user_349
+ADD_FRIEND alpha_user_492 alpha_user_405
+SUGGEST_FRIENDS gamma_user_359 7
+ADD_POST gamma_user_38 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_233 "another post"
+ADD_FRIEND alpha_user_426 gamma_user_41
+SUGGEST_FRIENDS alpha_user_54 9
+SUGGEST_FRIENDS beta_user_187 1
+DEGREES_OF_SEPARATION beta_user_406 beta_user_493
+OUTPUT_POSTS gamma_user_293 14
+LIST_FRIENDS gamma_user_185
+ADD_FRIEND gamma_user_413 beta_user_274
+ADD_FRIEND gamma_user_170 gamma_user_68
+LIST_FRIENDS alpha_user_369
+ADD_POST beta_user_382 "Thinking about degrees of separation."
+ADD_FRIEND beta_user_115 beta_user_178
+OUTPUT_POSTS beta_user_463 15
+ADD_FRIEND gamma_user_101 gamma_user_17
+ADD_POST gamma_user_263 "Thinking about degrees of separation."
+OUTPUT_POSTS alpha_user_138 11
+SUGGEST_FRIENDS beta_user_169 3
+ADD_FRIEND beta_user_211 gamma_user_338
+LIST_FRIENDS alpha_user_318
+OUTPUT_POSTS beta_user_484 15
+ADD_POST alpha_user_219 "Just finished the COL106 assignment!"
+ADD_POST alpha_user_129 "another post"
+OUTPUT_POSTS alpha_user_303 -1
+OUTPUT_POSTS beta_user_310 8
+ADD_FRIEND alpha_user_462 gamma_user_245
+OUTPUT_POSTS alpha_user_120 5
+SUGGEST_FRIENDS alpha_user_468 6
+OUTPUT_POSTS beta_user_406 1
+DEGREES_OF_SEPARATION gamma_user_209 gamma_user_383
+ADD_FRIEND beta_user_145 alpha_user_249
+ADD_FRIEND alpha_user_381 alpha_user_336
+ADD_FRIEND gamma_user_92 alpha_user_210
+ADD_POST beta_user_133 "Graphs are fascinating data structures."
+OUTPUT_POSTS gamma_user_377 -1
+ADD_FRIEND alpha_user_54 alpha_user_9
+ADD_FRIEND alpha_user_183 alpha_user_213
+ADD_POST gamma_user_221 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_279 4
+ADD_FRIEND beta_user_58 beta_user_382
+SUGGEST_FRIENDS alpha_user_267 3
+ADD_FRIEND beta_user_361 beta_user_190
+SUGGEST_FRIENDS gamma_user_296 5
+OUTPUT_POSTS beta_user_346 5
+OUTPUT_POSTS beta_user_139 -1
+ADD_FRIEND beta_user_460 beta_user_76
+ADD_FRIEND gamma_user_476 beta_user_172
+ADD_FRIEND gamma_user_233 beta_user_217
+DEGREES_OF_SEPARATION gamma_user_215 alpha_user_480
+ADD_FRIEND gamma_user_269 alpha_user_78
+LIST_FRIENDS gamma_user_479
+OUTPUT_POSTS alpha_user_450 14
+OUTPUT_POSTS gamma_user_266 15
+ADD_POST gamma_user_470 "A long post with multiple words to test parsing."
+ADD_FRIEND beta_user_451 gamma_user_236
+ADD_FRIEND gamma_user_326 gamma_user_200
+ADD_FRIEND gamma_user_44 gamma_user_368
+DEGREES_OF_SEPARATION alpha_user_378 gamma_user_461
+SUGGEST_FRIENDS beta_user_340 5
+ADD_FRIEND alpha_user_405 gamma_user_161
+OUTPUT_POSTS gamma_user_377 1
+ADD_POST beta_user_433 "another post"
+ADD_FRIEND beta_user_286 alpha_user_204
+ADD_POST beta_user_388 "Thinking about degrees of separation."
+OUTPUT_POSTS gamma_user_428 15
+SUGGEST_FRIENDS beta_user_337 5
+SUGGEST_FRIENDS beta_user_22 5
+ADD_FRIEND gamma_user_317 alpha_user_225
+ADD_POST beta_user_469 "This is a test post."
+OUTPUT_POSTS beta_user_289 6
+ADD_FRIEND beta_user_196 beta_user_145
+SUGGEST_FRIENDS beta_user_421 10
+LIST_FRIENDS gamma_user_134
+ADD_POST beta_user_22 "another post"
+LIST_FRIENDS alpha_user_432
+ADD_FRIEND beta_user_487 alpha_user_288
+ADD_POST alpha_user_324 "A long post with multiple words to test parsing."
+ADD_FRIEND gamma_user_110 beta_user_496
+OUTPUT_POSTS gamma_user_104 11
+SUGGEST_FRIENDS beta_user_469 8
+LIST_FRIENDS gamma_user_206
+ADD_FRIEND beta_user_52 beta_user_13
+SUGGEST_FRIENDS gamma_user_476 1
+ADD_POST beta_user_184 "Thinking about degrees of separation."
+ADD_POST gamma_user_482 "Thinking about degrees of separation."
+SUGGEST_FRIENDS alpha_user_480 4
+OUTPUT_POSTS beta_user_337 1
+ADD_FRIEND gamma_user_470 gamma_user_494
+ADD_FRIEND gamma_user_131 alpha_user_6
+SUGGEST_FRIENDS beta_user_472 7
+SUGGEST_FRIENDS alpha_user_426 10
+ADD_POST gamma_user_437 "My AVL tree is perfectly balanced."
+ADD_FRIEND alpha_user_342 beta_user_19
+DEGREES_OF_SEPARATION beta_user_214 beta_user_169
+OUTPUT_POSTS beta_user_196 1
+ADD_FRIEND alpha_user_90 gamma_user_425
+ADD_POST gamma_user_179 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS gamma_user_374 6
+OUTPUT_POSTS beta_user_277 1
+LIST_FRIENDS beta_user_253
+ADD_FRIEND beta_user_193 beta_user_25
+SUGGEST_FRIENDS alpha_user_495 7
+ADD_FRIEND gamma_user_11 gamma_user_194
+ADD_POST beta_user_274 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS beta_user_367 9
+ADD_POST alpha_user_474 "another post"
+ADD_POST gamma_user_458 "Graphs are fascinating data structures."
+ADD_POST alpha_user_225 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS beta_user_22 10
+OUTPUT_POSTS beta_user_166 11
+ADD_POST alpha_user_174 "Hello world"
+ADD_FRIEND beta_user_388 gamma_user_419
+LIST_FRIENDS beta_user_220
+ADD_POST beta_user_235 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS beta_user_157 0
+DEGREES_OF_SEPARATION beta_user_244 gamma_user_146
+DEGREES_OF_SEPARATION gamma_user_206 alpha_user_111
+OUTPUT_POSTS alpha_user_486 7
+ADD_FRIEND gamma_user_434 alpha_user_108
+ADD_FRIEND gamma_user_266 beta_user_187
+ADD_FRIEND gamma_user_293 alpha_user_396
+DEGREES_OF_SEPARATION gamma_user_386 gamma_user_326
+ADD_FRIEND alpha_user_57 gamma_user_86
+OUTPUT_POSTS alpha_user_204 9
+OUTPUT_POSTS alpha_user_141 9
+ADD_POST alpha_user_141 "Just finished the COL106 assignment!"
+ADD_FRIEND gamma_user_449 gamma_user_215
+SUGGEST_FRIENDS gamma_user_383 10
+OUTPUT_POSTS alpha_user_147 2
+SUGGEST_FRIENDS gamma_user_482 2
+DEGREES_OF_SEPARATION beta_user_61 beta_user_193
+LIST_FRIENDS alpha_user_192
+ADD_POST alpha_user_297 "Just finished the COL106 assignment!"
+LIST_FRIENDS gamma_user_23
+ADD_FRIEND alpha_user_429 alpha_user_48
+OUTPUT_POSTS beta_user_247 12
+ADD_FRIEND beta_user_124 gamma_user_140
+SUGGEST_FRIENDS beta_user_34 8
+OUTPUT_POSTS gamma_user_116 11
+OUTPUT_POSTS beta_user_499 8
+ADD_FRIEND gamma_user_323 gamma_user_185
+OUTPUT_POSTS gamma_user_365 4
+OUTPUT_POSTS gamma_user_395 0
+ADD_FRIEND gamma_user_68 beta_user_85
+SUGGEST_FRIENDS gamma_user_395 7
+ADD_FRIEND alpha_user_6 alpha_user_360
+ADD_POST gamma_user_380 "Hello world"
+ADD_FRIEND alpha_user_51 alpha_user_423
+ADD_FRIEND alpha_user_486 beta_user_43
+OUTPUT_POSTS beta_user_43 3
+SUGGEST_FRIENDS gamma_user_200 2
+SUGGEST_FRIENDS alpha_user_228 1
+DEGREES_OF_SEPARATION beta_user_376 gamma_user_386
+OUTPUT_POSTS alpha_user_486 -1
+ADD_POST gamma_user_74 "A long post with multiple words to test parsing."
+ADD_FRIEND beta_user_460 alpha_user_492
+LIST_FRIENDS gamma_user_188
+LIST_FRIENDS alpha_user_183
+OUTPUT_POSTS gamma_user_380 15
+SUGGEST_FRIENDS beta_user_154 9
+ADD_FRIEND alpha_user_369 beta_user_328
+ADD_FRIEND alpha_user_69 beta_user_175
+ADD_FRIEND beta_user_427 gamma_user_53
+OUTPUT_POSTS beta_user_7 14
+ADD_FRIEND gamma_user_257 alpha_user_243
+OUTPUT_POSTS alpha_user_78 2
+OUTPUT_POSTS beta_user_232 8
+DEGREES_OF_SEPARATION alpha_user_207 gamma_user_494
+OUTPUT_POSTS gamma_user_296 8
+ADD_FRIEND beta_user_388 gamma_user_299
+OUTPUT_POSTS gamma_user_74 11
+OUTPUT_POSTS beta_user_382 15
+ADD_POST gamma_user_149 "Hello world"
+SUGGEST_FRIENDS gamma_user_29 6
+ADD_POST beta_user_55 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_65 alpha_user_171
+DEGREES_OF_SEPARATION gamma_user_473 gamma_user_458
+ADD_FRIEND gamma_user_80 gamma_user_233
+ADD_FRIEND gamma_user_425 gamma_user_107
+ADD_FRIEND beta_user_388 gamma_user_410
+SUGGEST_FRIENDS beta_user_178 2
+ADD_FRIEND alpha_user_219 alpha_user_417
+ADD_POST beta_user_343 "Hello world"
+DEGREES_OF_SEPARATION beta_user_439 alpha_user_126
+OUTPUT_POSTS beta_user_40 9
+DEGREES_OF_SEPARATION alpha_user_405 beta_user_106
+SUGGEST_FRIENDS gamma_user_230 10
+LIST_FRIENDS alpha_user_411
+ADD_FRIEND alpha_user_234 beta_user_313
+OUTPUT_POSTS gamma_user_47 15
+ADD_POST gamma_user_236 "random thoughts 123 !@#"
+ADD_FRIEND beta_user_373 alpha_user_222
+SUGGEST_FRIENDS alpha_user_246 3
+LIST_FRIENDS gamma_user_98
+DEGREES_OF_SEPARATION alpha_user_354 gamma_user_140
+LIST_FRIENDS gamma_user_77
+ADD_FRIEND gamma_user_119 beta_user_481
+ADD_FRIEND alpha_user_15 beta_user_13
+LIST_FRIENDS gamma_user_263
+OUTPUT_POSTS alpha_user_426 13
+ADD_FRIEND gamma_user_143 gamma_user_8
+LIST_FRIENDS alpha_user_405
+ADD_FRIEND beta_user_442 alpha_user_204
+LIST_FRIENDS alpha_user_90
+ADD_FRIEND gamma_user_38 gamma_user_272
+OUTPUT_POSTS beta_user_70 6
+DEGREES_OF_SEPARATION gamma_user_296 alpha_user_270
+ADD_FRIEND alpha_user_162 alpha_user_447
+LIST_FRIENDS alpha_user_462
+ADD_FRIEND beta_user_151 alpha_user_6
+LIST_FRIENDS alpha_user_285
+ADD_POST gamma_user_314 "This is a test post."
+ADD_FRIEND gamma_user_401 gamma_user_188
+ADD_FRIEND alpha_user_252 beta_user_211
+LIST_FRIENDS beta_user_373
+SUGGEST_FRIENDS gamma_user_233 2
+LIST_FRIENDS alpha_user_72
+LIST_FRIENDS beta_user_349
+OUTPUT_POSTS alpha_user_363 7
+ADD_FRIEND alpha_user_396 beta_user_124
+ADD_FRIEND beta_user_382 beta_user_265
+ADD_FRIEND gamma_user_440 alpha_user_81
+ADD_FRIEND alpha_user_39 beta_user_418
+DEGREES_OF_SEPARATION alpha_user_165 alpha_user_102
+SUGGEST_FRIENDS alpha_user_288 6
+OUTPUT_POSTS beta_user_364 1
+SUGGEST_FRIENDS beta_user_67 3
+SUGGEST_FRIENDS gamma_user_467 3
+OUTPUT_POSTS alpha_user_417 15
+ADD_FRIEND beta_user_169 beta_user_181
+ADD_FRIEND beta_user_196 alpha_user_297
+DEGREES_OF_SEPARATION beta_user_454 gamma_user_248
+DEGREES_OF_SEPARATION alpha_user_333 beta_user_199
+OUTPUT_POSTS alpha_user_171 13
+LIST_FRIENDS beta_user_61
+OUTPUT_POSTS beta_user_118 3
+ADD_FRIEND beta_user_286 beta_user_445
+SUGGEST_FRIENDS beta_user_484 10
+ADD_FRIEND beta_user_226 gamma_user_356
+OUTPUT_POSTS alpha_user_90 8
+SUGGEST_FRIENDS beta_user_184 5
+LIST_FRIENDS beta_user_88
+SUGGEST_FRIENDS alpha_user_339 10
+ADD_POST alpha_user_87 "Suggesting friends is a cool feature."
+ADD_FRIEND alpha_user_303 beta_user_430
+SUGGEST_FRIENDS beta_user_238 9
+OUTPUT_POSTS beta_user_46 1
+DEGREES_OF_SEPARATION gamma_user_236 alpha_user_474
+DEGREES_OF_SEPARATION gamma_user_236 beta_user_64
+ADD_FRIEND beta_user_31 beta_user_130
+SUGGEST_FRIENDS gamma_user_161 6
+ADD_FRIEND alpha_user_189 beta_user_274
+OUTPUT_POSTS beta_user_115 8
+ADD_FRIEND gamma_user_146 gamma_user_239
+ADD_FRIEND beta_user_292 gamma_user_149
+OUTPUT_POSTS gamma_user_203 12
+ADD_POST beta_user_370 "Just finished the COL106 assignment!"
+ADD_FRIEND alpha_user_279 alpha_user_60
+SUGGEST_FRIENDS beta_user_88 10
+LIST_FRIENDS alpha_user_474
+LIST_FRIENDS alpha_user_63
+ADD_FRIEND beta_user_127 alpha_user_432
+ADD_FRIEND beta_user_64 gamma_user_320
+SUGGEST_FRIENDS gamma_user_356 1
+LIST_FRIENDS beta_user_214
+ADD_FRIEND gamma_user_2 beta_user_235
+ADD_FRIEND beta_user_235 alpha_user_153
+OUTPUT_POSTS alpha_user_453 11
+LIST_FRIENDS gamma_user_176
+SUGGEST_FRIENDS beta_user_367 3
+SUGGEST_FRIENDS alpha_user_246 9
+ADD_FRIEND gamma_user_248 alpha_user_276
+LIST_FRIENDS beta_user_133
+DEGREES_OF_SEPARATION beta_user_418 beta_user_406
+ADD_FRIEND gamma_user_143 alpha_user_165
+SUGGEST_FRIENDS alpha_user_165 7
+DEGREES_OF_SEPARATION alpha_user_69 gamma_user_272
+DEGREES_OF_SEPARATION gamma_user_455 gamma_user_179
+DEGREES_OF_SEPARATION gamma_user_161 gamma_user_464
+DEGREES_OF_SEPARATION alpha_user_333 alpha_user_81
+OUTPUT_POSTS beta_user_52 3
+OUTPUT_POSTS gamma_user_320 3
+ADD_FRIEND alpha_user_216 alpha_user_42
+SUGGEST_FRIENDS gamma_user_128 7
+DEGREES_OF_SEPARATION alpha_user_297 alpha_user_498
+ADD_FRIEND gamma_user_452 beta_user_400
+DEGREES_OF_SEPARATION beta_user_163 alpha_user_270
+ADD_FRIEND alpha_user_357 beta_user_157
+SUGGEST_FRIENDS beta_user_277 2
+ADD_FRIEND alpha_user_444 gamma_user_80
+OUTPUT_POSTS gamma_user_98 4
+ADD_FRIEND gamma_user_239 gamma_user_368
+OUTPUT_POSTS gamma_user_440 7
+SUGGEST_FRIENDS gamma_user_68 3
+OUTPUT_POSTS alpha_user_387 3
+SUGGEST_FRIENDS alpha_user_495 7
+ADD_POST gamma_user_374 "My AVL tree is perfectly balanced."
+ADD_FRIEND gamma_user_65 alpha_user_258
+DEGREES_OF_SEPARATION gamma_user_278 gamma_user_257
+OUTPUT_POSTS beta_user_226 2
+OUTPUT_POSTS alpha_user_258 6
+OUTPUT_POSTS alpha_user_393 5
+OUTPUT_POSTS alpha_user_336 12
+SUGGEST_FRIENDS beta_user_202 8
+OUTPUT_POSTS beta_user_337 15
+ADD_POST gamma_user_293 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_272 "random thoughts 123 !@#"
+DEGREES_OF_SEPARATION beta_user_259 alpha_user_153
+ADD_POST alpha_user_216 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_259 12
+SUGGEST_FRIENDS alpha_user_390 7
+ADD_FRIEND gamma_user_494 alpha_user_33
+DEGREES_OF_SEPARATION gamma_user_290 gamma_user_47
+ADD_FRIEND alpha_user_498 alpha_user_453
+OUTPUT_POSTS alpha_user_339 9
+LIST_FRIENDS alpha_user_360
+ADD_FRIEND alpha_user_6 alpha_user_231
+OUTPUT_POSTS gamma_user_257 2
+ADD_POST alpha_user_21 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_96 gamma_user_155
+SUGGEST_FRIENDS alpha_user_57 4
+DEGREES_OF_SEPARATION gamma_user_134 alpha_user_348
+OUTPUT_POSTS gamma_user_14 10
+SUGGEST_FRIENDS beta_user_4 6
+ADD_FRIEND gamma_user_62 beta_user_169
+ADD_FRIEND gamma_user_56 beta_user_172
+DEGREES_OF_SEPARATION gamma_user_272 alpha_user_159
+OUTPUT_POSTS beta_user_241 0
+OUTPUT_POSTS beta_user_112 5
+DEGREES_OF_SEPARATION alpha_user_363 alpha_user_378
+LIST_FRIENDS alpha_user_456
+OUTPUT_POSTS alpha_user_234 0
+ADD_POST alpha_user_285 "random thoughts 123 !@#"
+LIST_FRIENDS gamma_user_341
+OUTPUT_POSTS alpha_user_474 4
+OUTPUT_POSTS beta_user_388 1
+ADD_POST alpha_user_6 "This is a test post."
+OUTPUT_POSTS gamma_user_347 14
+SUGGEST_FRIENDS alpha_user_180 1
+OUTPUT_POSTS beta_user_478 15
+OUTPUT_POSTS gamma_user_185 1
+ADD_FRIEND beta_user_334 alpha_user_99
+ADD_FRIEND alpha_user_318 gamma_user_332
+OUTPUT_POSTS alpha_user_87 3
+OUTPUT_POSTS alpha_user_147 3
+OUTPUT_POSTS beta_user_88 5
+DEGREES_OF_SEPARATION beta_user_154 beta_user_382
+OUTPUT_POSTS gamma_user_80 12
+SUGGEST_FRIENDS gamma_user_131 1
+OUTPUT_POSTS beta_user_376 1
+DEGREES_OF_SEPARATION alpha_user_210 gamma_user_488
+ADD_FRIEND beta_user_127 alpha_user_243
+DEGREES_OF_SEPARATION beta_user_28 gamma_user_404
+ADD_POST gamma_user_59 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_6 beta_user_454
+ADD_FRIEND gamma_user_359 beta_user_127
+ADD_POST alpha_user_423 "Suggesting friends is a cool feature."
+LIST_FRIENDS beta_user_430
+DEGREES_OF_SEPARATION beta_user_43 gamma_user_173
+LIST_FRIENDS beta_user_172
+OUTPUT_POSTS beta_user_334 0
+SUGGEST_FRIENDS beta_user_82 2
+SUGGEST_FRIENDS alpha_user_72 5
+OUTPUT_POSTS beta_user_487 1
+OUTPUT_POSTS beta_user_226 13
+DEGREES_OF_SEPARATION gamma_user_452 alpha_user_468
+DEGREES_OF_SEPARATION alpha_user_432 gamma_user_476
+SUGGEST_FRIENDS alpha_user_309 7
+ADD_FRIEND gamma_user_149 gamma_user_281
+ADD_POST alpha_user_417 "Thinking about degrees of separation."
+SUGGEST_FRIENDS gamma_user_362 7
+OUTPUT_POSTS gamma_user_104 2
+SUGGEST_FRIENDS beta_user_382 3
+DEGREES_OF_SEPARATION alpha_user_300 alpha_user_240
+SUGGEST_FRIENDS alpha_user_258 2
+ADD_FRIEND alpha_user_315 alpha_user_36
+DEGREES_OF_SEPARATION gamma_user_194 gamma_user_77
+DEGREES_OF_SEPARATION gamma_user_449 beta_user_307
+SUGGEST_FRIENDS alpha_user_60 7
+ADD_POST beta_user_211 "Hello world"
+LIST_FRIENDS beta_user_37
+SUGGEST_FRIENDS alpha_user_459 1
+DEGREES_OF_SEPARATION gamma_user_95 alpha_user_354
+ADD_FRIEND beta_user_256 gamma_user_98
+ADD_POST alpha_user_237 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION gamma_user_494 alpha_user_87
+ADD_FRIEND beta_user_172 beta_user_301
+SUGGEST_FRIENDS alpha_user_276 1
+OUTPUT_POSTS beta_user_421 6
+LIST_FRIENDS alpha_user_111
+ADD_FRIEND alpha_user_9 gamma_user_470
+LIST_FRIENDS gamma_user_167
+LIST_FRIENDS beta_user_316
+ADD_FRIEND alpha_user_243 beta_user_295
+OUTPUT_POSTS gamma_user_206 6
+DEGREES_OF_SEPARATION gamma_user_350 beta_user_496
+ADD_POST alpha_user_270 "A long post with multiple words to test parsing."
+ADD_FRIEND alpha_user_18 alpha_user_465
+OUTPUT_POSTS beta_user_346 6
+ADD_FRIEND alpha_user_93 beta_user_208
+ADD_FRIEND gamma_user_41 alpha_user_351
+OUTPUT_POSTS beta_user_427 13
+ADD_FRIEND beta_user_412 gamma_user_95
+OUTPUT_POSTS beta_user_367 2
+ADD_FRIEND alpha_user_333 beta_user_469
+OUTPUT_POSTS alpha_user_114 5
+SUGGEST_FRIENDS gamma_user_473 9
+OUTPUT_POSTS gamma_user_410 14
+ADD_FRIEND alpha_user_333 alpha_user_381
+DEGREES_OF_SEPARATION gamma_user_368 gamma_user_266
+ADD_FRIEND alpha_user_492 alpha_user_258
+LIST_FRIENDS beta_user_463
+OUTPUT_POSTS alpha_user_51 2
+LIST_FRIENDS gamma_user_338
+ADD_FRIEND alpha_user_312 beta_user_229
+ADD_FRIEND beta_user_463 gamma_user_158
+DEGREES_OF_SEPARATION beta_user_28 gamma_user_359
+DEGREES_OF_SEPARATION beta_user_355 alpha_user_0
+DEGREES_OF_SEPARATION alpha_user_30 gamma_user_149
+DEGREES_OF_SEPARATION beta_user_16 alpha_user_363
+OUTPUT_POSTS alpha_user_219 12
+OUTPUT_POSTS gamma_user_131 2
+OUTPUT_POSTS beta_user_61 10
+OUTPUT_POSTS alpha_user_402 4
+ADD_POST beta_user_16 "random thoughts 123 !@#"
+ADD_FRIEND beta_user_367 alpha_user_318
+OUTPUT_POSTS alpha_user_108 6
+OUTPUT_POSTS beta_user_418 14
+OUTPUT_POSTS beta_user_367 1
+ADD_FRIEND beta_user_298 gamma_user_92
+ADD_FRIEND alpha_user_210 alpha_user_441
+ADD_FRIEND beta_user_61 alpha_user_228
+OUTPUT_POSTS gamma_user_488 0
+LIST_FRIENDS alpha_user_219
+DEGREES_OF_SEPARATION beta_user_349 alpha_user_429
+OUTPUT_POSTS beta_user_466 14
+ADD_FRIEND gamma_user_296 alpha_user_414
+ADD_FRIEND gamma_user_182 gamma_user_29
+SUGGEST_FRIENDS alpha_user_132 3
+ADD_FRIEND gamma_user_470 gamma_user_461
+SUGGEST_FRIENDS beta_user_328 2
+OUTPUT_POSTS beta_user_217 -1
+OUTPUT_POSTS beta_user_382 0
+LIST_FRIENDS alpha_user_297
+OUTPUT_POSTS gamma_user_113 6
+ADD_FRIEND gamma_user_287 alpha_user_69
+ADD_POST alpha_user_42 "Thinking about degrees of separation."
+SUGGEST_FRIENDS beta_user_268 10
+OUTPUT_POSTS gamma_user_155 6
+ADD_FRIEND gamma_user_446 beta_user_451
+LIST_FRIENDS beta_user_94
+OUTPUT_POSTS beta_user_1 13
+SUGGEST_FRIENDS beta_user_34 1
+DEGREES_OF_SEPARATION alpha_user_195 beta_user_316
+SUGGEST_FRIENDS beta_user_223 3
+OUTPUT_POSTS gamma_user_29 10
+ADD_FRIEND gamma_user_251 alpha_user_279
+OUTPUT_POSTS gamma_user_50 2
+LIST_FRIENDS alpha_user_180
+DEGREES_OF_SEPARATION alpha_user_372 alpha_user_348
+OUTPUT_POSTS alpha_user_306 8
+OUTPUT_POSTS beta_user_136 12
+SUGGEST_FRIENDS beta_user_73 9
+ADD_POST alpha_user_351 "Thinking about degrees of separation."
+ADD_POST beta_user_418 "Suggesting friends is a cool feature."
+DEGREES_OF_SEPARATION gamma_user_290 alpha_user_201
+LIST_FRIENDS gamma_user_317
+ADD_POST beta_user_298 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS gamma_user_356 9
+OUTPUT_POSTS alpha_user_282 -1
+OUTPUT_POSTS beta_user_361 7
+ADD_FRIEND gamma_user_137 alpha_user_117
+OUTPUT_POSTS alpha_user_159 -1
+OUTPUT_POSTS gamma_user_473 6
+ADD_FRIEND alpha_user_333 gamma_user_350
+ADD_FRIEND alpha_user_423 alpha_user_402
+LIST_FRIENDS gamma_user_65
+LIST_FRIENDS gamma_user_167
+ADD_FRIEND gamma_user_2 gamma_user_449
+LIST_FRIENDS gamma_user_188
+OUTPUT_POSTS alpha_user_168 6
+OUTPUT_POSTS beta_user_196 1
+ADD_POST alpha_user_231 "My AVL tree is perfectly balanced."
+ADD_FRIEND beta_user_133 alpha_user_282
+DEGREES_OF_SEPARATION alpha_user_252 beta_user_283
+OUTPUT_POSTS beta_user_106 11
+OUTPUT_POSTS beta_user_487 -1
+ADD_POST gamma_user_416 "random thoughts 123 !@#"
+OUTPUT_POSTS gamma_user_212 11
+SUGGEST_FRIENDS beta_user_91 2
+ADD_POST beta_user_358 "My AVL tree is perfectly balanced."
+LIST_FRIENDS gamma_user_143
+SUGGEST_FRIENDS beta_user_397 5
+ADD_FRIEND gamma_user_236 beta_user_292
+SUGGEST_FRIENDS alpha_user_486 2
+ADD_FRIEND alpha_user_117 beta_user_124
+ADD_FRIEND beta_user_49 gamma_user_32
+OUTPUT_POSTS gamma_user_80 0
+ADD_POST alpha_user_312 "Just finished the COL106 assignment!"
+ADD_POST beta_user_100 "A long post with multiple words to test parsing."
+DEGREES_OF_SEPARATION beta_user_163 beta_user_40
+OUTPUT_POSTS beta_user_115 12
+ADD_POST alpha_user_456 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_67 1
+ADD_POST gamma_user_419 "random thoughts 123 !@#"
+ADD_FRIEND alpha_user_330 alpha_user_69
+OUTPUT_POSTS gamma_user_161 10
+ADD_FRIEND beta_user_178 alpha_user_135
+SUGGEST_FRIENDS gamma_user_341 2
+SUGGEST_FRIENDS gamma_user_137 9
+LIST_FRIENDS beta_user_37
+SUGGEST_FRIENDS alpha_user_492 9
+DEGREES_OF_SEPARATION alpha_user_207 beta_user_220
+OUTPUT_POSTS alpha_user_228 8
+LIST_FRIENDS beta_user_325
+OUTPUT_POSTS alpha_user_219 -1
+DEGREES_OF_SEPARATION gamma_user_173 beta_user_481
+SUGGEST_FRIENDS gamma_user_29 3
+ADD_FRIEND beta_user_499 gamma_user_380
+OUTPUT_POSTS alpha_user_414 6
+ADD_FRIEND alpha_user_111 alpha_user_291
+OUTPUT_POSTS gamma_user_239 14
+OUTPUT_POSTS alpha_user_330 8
+ADD_FRIEND beta_user_202 beta_user_19
+SUGGEST_FRIENDS gamma_user_386 4
+OUTPUT_POSTS beta_user_256 8
+DEGREES_OF_SEPARATION alpha_user_309 alpha_user_270
+ADD_FRIEND alpha_user_249 alpha_user_93
+ADD_FRIEND gamma_user_320 gamma_user_119
+OUTPUT_POSTS beta_user_136 4
+SUGGEST_FRIENDS alpha_user_465 4
+OUTPUT_POSTS beta_user_358 -1
+ADD_FRIEND gamma_user_65 gamma_user_413
+ADD_POST alpha_user_444 "another post"
+ADD_FRIEND alpha_user_243 beta_user_154
+OUTPUT_POSTS alpha_user_261 4
+OUTPUT_POSTS gamma_user_128 2
+LIST_FRIENDS gamma_user_383
+ADD_FRIEND alpha_user_309 alpha_user_87
+DEGREES_OF_SEPARATION gamma_user_380 beta_user_73
+OUTPUT_POSTS alpha_user_33 11
+OUTPUT_POSTS gamma_user_11 15
+DEGREES_OF_SEPARATION beta_user_301 gamma_user_341
+ADD_FRIEND gamma_user_236 gamma_user_431
+ADD_FRIEND beta_user_352 beta_user_316
+ADD_FRIEND gamma_user_353 beta_user_271
+DEGREES_OF_SEPARATION beta_user_157 alpha_user_45
+OUTPUT_POSTS gamma_user_110 10
+SUGGEST_FRIENDS gamma_user_260 3
+ADD_POST gamma_user_23 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION alpha_user_489 beta_user_319
+LIST_FRIENDS alpha_user_48
+ADD_FRIEND gamma_user_296 gamma_user_167
+ADD_FRIEND beta_user_13 alpha_user_228
+OUTPUT_POSTS gamma_user_305 5
+ADD_FRIEND beta_user_484 alpha_user_63
+LIST_FRIENDS beta_user_178
+ADD_FRIEND alpha_user_186 beta_user_454
+LIST_FRIENDS beta_user_4
+SUGGEST_FRIENDS beta_user_328 1
+ADD_FRIEND alpha_user_486 beta_user_97
+DEGREES_OF_SEPARATION beta_user_463 gamma_user_146
+LIST_FRIENDS gamma_user_311
+SUGGEST_FRIENDS alpha_user_300 4
+OUTPUT_POSTS beta_user_340 15
+LIST_FRIENDS alpha_user_339
+OUTPUT_POSTS beta_user_112 11
+ADD_FRIEND alpha_user_408 beta_user_151
+ADD_POST alpha_user_396 "random thoughts 123 !@#"
+DEGREES_OF_SEPARATION beta_user_4 gamma_user_95
+SUGGEST_FRIENDS gamma_user_455 7
+LIST_FRIENDS alpha_user_54
+ADD_FRIEND gamma_user_134 beta_user_487
+ADD_FRIEND gamma_user_491 alpha_user_327
+ADD_FRIEND alpha_user_477 alpha_user_174
+ADD_FRIEND beta_user_148 gamma_user_125
+ADD_FRIEND alpha_user_81 alpha_user_159
+DEGREES_OF_SEPARATION gamma_user_188 alpha_user_480
+OUTPUT_POSTS beta_user_256 8
+DEGREES_OF_SEPARATION alpha_user_225 gamma_user_179
+ADD_FRIEND gamma_user_260 alpha_user_201
+SUGGEST_FRIENDS gamma_user_17 6
+OUTPUT_POSTS alpha_user_66 1
+OUTPUT_POSTS alpha_user_378 10
+OUTPUT_POSTS gamma_user_191 9
+ADD_FRIEND alpha_user_306 alpha_user_48
+SUGGEST_FRIENDS alpha_user_318 9
+SUGGEST_FRIENDS alpha_user_6 7
+DEGREES_OF_SEPARATION alpha_user_456 beta_user_247
+DEGREES_OF_SEPARATION gamma_user_443 beta_user_208
+OUTPUT_POSTS beta_user_193 4
+SUGGEST_FRIENDS beta_user_271 5
+ADD_FRIEND beta_user_184 gamma_user_263
+ADD_POST gamma_user_488 "Just finished the COL106 assignment!"
+OUTPUT_POSTS beta_user_235 3
+SUGGEST_FRIENDS beta_user_64 10
+SUGGEST_FRIENDS alpha_user_318 3
+ADD_FRIEND alpha_user_414 gamma_user_188
+OUTPUT_POSTS gamma_user_224 14
+ADD_POST alpha_user_186 "Graphs are fascinating data structures."
+LIST_FRIENDS gamma_user_29
+OUTPUT_POSTS gamma_user_140 4
+ADD_FRIEND beta_user_193 beta_user_472
+LIST_FRIENDS beta_user_37
+OUTPUT_POSTS gamma_user_275 2
+DEGREES_OF_SEPARATION beta_user_364 alpha_user_243
+LIST_FRIENDS gamma_user_365
+LIST_FRIENDS alpha_user_123
+ADD_POST alpha_user_324 "My AVL tree is perfectly balanced."
+ADD_FRIEND gamma_user_197 beta_user_124
+DEGREES_OF_SEPARATION gamma_user_293 gamma_user_326
+SUGGEST_FRIENDS alpha_user_117 3
+OUTPUT_POSTS gamma_user_407 14
+DEGREES_OF_SEPARATION beta_user_136 beta_user_433
+ADD_POST gamma_user_221 "Thinking about degrees of separation."
+DEGREES_OF_SEPARATION gamma_user_416 gamma_user_470
+OUTPUT_POSTS gamma_user_482 13
+OUTPUT_POSTS gamma_user_8 7
+SUGGEST_FRIENDS gamma_user_464 5
+ADD_POST alpha_user_486 "random thoughts 123 !@#"
+OUTPUT_POSTS gamma_user_422 2
+OUTPUT_POSTS beta_user_73 10
+ADD_POST alpha_user_45 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS beta_user_475 15
+ADD_FRIEND gamma_user_488 gamma_user_56
+ADD_FRIEND alpha_user_258 gamma_user_410
+ADD_FRIEND alpha_user_405 alpha_user_153
+DEGREES_OF_SEPARATION gamma_user_284 gamma_user_137
+SUGGEST_FRIENDS gamma_user_335 6
+ADD_POST alpha_user_399 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS alpha_user_135 2
+OUTPUT_POSTS beta_user_202 12
+OUTPUT_POSTS beta_user_451 12
+OUTPUT_POSTS alpha_user_228 14
+ADD_POST gamma_user_299 "Hello world"
+ADD_POST gamma_user_41 "Thinking about degrees of separation."
+LIST_FRIENDS gamma_user_311
+ADD_FRIEND gamma_user_50 alpha_user_420
+LIST_FRIENDS alpha_user_252
+DEGREES_OF_SEPARATION beta_user_418 beta_user_250
+DEGREES_OF_SEPARATION gamma_user_248 gamma_user_365
+SUGGEST_FRIENDS gamma_user_440 5
+OUTPUT_POSTS beta_user_472 11
+ADD_FRIEND alpha_user_261 gamma_user_125
+SUGGEST_FRIENDS gamma_user_74 1
+OUTPUT_POSTS alpha_user_435 15
+SUGGEST_FRIENDS beta_user_325 1
+ADD_POST alpha_user_147 "Graphs are fascinating data structures."
+LIST_FRIENDS gamma_user_62
+ADD_FRIEND beta_user_85 alpha_user_135
+OUTPUT_POSTS beta_user_316 6
+ADD_FRIEND gamma_user_473 gamma_user_47
+ADD_POST beta_user_424 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS alpha_user_300 3
+DEGREES_OF_SEPARATION beta_user_103 beta_user_232
+ADD_POST gamma_user_71 "This is a test post."
+LIST_FRIENDS alpha_user_198
+OUTPUT_POSTS gamma_user_281 0
+ADD_FRIEND gamma_user_173 gamma_user_248
+LIST_FRIENDS gamma_user_77
+ADD_FRIEND gamma_user_119 beta_user_433
+ADD_POST alpha_user_57 "random thoughts 123 !@#"
+ADD_FRIEND alpha_user_12 gamma_user_419
+SUGGEST_FRIENDS gamma_user_464 5
+LIST_FRIENDS gamma_user_227
+OUTPUT_POSTS alpha_user_249 11
+SUGGEST_FRIENDS gamma_user_413 10
+ADD_FRIEND gamma_user_275 beta_user_274
+OUTPUT_POSTS beta_user_196 13
+LIST_FRIENDS gamma_user_161
+ADD_FRIEND alpha_user_57 gamma_user_146
+OUTPUT_POSTS beta_user_274 3
+OUTPUT_POSTS beta_user_205 0
+DEGREES_OF_SEPARATION gamma_user_401 gamma_user_389
+LIST_FRIENDS beta_user_442
+OUTPUT_POSTS gamma_user_50 3
+OUTPUT_POSTS gamma_user_137 2
+OUTPUT_POSTS gamma_user_158 5
+ADD_FRIEND alpha_user_216 alpha_user_333
+LIST_FRIENDS alpha_user_48
+OUTPUT_POSTS alpha_user_129 13
+SUGGEST_FRIENDS gamma_user_137 6
+ADD_FRIEND beta_user_262 beta_user_7
+LIST_FRIENDS gamma_user_356
+ADD_POST gamma_user_392 "Graphs are fascinating data structures."
+LIST_FRIENDS beta_user_481
+ADD_POST alpha_user_141 "Thinking about degrees of separation."
+OUTPUT_POSTS gamma_user_116 14
+OUTPUT_POSTS gamma_user_365 2
+DEGREES_OF_SEPARATION gamma_user_218 gamma_user_269
+LIST_FRIENDS alpha_user_369
+ADD_FRIEND gamma_user_344 alpha_user_432
+OUTPUT_POSTS alpha_user_93 12
+OUTPUT_POSTS gamma_user_473 9
+ADD_FRIEND gamma_user_326 beta_user_208
+DEGREES_OF_SEPARATION beta_user_7 alpha_user_378
+ADD_FRIEND gamma_user_314 alpha_user_225
+SUGGEST_FRIENDS gamma_user_380 8
+LIST_FRIENDS gamma_user_179
+OUTPUT_POSTS beta_user_82 -1
+DEGREES_OF_SEPARATION beta_user_73 gamma_user_77
+DEGREES_OF_SEPARATION alpha_user_303 alpha_user_435
+ADD_POST alpha_user_255 "My AVL tree is perfectly balanced."
+SUGGEST_FRIENDS alpha_user_369 9
+OUTPUT_POSTS gamma_user_413 15
+ADD_FRIEND gamma_user_140 beta_user_367
+LIST_FRIENDS gamma_user_224
+ADD_FRIEND gamma_user_401 beta_user_481
+OUTPUT_POSTS alpha_user_306 12
+OUTPUT_POSTS alpha_user_435 3
+LIST_FRIENDS gamma_user_194
+OUTPUT_POSTS alpha_user_459 15
+LIST_FRIENDS alpha_user_96
+ADD_POST beta_user_487 "random thoughts 123 !@#"
+ADD_POST alpha_user_276 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION gamma_user_419 gamma_user_50
+ADD_FRIEND gamma_user_467 gamma_user_89
+OUTPUT_POSTS beta_user_364 12
+ADD_POST beta_user_463 "Graphs are fascinating data structures."
+SUGGEST_FRIENDS alpha_user_201 1
+ADD_FRIEND beta_user_442 gamma_user_293
+ADD_FRIEND beta_user_490 gamma_user_491
+ADD_FRIEND alpha_user_369 alpha_user_81
+OUTPUT_POSTS gamma_user_446 15
+ADD_FRIEND gamma_user_47 alpha_user_495
+OUTPUT_POSTS beta_user_31 3
+DEGREES_OF_SEPARATION beta_user_256 gamma_user_251
+ADD_FRIEND gamma_user_452 beta_user_388
+DEGREES_OF_SEPARATION beta_user_61 gamma_user_338
+DEGREES_OF_SEPARATION gamma_user_293 alpha_user_156
+LIST_FRIENDS alpha_user_459
+OUTPUT_POSTS alpha_user_123 6
+OUTPUT_POSTS beta_user_460 1
+OUTPUT_POSTS alpha_user_414 4
+LIST_FRIENDS alpha_user_384
+SUGGEST_FRIENDS gamma_user_17 10
+ADD_POST alpha_user_3 "This is a test post."
+DEGREES_OF_SEPARATION beta_user_226 alpha_user_348
+LIST_FRIENDS beta_user_79
+ADD_FRIEND beta_user_301 beta_user_46
+SUGGEST_FRIENDS gamma_user_425 2
+DEGREES_OF_SEPARATION beta_user_220 gamma_user_104
+SUGGEST_FRIENDS gamma_user_131 9
+LIST_FRIENDS beta_user_340
+LIST_FRIENDS alpha_user_24
+ADD_FRIEND gamma_user_47 alpha_user_309
+OUTPUT_POSTS alpha_user_9 3
+SUGGEST_FRIENDS alpha_user_153 6
+ADD_FRIEND beta_user_412 beta_user_484
+ADD_FRIEND beta_user_484 gamma_user_482
+OUTPUT_POSTS alpha_user_405 10
+OUTPUT_POSTS alpha_user_150 0
+ADD_FRIEND gamma_user_197 gamma_user_137
+ADD_POST gamma_user_86 "Graphs are fascinating data structures."
+ADD_FRIEND beta_user_424 gamma_user_473
+SUGGEST_FRIENDS gamma_user_317 8
+LIST_FRIENDS gamma_user_110
+DEGREES_OF_SEPARATION alpha_user_15 beta_user_202
+OUTPUT_POSTS alpha_user_78 8
+LIST_FRIENDS beta_user_145
+SUGGEST_FRIENDS beta_user_448 9
+DEGREES_OF_SEPARATION alpha_user_300 beta_user_454
+ADD_FRIEND beta_user_379 alpha_user_18
+ADD_FRIEND alpha_user_300 gamma_user_41
+ADD_POST alpha_user_390 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS alpha_user_15 5
+LIST_FRIENDS beta_user_61
+DEGREES_OF_SEPARATION alpha_user_39 alpha_user_441
+SUGGEST_FRIENDS gamma_user_182 10
+ADD_POST gamma_user_149 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_119 gamma_user_167
+SUGGEST_FRIENDS alpha_user_9 3
+SUGGEST_FRIENDS alpha_user_243 1
+DEGREES_OF_SEPARATION beta_user_193 gamma_user_50
+OUTPUT_POSTS alpha_user_474 4
+DEGREES_OF_SEPARATION beta_user_316 beta_user_385
+LIST_FRIENDS beta_user_211
+SUGGEST_FRIENDS gamma_user_323 10
+ADD_POST beta_user_22 "Graphs are fascinating data structures."
+ADD_POST beta_user_451 "This is a test post."
+OUTPUT_POSTS alpha_user_216 8
+OUTPUT_POSTS beta_user_100 14
+LIST_FRIENDS alpha_user_45
+ADD_FRIEND alpha_user_336 alpha_user_135
+OUTPUT_POSTS beta_user_121 1
+ADD_POST alpha_user_462 "Suggesting friends is a cool feature."
+OUTPUT_POSTS gamma_user_29 10
+OUTPUT_POSTS alpha_user_153 4
+LIST_FRIENDS beta_user_466
+LIST_FRIENDS beta_user_274
+ADD_POST gamma_user_140 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_179 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS alpha_user_285 1
+DEGREES_OF_SEPARATION alpha_user_459 beta_user_217
+LIST_FRIENDS beta_user_499
+ADD_FRIEND gamma_user_323 beta_user_220
+LIST_FRIENDS alpha_user_39
+ADD_FRIEND gamma_user_341 beta_user_406
+OUTPUT_POSTS gamma_user_305 14
+ADD_FRIEND alpha_user_396 alpha_user_144
+ADD_FRIEND beta_user_100 beta_user_280
+SUGGEST_FRIENDS alpha_user_342 6
+SUGGEST_FRIENDS gamma_user_296 3
+LIST_FRIENDS gamma_user_32
+ADD_FRIEND gamma_user_446 gamma_user_476
+SUGGEST_FRIENDS alpha_user_495 2
+SUGGEST_FRIENDS beta_user_325 9
+OUTPUT_POSTS beta_user_352 1
+DEGREES_OF_SEPARATION alpha_user_393 alpha_user_153
+OUTPUT_POSTS alpha_user_336 12
+DEGREES_OF_SEPARATION beta_user_481 alpha_user_411
+SUGGEST_FRIENDS beta_user_487 3
+LIST_FRIENDS gamma_user_191
+OUTPUT_POSTS gamma_user_23 0
+LIST_FRIENDS alpha_user_66
+OUTPUT_POSTS alpha_user_390 0
+DEGREES_OF_SEPARATION gamma_user_332 alpha_user_207
+ADD_FRIEND alpha_user_168 beta_user_289
+ADD_FRIEND beta_user_322 alpha_user_267
+SUGGEST_FRIENDS gamma_user_458 2
+OUTPUT_POSTS gamma_user_32 1
+SUGGEST_FRIENDS gamma_user_332 3
+ADD_FRIEND alpha_user_48 alpha_user_375
+OUTPUT_POSTS alpha_user_108 11
+SUGGEST_FRIENDS beta_user_340 1
+ADD_FRIEND alpha_user_312 alpha_user_24
+OUTPUT_POSTS beta_user_19 0
+SUGGEST_FRIENDS beta_user_499 1
+ADD_FRIEND gamma_user_272 beta_user_283
+ADD_FRIEND alpha_user_495 alpha_user_27
+LIST_FRIENDS alpha_user_402
+OUTPUT_POSTS beta_user_343 0
+SUGGEST_FRIENDS alpha_user_381 1
+LIST_FRIENDS beta_user_124
+DEGREES_OF_SEPARATION beta_user_481 gamma_user_11
+ADD_POST beta_user_361 "random thoughts 123 !@#"
+LIST_FRIENDS alpha_user_420
+ADD_FRIEND gamma_user_386 beta_user_64
+LIST_FRIENDS beta_user_367
+ADD_FRIEND beta_user_271 alpha_user_366
+LIST_FRIENDS beta_user_16
+OUTPUT_POSTS gamma_user_413 3
+DEGREES_OF_SEPARATION alpha_user_204 gamma_user_353
+SUGGEST_FRIENDS alpha_user_153 10
+LIST_FRIENDS gamma_user_230
+OUTPUT_POSTS beta_user_91 7
+SUGGEST_FRIENDS beta_user_61 8
+ADD_POST gamma_user_245 "Hello world"
+LIST_FRIENDS alpha_user_210
+SUGGEST_FRIENDS beta_user_382 5
+ADD_POST alpha_user_288 "Just finished the COL106 assignment!"
+OUTPUT_POSTS beta_user_496 5
+OUTPUT_POSTS beta_user_55 3
+ADD_FRIEND gamma_user_179 beta_user_157
+ADD_FRIEND beta_user_319 alpha_user_393
+ADD_FRIEND alpha_user_21 beta_user_136
+OUTPUT_POSTS beta_user_4 5
+OUTPUT_POSTS alpha_user_234 12
+DEGREES_OF_SEPARATION beta_user_295 alpha_user_162
+ADD_FRIEND gamma_user_263 beta_user_112
+OUTPUT_POSTS beta_user_460 12
+LIST_FRIENDS gamma_user_128
+ADD_FRIEND beta_user_451 beta_user_214
+ADD_FRIEND gamma_user_371 alpha_user_57
+OUTPUT_POSTS alpha_user_348 15
+ADD_FRIEND gamma_user_437 gamma_user_470
+ADD_FRIEND alpha_user_321 beta_user_10
+ADD_FRIEND beta_user_268 beta_user_217
+OUTPUT_POSTS beta_user_484 6
+SUGGEST_FRIENDS beta_user_448 1
+ADD_POST beta_user_190 "another post"
+LIST_FRIENDS alpha_user_384
+ADD_FRIEND gamma_user_257 beta_user_238
+ADD_FRIEND beta_user_472 gamma_user_122
+ADD_POST alpha_user_330 "Hello world"
+OUTPUT_POSTS gamma_user_380 7
+ADD_FRIEND gamma_user_455 gamma_user_146
+LIST_FRIENDS gamma_user_437
+OUTPUT_POSTS beta_user_298 8
+ADD_FRIEND gamma_user_350 gamma_user_347
+ADD_FRIEND beta_user_16 gamma_user_59
+ADD_POST beta_user_19 "Just finished the COL106 assignment!"
+ADD_FRIEND alpha_user_243 beta_user_406
+ADD_FRIEND alpha_user_90 alpha_user_456
+LIST_FRIENDS beta_user_166
+ADD_FRIEND gamma_user_107 beta_user_115
+ADD_FRIEND alpha_user_447 alpha_user_165
+ADD_POST gamma_user_410 "A long post with multiple words to test parsing."
+OUTPUT_POSTS beta_user_67 2
+LIST_FRIENDS alpha_user_0
+DEGREES_OF_SEPARATION gamma_user_353 beta_user_271
+LIST_FRIENDS gamma_user_410
+ADD_FRIEND beta_user_253 gamma_user_305
+OUTPUT_POSTS gamma_user_92 14
+ADD_FRIEND beta_user_52 gamma_user_266
+ADD_FRIEND alpha_user_186 alpha_user_231
+ADD_FRIEND beta_user_259 alpha_user_39
+LIST_FRIENDS gamma_user_488
+SUGGEST_FRIENDS gamma_user_11 5
+OUTPUT_POSTS beta_user_226 14
+LIST_FRIENDS gamma_user_410
+ADD_POST gamma_user_473 "This is a test post."
+OUTPUT_POSTS alpha_user_303 11
+DEGREES_OF_SEPARATION gamma_user_14 alpha_user_426
+LIST_FRIENDS gamma_user_317
+OUTPUT_POSTS gamma_user_215 14
+ADD_FRIEND gamma_user_125 gamma_user_497
+SUGGEST_FRIENDS gamma_user_356 5
+OUTPUT_POSTS gamma_user_77 1
+OUTPUT_POSTS gamma_user_80 7
+SUGGEST_FRIENDS alpha_user_111 5
+SUGGEST_FRIENDS alpha_user_444 3
+ADD_FRIEND beta_user_64 beta_user_97
+ADD_FRIEND gamma_user_101 gamma_user_353
+ADD_FRIEND beta_user_79 gamma_user_161
+ADD_POST beta_user_106 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION beta_user_337 beta_user_55
+DEGREES_OF_SEPARATION gamma_user_68 alpha_user_468
+LIST_FRIENDS beta_user_400
+ADD_FRIEND gamma_user_257 gamma_user_254
+SUGGEST_FRIENDS beta_user_217 1
+LIST_FRIENDS gamma_user_494
+DEGREES_OF_SEPARATION gamma_user_116 alpha_user_210
+LIST_FRIENDS gamma_user_470
+SUGGEST_FRIENDS alpha_user_219 10
+OUTPUT_POSTS alpha_user_54 -1
+SUGGEST_FRIENDS alpha_user_75 4
+ADD_FRIEND gamma_user_269 alpha_user_459
+ADD_FRIEND beta_user_430 alpha_user_177
+ADD_POST alpha_user_279 "Graphs are fascinating data structures."
+OUTPUT_POSTS alpha_user_474 1
+OUTPUT_POSTS beta_user_55 1
+OUTPUT_POSTS gamma_user_254 5
+OUTPUT_POSTS gamma_user_65 13
+OUTPUT_POSTS gamma_user_320 1
+OUTPUT_POSTS beta_user_490 9
+DEGREES_OF_SEPARATION alpha_user_378 gamma_user_494
+OUTPUT_POSTS beta_user_346 7
+ADD_FRIEND alpha_user_51 beta_user_382
+ADD_POST alpha_user_138 "random thoughts 123 !@#"
+ADD_POST beta_user_226 "A long post with multiple words to test parsing."
+DEGREES_OF_SEPARATION alpha_user_384 alpha_user_24
+OUTPUT_POSTS gamma_user_89 13
+DEGREES_OF_SEPARATION alpha_user_357 beta_user_40
+LIST_FRIENDS beta_user_70
+ADD_FRIEND gamma_user_434 beta_user_214
+ADD_FRIEND beta_user_22 gamma_user_20
+ADD_FRIEND beta_user_412 alpha_user_168
+SUGGEST_FRIENDS beta_user_478 5
+LIST_FRIENDS gamma_user_230
+DEGREES_OF_SEPARATION gamma_user_26 alpha_user_309
+DEGREES_OF_SEPARATION gamma_user_308 beta_user_46
+DEGREES_OF_SEPARATION alpha_user_405 alpha_user_189
+OUTPUT_POSTS alpha_user_246 14
+SUGGEST_FRIENDS beta_user_442 5
+OUTPUT_POSTS gamma_user_59 9
+OUTPUT_POSTS alpha_user_177 4
+DEGREES_OF_SEPARATION beta_user_202 gamma_user_155
+DEGREES_OF_SEPARATION beta_user_496 alpha_user_303
+SUGGEST_FRIENDS gamma_user_311 1
+ADD_FRIEND gamma_user_134 alpha_user_6
+OUTPUT_POSTS beta_user_454 4
+LIST_FRIENDS beta_user_487
+LIST_FRIENDS beta_user_115
+SUGGEST_FRIENDS gamma_user_65 1
+LIST_FRIENDS gamma_user_182
+ADD_FRIEND beta_user_112 gamma_user_251
+ADD_FRIEND gamma_user_218 gamma_user_326
+ADD_POST gamma_user_275 "This is a test post."
+SUGGEST_FRIENDS alpha_user_414 1
+ADD_POST beta_user_418 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION beta_user_283 gamma_user_257
+ADD_FRIEND beta_user_295 alpha_user_291
+DEGREES_OF_SEPARATION alpha_user_294 beta_user_73
+ADD_FRIEND gamma_user_161 gamma_user_278
+ADD_FRIEND beta_user_358 beta_user_286
+ADD_POST gamma_user_278 "My AVL tree is perfectly balanced."
+ADD_POST beta_user_499 "This is a test post."
+LIST_FRIENDS beta_user_313
+ADD_FRIEND gamma_user_14 alpha_user_489
+DEGREES_OF_SEPARATION gamma_user_14 alpha_user_252
+ADD_POST alpha_user_201 "A long post with multiple words to test parsing."
+OUTPUT_POSTS gamma_user_62 15
+ADD_POST beta_user_184 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_146 beta_user_376
+SUGGEST_FRIENDS gamma_user_68 3
+ADD_FRIEND alpha_user_297 beta_user_376
+OUTPUT_POSTS beta_user_325 10
+ADD_POST alpha_user_213 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION alpha_user_87 alpha_user_444
+LIST_FRIENDS alpha_user_123
+ADD_POST alpha_user_480 "another post"
+SUGGEST_FRIENDS beta_user_277 10
+LIST_FRIENDS beta_user_481
+ADD_POST gamma_user_302 "Graphs are fascinating data structures."
+ADD_POST gamma_user_494 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_470 beta_user_364
+OUTPUT_POSTS alpha_user_33 3
+LIST_FRIENDS alpha_user_129
+OUTPUT_POSTS gamma_user_491 9
+OUTPUT_POSTS alpha_user_465 12
+ADD_FRIEND beta_user_370 alpha_user_303
+SUGGEST_FRIENDS gamma_user_383 3
+DEGREES_OF_SEPARATION beta_user_484 alpha_user_15
+ADD_POST gamma_user_404 "My AVL tree is perfectly balanced."
+ADD_POST gamma_user_362 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_19 14
+ADD_POST gamma_user_266 "This is a test post."
+ADD_FRIEND beta_user_106 gamma_user_2
+OUTPUT_POSTS alpha_user_405 13
+ADD_FRIEND gamma_user_209 alpha_user_36
+DEGREES_OF_SEPARATION alpha_user_231 beta_user_244
+ADD_FRIEND gamma_user_320 gamma_user_287
+ADD_FRIEND gamma_user_116 beta_user_253
+OUTPUT_POSTS alpha_user_69 8
+LIST_FRIENDS alpha_user_303
+OUTPUT_POSTS alpha_user_309 11
+DEGREES_OF_SEPARATION gamma_user_368 alpha_user_315
+SUGGEST_FRIENDS gamma_user_464 8
+OUTPUT_POSTS beta_user_274 12
+LIST_FRIENDS beta_user_259
+ADD_POST beta_user_88 "random thoughts 123 !@#"
+ADD_FRIEND alpha_user_396 gamma_user_260
+OUTPUT_POSTS gamma_user_461 12
+LIST_FRIENDS alpha_user_297
+LIST_FRIENDS beta_user_352
+LIST_FRIENDS alpha_user_471
+ADD_FRIEND gamma_user_50 beta_user_4
+ADD_POST beta_user_85 "Just finished the COL106 assignment!"
+ADD_FRIEND gamma_user_365 beta_user_97
+SUGGEST_FRIENDS beta_user_187 2
+SUGGEST_FRIENDS gamma_user_317 7
+LIST_FRIENDS beta_user_208
+DEGREES_OF_SEPARATION gamma_user_332 alpha_user_6
+DEGREES_OF_SEPARATION alpha_user_183 beta_user_349
+OUTPUT_POSTS alpha_user_267 -1
+DEGREES_OF_SEPARATION alpha_user_345 gamma_user_404
+ADD_FRIEND alpha_user_471 beta_user_142
+OUTPUT_POSTS beta_user_379 12
+ADD_FRIEND alpha_user_459 alpha_user_456
+ADD_FRIEND beta_user_448 gamma_user_368
+OUTPUT_POSTS beta_user_76 8
+ADD_FRIEND beta_user_7 beta_user_274
+OUTPUT_POSTS beta_user_256 7
+ADD_FRIEND gamma_user_176 beta_user_67
+OUTPUT_POSTS alpha_user_30 9
+ADD_FRIEND alpha_user_15 alpha_user_414
+ADD_FRIEND beta_user_409 beta_user_499
+LIST_FRIENDS gamma_user_194
+DEGREES_OF_SEPARATION beta_user_448 gamma_user_452
+OUTPUT_POSTS alpha_user_288 1
+OUTPUT_POSTS gamma_user_11 -1
+SUGGEST_FRIENDS alpha_user_15 2
+SUGGEST_FRIENDS gamma_user_314 9
+SUGGEST_FRIENDS alpha_user_108 10
+OUTPUT_POSTS beta_user_454 15
+LIST_FRIENDS gamma_user_185
+ADD_POST alpha_user_306 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_5 beta_user_379
+LIST_FRIENDS beta_user_499
+SUGGEST_FRIENDS gamma_user_32 4
+ADD_POST alpha_user_366 "My AVL tree is perfectly balanced."
+ADD_FRIEND beta_user_250 alpha_user_306
+ADD_POST gamma_user_305 "another post"
+LIST_FRIENDS gamma_user_143
+ADD_POST gamma_user_329 "random thoughts 123 !@#"
+OUTPUT_POSTS gamma_user_437 4
+OUTPUT_POSTS gamma_user_107 15
+SUGGEST_FRIENDS beta_user_361 3
+SUGGEST_FRIENDS beta_user_145 4
+LIST_FRIENDS alpha_user_42
+ADD_FRIEND beta_user_223 beta_user_139
+DEGREES_OF_SEPARATION alpha_user_354 alpha_user_432
+LIST_FRIENDS beta_user_31
+ADD_FRIEND beta_user_19 gamma_user_188
+ADD_FRIEND beta_user_262 alpha_user_33
+ADD_FRIEND beta_user_88 beta_user_418
+SUGGEST_FRIENDS alpha_user_378 5
+ADD_POST alpha_user_213 "random thoughts 123 !@#"
+DEGREES_OF_SEPARATION beta_user_334 gamma_user_296
+ADD_FRIEND beta_user_448 alpha_user_438
+DEGREES_OF_SEPARATION gamma_user_68 gamma_user_146
+ADD_FRIEND beta_user_19 beta_user_328
+OUTPUT_POSTS alpha_user_396 6
+OUTPUT_POSTS beta_user_73 1
+OUTPUT_POSTS beta_user_232 12
+LIST_FRIENDS alpha_user_243
+ADD_POST gamma_user_368 "Hello world"
+ADD_POST beta_user_139 "Graphs are fascinating data structures."
+DEGREES_OF_SEPARATION gamma_user_74 beta_user_262
+OUTPUT_POSTS alpha_user_132 12
+ADD_FRIEND gamma_user_440 beta_user_79
+ADD_FRIEND alpha_user_126 alpha_user_441
+DEGREES_OF_SEPARATION alpha_user_288 gamma_user_272
+OUTPUT_POSTS alpha_user_141 14
+OUTPUT_POSTS gamma_user_476 10
+ADD_FRIEND beta_user_244 beta_user_277
+OUTPUT_POSTS alpha_user_324 5
+ADD_FRIEND gamma_user_128 beta_user_52
+ADD_FRIEND gamma_user_386 gamma_user_380
+SUGGEST_FRIENDS alpha_user_384 1
+ADD_FRIEND alpha_user_177 alpha_user_264
+SUGGEST_FRIENDS gamma_user_332 10
+ADD_FRIEND beta_user_403 beta_user_223
+DEGREES_OF_SEPARATION gamma_user_419 alpha_user_324
+OUTPUT_POSTS gamma_user_80 5
+DEGREES_OF_SEPARATION beta_user_370 alpha_user_291
+DEGREES_OF_SEPARATION alpha_user_174 beta_user_118
+ADD_POST beta_user_124 "random thoughts 123 !@#"
+ADD_POST alpha_user_249 "Hello world"
+ADD_FRIEND alpha_user_228 alpha_user_105
+OUTPUT_POSTS alpha_user_306 15
+ADD_FRIEND beta_user_205 beta_user_178
+OUTPUT_POSTS gamma_user_194 13
+SUGGEST_FRIENDS beta_user_340 7
+DEGREES_OF_SEPARATION beta_user_109 gamma_user_467
+OUTPUT_POSTS beta_user_109 10
+ADD_FRIEND gamma_user_476 beta_user_187
+DEGREES_OF_SEPARATION alpha_user_51 beta_user_142
+ADD_FRIEND gamma_user_203 beta_user_127
+ADD_FRIEND beta_user_310 alpha_user_405
+ADD_POST alpha_user_264 "Thinking about degrees of separation."
+SUGGEST_FRIENDS alpha_user_279 8
+ADD_POST alpha_user_150 "This is a test post."
+OUTPUT_POSTS gamma_user_65 2
+ADD_FRIEND gamma_user_203 beta_user_175
+SUGGEST_FRIENDS gamma_user_491 10
+ADD_FRIEND gamma_user_131 beta_user_154
+OUTPUT_POSTS alpha_user_129 9
+ADD_FRIEND alpha_user_426 beta_user_334
+ADD_FRIEND gamma_user_356 alpha_user_255
+DEGREES_OF_SEPARATION alpha_user_195 gamma_user_482
+OUTPUT_POSTS alpha_user_438 6
+ADD_FRIEND beta_user_151 beta_user_1
+ADD_FRIEND alpha_user_123 alpha_user_18
+SUGGEST_FRIENDS alpha_user_330 4
+LIST_FRIENDS beta_user_118
+ADD_FRIEND beta_user_376 alpha_user_342
+DEGREES_OF_SEPARATION beta_user_445 alpha_user_285
+ADD_POST gamma_user_215 "Hello world"
+DEGREES_OF_SEPARATION gamma_user_482 beta_user_163
+LIST_FRIENDS gamma_user_188
+OUTPUT_POSTS beta_user_160 -1
+LIST_FRIENDS beta_user_403
+ADD_FRIEND beta_user_403 gamma_user_329
+ADD_POST beta_user_1 "Hello world"
+ADD_POST beta_user_271 "random thoughts 123 !@#"
+SUGGEST_FRIENDS gamma_user_137 6
+ADD_FRIEND gamma_user_68 alpha_user_339
+SUGGEST_FRIENDS beta_user_403 4
+SUGGEST_FRIENDS beta_user_286 2
+ADD_FRIEND alpha_user_465 beta_user_178
+SUGGEST_FRIENDS beta_user_289 9
+ADD_POST beta_user_202 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS alpha_user_477 6
+OUTPUT_POSTS alpha_user_57 6
+DEGREES_OF_SEPARATION gamma_user_74 alpha_user_204
+LIST_FRIENDS gamma_user_485
+ADD_POST beta_user_193 "random thoughts 123 !@#"
+ADD_POST gamma_user_188 "another post"
+OUTPUT_POSTS gamma_user_308 -1
+DEGREES_OF_SEPARATION beta_user_4 gamma_user_152
+ADD_FRIEND beta_user_127 gamma_user_113
+DEGREES_OF_SEPARATION beta_user_352 gamma_user_71
+ADD_FRIEND beta_user_313 alpha_user_381
+OUTPUT_POSTS gamma_user_311 3
+SUGGEST_FRIENDS beta_user_460 1
+ADD_POST alpha_user_54 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS beta_user_316 6
+ADD_FRIEND gamma_user_245 alpha_user_234
+SUGGEST_FRIENDS gamma_user_86 4
+LIST_FRIENDS beta_user_409
+OUTPUT_POSTS alpha_user_267 6
+SUGGEST_FRIENDS gamma_user_392 8
+OUTPUT_POSTS gamma_user_443 7
+LIST_FRIENDS alpha_user_219
+SUGGEST_FRIENDS gamma_user_149 1
+OUTPUT_POSTS gamma_user_200 3
+LIST_FRIENDS gamma_user_350
+ADD_FRIEND beta_user_253 alpha_user_288
+OUTPUT_POSTS alpha_user_219 15
+OUTPUT_POSTS beta_user_394 4
+ADD_FRIEND beta_user_499 gamma_user_479
+OUTPUT_POSTS gamma_user_152 15
+ADD_FRIEND gamma_user_314 alpha_user_105
+ADD_POST beta_user_490 "Thinking about degrees of separation."
+LIST_FRIENDS alpha_user_432
+ADD_FRIEND alpha_user_471 alpha_user_33
+ADD_FRIEND gamma_user_479 beta_user_154
+ADD_POST alpha_user_384 "another post"
+ADD_FRIEND beta_user_256 gamma_user_419
+OUTPUT_POSTS gamma_user_347 12
+OUTPUT_POSTS alpha_user_471 9
+ADD_POST gamma_user_476 "Graphs are fascinating data structures."
+ADD_FRIEND alpha_user_450 alpha_user_444
+DEGREES_OF_SEPARATION gamma_user_245 gamma_user_311
+ADD_POST alpha_user_222 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_227 "My AVL tree is perfectly balanced."
+ADD_FRIEND beta_user_448 alpha_user_6
+OUTPUT_POSTS alpha_user_24 14
+OUTPUT_POSTS alpha_user_144 15
+DEGREES_OF_SEPARATION gamma_user_434 beta_user_166
+LIST_FRIENDS alpha_user_474
+ADD_FRIEND beta_user_259 gamma_user_227
+ADD_FRIEND beta_user_379 alpha_user_246
+OUTPUT_POSTS beta_user_295 15
+ADD_POST alpha_user_267 "another post"
+OUTPUT_POSTS alpha_user_6 12
+ADD_POST beta_user_397 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_401 gamma_user_407
+OUTPUT_POSTS alpha_user_147 5
+ADD_POST alpha_user_441 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_152 "Hello world"
+LIST_FRIENDS beta_user_346
+ADD_FRIEND gamma_user_407 beta_user_64
+DEGREES_OF_SEPARATION gamma_user_248 gamma_user_422
+SUGGEST_FRIENDS gamma_user_350 4
+SUGGEST_FRIENDS alpha_user_357 9
+ADD_POST beta_user_190 "another post"
+DEGREES_OF_SEPARATION alpha_user_21 gamma_user_473
+ADD_FRIEND alpha_user_417 gamma_user_278
+OUTPUT_POSTS alpha_user_57 12
+SUGGEST_FRIENDS beta_user_412 7
+ADD_FRIEND alpha_user_156 gamma_user_482
+ADD_POST beta_user_79 "Suggesting friends is a cool feature."
+SUGGEST_FRIENDS beta_user_433 7
+OUTPUT_POSTS gamma_user_212 2
+ADD_FRIEND beta_user_391 alpha_user_387
+OUTPUT_POSTS gamma_user_194 3
+LIST_FRIENDS gamma_user_395
+OUTPUT_POSTS beta_user_67 13
+OUTPUT_POSTS alpha_user_267 3
+OUTPUT_POSTS gamma_user_26 -1
+SUGGEST_FRIENDS beta_user_484 7
+ADD_POST gamma_user_221 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_342 gamma_user_176
+OUTPUT_POSTS gamma_user_254 9
+LIST_FRIENDS alpha_user_33
+LIST_FRIENDS beta_user_436
+DEGREES_OF_SEPARATION alpha_user_381 alpha_user_351
+ADD_POST gamma_user_29 "Hello world"
+ADD_FRIEND beta_user_370 gamma_user_41
+DEGREES_OF_SEPARATION alpha_user_498 gamma_user_38
+ADD_FRIEND gamma_user_341 alpha_user_462
+OUTPUT_POSTS beta_user_232 13
+ADD_FRIEND alpha_user_150 beta_user_148
+SUGGEST_FRIENDS gamma_user_152 6
+SUGGEST_FRIENDS beta_user_232 2
+OUTPUT_POSTS beta_user_214 -1
+ADD_FRIEND gamma_user_317 alpha_user_486
+ADD_POST alpha_user_327 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_490 4
+OUTPUT_POSTS gamma_user_113 -1
+OUTPUT_POSTS alpha_user_348 7
+OUTPUT_POSTS alpha_user_270 3
+ADD_POST gamma_user_8 "random thoughts 123 !@#"
+ADD_FRIEND gamma_user_317 alpha_user_189
+DEGREES_OF_SEPARATION gamma_user_248 gamma_user_284
+ADD_POST alpha_user_129 "This is a test post."
+ADD_POST gamma_user_425 "another post"
+ADD_FRIEND alpha_user_405 beta_user_295
+DEGREES_OF_SEPARATION beta_user_364 beta_user_130
+ADD_FRIEND alpha_user_174 gamma_user_176
+ADD_FRIEND alpha_user_429 beta_user_259
+OUTPUT_POSTS alpha_user_339 9
+SUGGEST_FRIENDS gamma_user_344 9
+OUTPUT_POSTS gamma_user_95 12
+OUTPUT_POSTS gamma_user_263 5
+ADD_FRIEND alpha_user_444 gamma_user_185
+DEGREES_OF_SEPARATION gamma_user_242 alpha_user_156
+LIST_FRIENDS alpha_user_312
+LIST_FRIENDS gamma_user_236
+LIST_FRIENDS alpha_user_429
+ADD_POST beta_user_13 "Hello world"
+ADD_FRIEND alpha_user_27 beta_user_379
+ADD_FRIEND beta_user_487 gamma_user_2
+ADD_FRIEND alpha_user_306 gamma_user_242
+LIST_FRIENDS alpha_user_90
+OUTPUT_POSTS gamma_user_14 8
+DEGREES_OF_SEPARATION beta_user_160 gamma_user_419
+SUGGEST_FRIENDS gamma_user_281 4
+ADD_POST alpha_user_216 "Thinking about degrees of separation."
+SUGGEST_FRIENDS alpha_user_126 5
+OUTPUT_POSTS beta_user_433 6
+SUGGEST_FRIENDS beta_user_172 6
+OUTPUT_POSTS gamma_user_152 7
+OUTPUT_POSTS alpha_user_249 11
+ADD_FRIEND alpha_user_6 alpha_user_279
+LIST_FRIENDS beta_user_295
+ADD_POST gamma_user_179 "another post"
+OUTPUT_POSTS gamma_user_161 1
+ADD_POST alpha_user_339 "Hello world"
+SUGGEST_FRIENDS beta_user_40 2
+DEGREES_OF_SEPARATION gamma_user_119 gamma_user_83
+OUTPUT_POSTS beta_user_139 15
+OUTPUT_POSTS alpha_user_408 1
+OUTPUT_POSTS alpha_user_63 14
+OUTPUT_POSTS beta_user_190 5
+OUTPUT_POSTS alpha_user_309 12
+ADD_FRIEND alpha_user_138 gamma_user_65
+ADD_POST alpha_user_342 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS gamma_user_155 10
+LIST_FRIENDS alpha_user_456
+ADD_POST beta_user_475 "another post"
+ADD_FRIEND alpha_user_210 beta_user_67
+ADD_POST alpha_user_312 "random thoughts 123 !@#"
+LIST_FRIENDS beta_user_472
+ADD_FRIEND gamma_user_419 beta_user_442
+OUTPUT_POSTS beta_user_457 6
+LIST_FRIENDS beta_user_364
+ADD_FRIEND beta_user_271 alpha_user_138
+DEGREES_OF_SEPARATION alpha_user_453 alpha_user_180
+ADD_FRIEND beta_user_469 alpha_user_81
+OUTPUT_POSTS gamma_user_218 13
+ADD_FRIEND alpha_user_144 beta_user_340
+SUGGEST_FRIENDS alpha_user_321 10
+OUTPUT_POSTS alpha_user_258 6
+SUGGEST_FRIENDS beta_user_145 1
+SUGGEST_FRIENDS gamma_user_65 9
+DEGREES_OF_SEPARATION alpha_user_390 alpha_user_45
+SUGGEST_FRIENDS gamma_user_254 10
+OUTPUT_POSTS alpha_user_150 5
+ADD_POST gamma_user_440 "This is a test post."
+SUGGEST_FRIENDS gamma_user_311 10
+OUTPUT_POSTS gamma_user_143 2
+ADD_FRIEND alpha_user_441 beta_user_55
+SUGGEST_FRIENDS beta_user_211 4
+ADD_FRIEND alpha_user_300 beta_user_277
+ADD_POST beta_user_334 "Graphs are fascinating data structures."
+SUGGEST_FRIENDS alpha_user_234 5
+SUGGEST_FRIENDS alpha_user_315 9
+ADD_POST alpha_user_6 "random thoughts 123 !@#"
+SUGGEST_FRIENDS beta_user_394 5
+ADD_POST beta_user_55 "My AVL tree is perfectly balanced."
+LIST_FRIENDS beta_user_58
+OUTPUT_POSTS gamma_user_110 0
+OUTPUT_POSTS gamma_user_323 4
+ADD_POST gamma_user_263 "A long post with multiple words to test parsing."
+ADD_POST beta_user_391 "random thoughts 123 !@#"
+OUTPUT_POSTS beta_user_466 2
+SUGGEST_FRIENDS beta_user_280 9
+LIST_FRIENDS alpha_user_204
+LIST_FRIENDS gamma_user_470
+LIST_FRIENDS gamma_user_53
+DEGREES_OF_SEPARATION beta_user_301 beta_user_478
+OUTPUT_POSTS alpha_user_129 8
+ADD_FRIEND alpha_user_342 gamma_user_233
+SUGGEST_FRIENDS gamma_user_284 8
+ADD_FRIEND gamma_user_86 beta_user_49
+SUGGEST_FRIENDS gamma_user_461 7
+OUTPUT_POSTS alpha_user_30 4
+OUTPUT_POSTS gamma_user_101 1
+ADD_FRIEND beta_user_268 alpha_user_159
+ADD_FRIEND beta_user_364 beta_user_52
+ADD_FRIEND gamma_user_455 gamma_user_53
+OUTPUT_POSTS alpha_user_225 13
+ADD_FRIEND gamma_user_254 beta_user_355
+OUTPUT_POSTS alpha_user_465 0
+OUTPUT_POSTS beta_user_142 13
+SUGGEST_FRIENDS beta_user_169 3
+OUTPUT_POSTS gamma_user_413 5
+DEGREES_OF_SEPARATION beta_user_466 gamma_user_338
+SUGGEST_FRIENDS beta_user_124 6
+ADD_FRIEND gamma_user_275 beta_user_166
+SUGGEST_FRIENDS beta_user_265 5
+ADD_FRIEND gamma_user_20 beta_user_253
+OUTPUT_POSTS alpha_user_45 15
+SUGGEST_FRIENDS gamma_user_32 8
+ADD_POST beta_user_253 "random thoughts 123 !@#"
+ADD_FRIEND gamma_user_398 alpha_user_333
+SUGGEST_FRIENDS beta_user_55 2
+ADD_FRIEND beta_user_241 alpha_user_180
+ADD_FRIEND beta_user_301 alpha_user_447
+DEGREES_OF_SEPARATION beta_user_238 alpha_user_147
+ADD_FRIEND alpha_user_300 alpha_user_159
+LIST_FRIENDS alpha_user_285
+OUTPUT_POSTS gamma_user_77 9
+OUTPUT_POSTS beta_user_475 14
+ADD_FRIEND gamma_user_443 beta_user_457
+ADD_POST alpha_user_126 "This is a test post."
+ADD_FRIEND beta_user_178 alpha_user_39
+ADD_FRIEND gamma_user_158 alpha_user_270
+ADD_FRIEND beta_user_217 beta_user_322
+ADD_FRIEND beta_user_298 alpha_user_33
+OUTPUT_POSTS alpha_user_363 1
+ADD_FRIEND gamma_user_230 beta_user_79
+OUTPUT_POSTS beta_user_67 2
+ADD_FRIEND alpha_user_9 gamma_user_164
+DEGREES_OF_SEPARATION gamma_user_254 gamma_user_245
+LIST_FRIENDS gamma_user_173
+ADD_POST beta_user_127 "A long post with multiple words to test parsing."
+OUTPUT_POSTS alpha_user_210 8
+ADD_POST gamma_user_320 "Just finished the COL106 assignment!"
+OUTPUT_POSTS beta_user_88 -1
+OUTPUT_POSTS beta_user_40 10
+OUTPUT_POSTS gamma_user_218 1
+OUTPUT_POSTS gamma_user_272 0
+ADD_POST gamma_user_8 "another post"
+OUTPUT_POSTS beta_user_127 -1
+DEGREES_OF_SEPARATION alpha_user_258 alpha_user_309
+ADD_FRIEND beta_user_202 beta_user_277
+DEGREES_OF_SEPARATION beta_user_253 alpha_user_384
+ADD_FRIEND gamma_user_62 gamma_user_461
+ADD_POST beta_user_118 "Graphs are fascinating data structures."
+SUGGEST_FRIENDS beta_user_4 8
+ADD_POST gamma_user_323 "another post"
+SUGGEST_FRIENDS beta_user_394 2
+LIST_FRIENDS alpha_user_222
+OUTPUT_POSTS alpha_user_66 8
+SUGGEST_FRIENDS alpha_user_339 9
+OUTPUT_POSTS beta_user_379 8
+DEGREES_OF_SEPARATION alpha_user_192 beta_user_250
+DEGREES_OF_SEPARATION beta_user_229 alpha_user_351
+ADD_FRIEND gamma_user_137 gamma_user_194
+DEGREES_OF_SEPARATION gamma_user_335 alpha_user_333
+ADD_FRIEND gamma_user_125 beta_user_187
+OUTPUT_POSTS alpha_user_177 14
+ADD_FRIEND gamma_user_485 alpha_user_138
+ADD_POST gamma_user_17 "Just finished the COL106 assignment!"
+OUTPUT_POSTS alpha_user_18 7
+OUTPUT_POSTS beta_user_25 4
+SUGGEST_FRIENDS gamma_user_215 10
+OUTPUT_POSTS beta_user_376 10
+ADD_FRIEND beta_user_148 alpha_user_453
+SUGGEST_FRIENDS beta_user_76 1
+ADD_FRIEND beta_user_355 alpha_user_405
+SUGGEST_FRIENDS beta_user_163 1
+LIST_FRIENDS gamma_user_128
+SUGGEST_FRIENDS alpha_user_51 3
+LIST_FRIENDS beta_user_163
+ADD_FRIEND gamma_user_350 beta_user_322
+DEGREES_OF_SEPARATION alpha_user_63 beta_user_103
+LIST_FRIENDS alpha_user_213
+OUTPUT_POSTS alpha_user_6 11
+OUTPUT_POSTS gamma_user_137 9
+LIST_FRIENDS alpha_user_441
+OUTPUT_POSTS gamma_user_341 9
+SUGGEST_FRIENDS beta_user_232 3
+OUTPUT_POSTS beta_user_466 0
+DEGREES_OF_SEPARATION gamma_user_83 alpha_user_468
+LIST_FRIENDS alpha_user_336
+SUGGEST_FRIENDS beta_user_496 9
+ADD_FRIEND gamma_user_284 beta_user_76
+DEGREES_OF_SEPARATION gamma_user_395 alpha_user_138
+DEGREES_OF_SEPARATION gamma_user_404 alpha_user_399
+ADD_FRIEND gamma_user_149 gamma_user_413
+ADD_FRIEND gamma_user_302 beta_user_55
+DEGREES_OF_SEPARATION beta_user_175 gamma_user_446
+SUGGEST_FRIENDS beta_user_40 6
+OUTPUT_POSTS gamma_user_392 5
+ADD_FRIEND alpha_user_258 gamma_user_104
+ADD_FRIEND alpha_user_135 beta_user_70
+SUGGEST_FRIENDS alpha_user_177 2
+ADD_FRIEND alpha_user_159 beta_user_328
+ADD_FRIEND gamma_user_419 beta_user_457
+SUGGEST_FRIENDS beta_user_301 2
+ADD_FRIEND beta_user_412 alpha_user_486
+OUTPUT_POSTS beta_user_352 9
+LIST_FRIENDS beta_user_166
+DEGREES_OF_SEPARATION beta_user_247 beta_user_367
+ADD_FRIEND alpha_user_456 beta_user_214
+LIST_FRIENDS gamma_user_89
+ADD_POST beta_user_253 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION beta_user_451 beta_user_157
+ADD_FRIEND gamma_user_344 beta_user_310
+ADD_FRIEND beta_user_454 gamma_user_137
+OUTPUT_POSTS alpha_user_423 15
+SUGGEST_FRIENDS beta_user_469 6
+ADD_POST alpha_user_294 "A long post with multiple words to test parsing."
+OUTPUT_POSTS beta_user_370 -1
+ADD_FRIEND gamma_user_101 gamma_user_170
+ADD_FRIEND gamma_user_317 beta_user_295
+OUTPUT_POSTS beta_user_169 9
+OUTPUT_POSTS gamma_user_113 -1
+DEGREES_OF_SEPARATION beta_user_97 gamma_user_218
+ADD_FRIEND alpha_user_492 gamma_user_335
+LIST_FRIENDS beta_user_184
+DEGREES_OF_SEPARATION gamma_user_395 beta_user_331
+ADD_FRIEND alpha_user_291 alpha_user_168
+LIST_FRIENDS beta_user_433
+SUGGEST_FRIENDS beta_user_124 7
+OUTPUT_POSTS gamma_user_17 9
+ADD_POST beta_user_154 "Graphs are fascinating data structures."
+ADD_FRIEND beta_user_136 gamma_user_302
+ADD_FRIEND gamma_user_404 alpha_user_213
+ADD_FRIEND gamma_user_332 beta_user_229
+ADD_FRIEND beta_user_283 beta_user_439
+DEGREES_OF_SEPARATION alpha_user_48 alpha_user_189
+DEGREES_OF_SEPARATION alpha_user_201 beta_user_436
+ADD_POST beta_user_421 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_65 alpha_user_348
+ADD_POST gamma_user_377 "Thinking about degrees of separation."
+DEGREES_OF_SEPARATION beta_user_289 alpha_user_393
+OUTPUT_POSTS beta_user_304 11
+DEGREES_OF_SEPARATION beta_user_448 alpha_user_216
+SUGGEST_FRIENDS alpha_user_432 10
+ADD_FRIEND beta_user_403 alpha_user_177
+OUTPUT_POSTS beta_user_28 10
+SUGGEST_FRIENDS gamma_user_194 3
+OUTPUT_POSTS beta_user_373 10
+OUTPUT_POSTS gamma_user_227 15
+OUTPUT_POSTS gamma_user_428 5
+ADD_FRIEND gamma_user_269 gamma_user_248
+OUTPUT_POSTS beta_user_340 13
+SUGGEST_FRIENDS beta_user_466 6
+ADD_POST alpha_user_273 "Graphs are fascinating data structures."
+OUTPUT_POSTS gamma_user_71 4
+LIST_FRIENDS beta_user_175
+ADD_FRIEND gamma_user_227 alpha_user_483
+LIST_FRIENDS beta_user_28
+DEGREES_OF_SEPARATION beta_user_49 beta_user_184
+LIST_FRIENDS gamma_user_143
+OUTPUT_POSTS alpha_user_465 13
+LIST_FRIENDS gamma_user_41
+ADD_POST beta_user_109 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS beta_user_103 2
+ADD_FRIEND alpha_user_117 gamma_user_407
+DEGREES_OF_SEPARATION gamma_user_302 beta_user_409
+SUGGEST_FRIENDS beta_user_493 1
+SUGGEST_FRIENDS beta_user_364 7
+LIST_FRIENDS alpha_user_18
+DEGREES_OF_SEPARATION alpha_user_240 alpha_user_489
+ADD_FRIEND alpha_user_207 gamma_user_200
+OUTPUT_POSTS gamma_user_248 11
+ADD_POST beta_user_97 "random thoughts 123 !@#"
+SUGGEST_FRIENDS beta_user_370 9
+LIST_FRIENDS gamma_user_272
+ADD_FRIEND beta_user_418 gamma_user_326
+OUTPUT_POSTS beta_user_484 13
+ADD_FRIEND gamma_user_131 alpha_user_321
+ADD_FRIEND alpha_user_444 gamma_user_491
+ADD_POST gamma_user_245 "Graphs are fascinating data structures."
+OUTPUT_POSTS beta_user_124 7
+SUGGEST_FRIENDS alpha_user_60 2
+DEGREES_OF_SEPARATION beta_user_202 gamma_user_380
+SUGGEST_FRIENDS alpha_user_363 5
+ADD_FRIEND alpha_user_261 beta_user_142
+ADD_FRIEND gamma_user_65 beta_user_469
+ADD_FRIEND alpha_user_156 alpha_user_318
+ADD_POST beta_user_286 "Just finished the COL106 assignment!"
+ADD_FRIEND beta_user_277 alpha_user_492
+ADD_POST alpha_user_384 "Hello world"
+SUGGEST_FRIENDS alpha_user_60 5
+ADD_FRIEND beta_user_1 alpha_user_408
+DEGREES_OF_SEPARATION beta_user_175 gamma_user_308
+ADD_FRIEND alpha_user_12 beta_user_115
+DEGREES_OF_SEPARATION alpha_user_138 gamma_user_266
+ADD_FRIEND alpha_user_474 gamma_user_152
+ADD_FRIEND beta_user_445 gamma_user_413
+ADD_FRIEND alpha_user_165 gamma_user_467
+ADD_POST alpha_user_0 "Hello world"
+DEGREES_OF_SEPARATION beta_user_199 gamma_user_38
+ADD_FRIEND alpha_user_21 alpha_user_258
+ADD_FRIEND alpha_user_261 alpha_user_327
+ADD_POST gamma_user_8 "Suggesting friends is a cool feature."
+OUTPUT_POSTS beta_user_418 12
+DEGREES_OF_SEPARATION beta_user_190 beta_user_472
+SUGGEST_FRIENDS beta_user_130 9
+SUGGEST_FRIENDS gamma_user_377 4
+ADD_POST alpha_user_468 "Hello world"
+OUTPUT_POSTS alpha_user_441 2
+OUTPUT_POSTS beta_user_169 0
+LIST_FRIENDS alpha_user_81
+ADD_FRIEND beta_user_301 alpha_user_186
+OUTPUT_POSTS beta_user_442 5
+ADD_FRIEND alpha_user_381 beta_user_31
+ADD_FRIEND gamma_user_161 beta_user_61
+ADD_FRIEND gamma_user_38 beta_user_109
+SUGGEST_FRIENDS beta_user_346 2
+ADD_FRIEND alpha_user_411 beta_user_463
+DEGREES_OF_SEPARATION beta_user_184 gamma_user_164
+ADD_FRIEND alpha_user_9 beta_user_40
+LIST_FRIENDS beta_user_466
+DEGREES_OF_SEPARATION beta_user_139 alpha_user_204
+OUTPUT_POSTS beta_user_445 7
+LIST_FRIENDS beta_user_499
+DEGREES_OF_SEPARATION gamma_user_128 gamma_user_389
+ADD_POST beta_user_205 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_146 alpha_user_312
+SUGGEST_FRIENDS gamma_user_149 1
+DEGREES_OF_SEPARATION gamma_user_2 alpha_user_432
+LIST_FRIENDS beta_user_442
+OUTPUT_POSTS beta_user_454 9
+SUGGEST_FRIENDS alpha_user_159 8
+LIST_FRIENDS gamma_user_380
+ADD_FRIEND gamma_user_104 gamma_user_386
+OUTPUT_POSTS beta_user_1 1
+LIST_FRIENDS gamma_user_479
+OUTPUT_POSTS gamma_user_302 15
+LIST_FRIENDS gamma_user_227
+ADD_FRIEND gamma_user_428 alpha_user_279
+SUGGEST_FRIENDS gamma_user_227 6
+ADD_POST beta_user_136 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_305 alpha_user_246
+SUGGEST_FRIENDS gamma_user_467 5
+LIST_FRIENDS gamma_user_497
+OUTPUT_POSTS alpha_user_246 13
+OUTPUT_POSTS alpha_user_480 4
+LIST_FRIENDS alpha_user_87
+ADD_FRIEND beta_user_433 gamma_user_299
+LIST_FRIENDS gamma_user_443
+ADD_FRIEND gamma_user_230 gamma_user_23
+OUTPUT_POSTS beta_user_334 14
+ADD_POST beta_user_391 "Just finished the COL106 assignment!"
+LIST_FRIENDS alpha_user_300
+SUGGEST_FRIENDS gamma_user_197 3
+SUGGEST_FRIENDS gamma_user_311 4
+ADD_POST beta_user_223 "My AVL tree is perfectly balanced."
+SUGGEST_FRIENDS alpha_user_384 6
+ADD_FRIEND beta_user_349 beta_user_346
+DEGREES_OF_SEPARATION alpha_user_300 alpha_user_168
+OUTPUT_POSTS alpha_user_378 9
+OUTPUT_POSTS gamma_user_74 14
+ADD_FRIEND beta_user_499 gamma_user_377
+ADD_FRIEND gamma_user_434 gamma_user_479
+ADD_FRIEND alpha_user_72 beta_user_250
+ADD_FRIEND alpha_user_9 alpha_user_174
+ADD_FRIEND gamma_user_119 gamma_user_53
+LIST_FRIENDS beta_user_136
+ADD_POST gamma_user_476 "Suggesting friends is a cool feature."
+ADD_POST beta_user_328 "random thoughts 123 !@#"
+OUTPUT_POSTS beta_user_475 15
+ADD_FRIEND beta_user_364 alpha_user_126
+SUGGEST_FRIENDS alpha_user_60 1
+ADD_FRIEND gamma_user_41 beta_user_355
+LIST_FRIENDS beta_user_463
+DEGREES_OF_SEPARATION beta_user_361 gamma_user_422
+SUGGEST_FRIENDS beta_user_208 8
+SUGGEST_FRIENDS alpha_user_342 6
+OUTPUT_POSTS gamma_user_398 13
+LIST_FRIENDS beta_user_340
+ADD_POST beta_user_229 "Hello world"
+ADD_FRIEND beta_user_190 alpha_user_483
+ADD_FRIEND beta_user_139 gamma_user_8
+DEGREES_OF_SEPARATION gamma_user_458 gamma_user_32
+LIST_FRIENDS gamma_user_251
+LIST_FRIENDS alpha_user_336
+ADD_POST alpha_user_249 "Thinking about degrees of separation."
+ADD_FRIEND alpha_user_141 gamma_user_494
+ADD_FRIEND beta_user_127 beta_user_91
+ADD_FRIEND gamma_user_290 alpha_user_459
+OUTPUT_POSTS gamma_user_200 4
+DEGREES_OF_SEPARATION alpha_user_231 alpha_user_24
+LIST_FRIENDS alpha_user_15
+OUTPUT_POSTS beta_user_232 11
+LIST_FRIENDS beta_user_67
+ADD_FRIEND beta_user_322 gamma_user_203
+LIST_FRIENDS beta_user_214
+OUTPUT_POSTS alpha_user_15 14
+OUTPUT_POSTS beta_user_352 10
+ADD_FRIEND gamma_user_266 gamma_user_14
+ADD_POST beta_user_226 "another post"
+SUGGEST_FRIENDS beta_user_370 1
+OUTPUT_POSTS gamma_user_257 10
+LIST_FRIENDS alpha_user_336
+ADD_FRIEND gamma_user_20 beta_user_97
+DEGREES_OF_SEPARATION alpha_user_375 alpha_user_333
+OUTPUT_POSTS gamma_user_209 4
+SUGGEST_FRIENDS alpha_user_387 5
+ADD_FRIEND gamma_user_8 gamma_user_278
+LIST_FRIENDS alpha_user_270
+DEGREES_OF_SEPARATION beta_user_148 alpha_user_18
+SUGGEST_FRIENDS gamma_user_206 6
+ADD_POST beta_user_400 "This is a test post."
+ADD_POST alpha_user_360 "Graphs are fascinating data structures."
+ADD_FRIEND gamma_user_413 alpha_user_252
+ADD_POST beta_user_10 "Graphs are fascinating data structures."
+ADD_POST beta_user_367 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION gamma_user_191 gamma_user_215
+ADD_FRIEND gamma_user_98 beta_user_142
+OUTPUT_POSTS beta_user_202 1
+SUGGEST_FRIENDS alpha_user_87 1
+OUTPUT_POSTS beta_user_370 6
+ADD_FRIEND alpha_user_459 beta_user_268
+SUGGEST_FRIENDS gamma_user_203 6
+ADD_FRIEND gamma_user_398 alpha_user_327
+SUGGEST_FRIENDS gamma_user_158 2
+ADD_FRIEND gamma_user_251 beta_user_190
+OUTPUT_POSTS beta_user_298 1
+SUGGEST_FRIENDS alpha_user_231 7
+LIST_FRIENDS beta_user_250
+OUTPUT_POSTS gamma_user_362 14
+DEGREES_OF_SEPARATION alpha_user_93 gamma_user_134
+LIST_FRIENDS beta_user_22
+ADD_POST gamma_user_152 "A long post with multiple words to test parsing."
+DEGREES_OF_SEPARATION beta_user_346 gamma_user_2
+SUGGEST_FRIENDS beta_user_37 8
+ADD_FRIEND gamma_user_254 beta_user_436
+ADD_POST gamma_user_221 "Thinking about degrees of separation."
+DEGREES_OF_SEPARATION gamma_user_68 gamma_user_344
+ADD_POST beta_user_445 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_488 alpha_user_18
+OUTPUT_POSTS alpha_user_381 0
+LIST_FRIENDS gamma_user_419
+ADD_FRIEND beta_user_436 gamma_user_65
+DEGREES_OF_SEPARATION gamma_user_56 alpha_user_396
+DEGREES_OF_SEPARATION beta_user_334 alpha_user_33
+ADD_POST alpha_user_0 "random thoughts 123 !@#"
+SUGGEST_FRIENDS alpha_user_207 4
+ADD_POST gamma_user_470 "random thoughts 123 !@#"
+ADD_POST beta_user_292 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS alpha_user_60 2
+SUGGEST_FRIENDS beta_user_175 9
+LIST_FRIENDS gamma_user_23
+OUTPUT_POSTS beta_user_331 11
+ADD_FRIEND alpha_user_273 alpha_user_309
+DEGREES_OF_SEPARATION gamma_user_185 beta_user_205
+OUTPUT_POSTS gamma_user_383 5
+LIST_FRIENDS alpha_user_228
+ADD_FRIEND beta_user_31 alpha_user_57
+OUTPUT_POSTS gamma_user_23 8
+OUTPUT_POSTS beta_user_457 6
+DEGREES_OF_SEPARATION gamma_user_485 beta_user_136
+ADD_FRIEND alpha_user_6 gamma_user_467
+ADD_POST beta_user_1 "Suggesting friends is a cool feature."
+ADD_FRIEND beta_user_49 gamma_user_353
+OUTPUT_POSTS alpha_user_258 9
+ADD_FRIEND gamma_user_356 gamma_user_128
+OUTPUT_POSTS gamma_user_191 0
+ADD_FRIEND beta_user_370 gamma_user_332
+ADD_POST beta_user_367 "random thoughts 123 !@#"
+ADD_FRIEND beta_user_76 alpha_user_468
+ADD_FRIEND gamma_user_275 alpha_user_441
+SUGGEST_FRIENDS beta_user_175 8
+OUTPUT_POSTS beta_user_256 3
+ADD_FRIEND gamma_user_389 beta_user_232
+ADD_POST gamma_user_212 "This is a test post."
+ADD_FRIEND gamma_user_461 beta_user_91
+ADD_POST beta_user_391 "another post"
+OUTPUT_POSTS beta_user_76 14
+ADD_FRIEND alpha_user_402 beta_user_127
+LIST_FRIENDS alpha_user_246
+SUGGEST_FRIENDS alpha_user_144 3
+DEGREES_OF_SEPARATION beta_user_436 alpha_user_102
+OUTPUT_POSTS alpha_user_195 -1
+ADD_FRIEND gamma_user_281 beta_user_22
+OUTPUT_POSTS beta_user_112 14
+OUTPUT_POSTS alpha_user_177 2
+OUTPUT_POSTS beta_user_238 9
+OUTPUT_POSTS gamma_user_98 1
+SUGGEST_FRIENDS alpha_user_78 1
+SUGGEST_FRIENDS alpha_user_483 5
+ADD_FRIEND gamma_user_395 gamma_user_413
+OUTPUT_POSTS alpha_user_294 4
+SUGGEST_FRIENDS beta_user_118 6
+LIST_FRIENDS gamma_user_278
+LIST_FRIENDS gamma_user_257
+OUTPUT_POSTS alpha_user_426 2
+OUTPUT_POSTS gamma_user_62 10
+ADD_FRIEND beta_user_427 alpha_user_465
+LIST_FRIENDS alpha_user_204
+ADD_POST alpha_user_366 "Hello world"
+ADD_POST gamma_user_98 "This is a test post."
+ADD_FRIEND alpha_user_195 gamma_user_128
+LIST_FRIENDS beta_user_97
+ADD_FRIEND alpha_user_108 alpha_user_300
+DEGREES_OF_SEPARATION alpha_user_249 alpha_user_498
+SUGGEST_FRIENDS gamma_user_197 1
+SUGGEST_FRIENDS beta_user_145 2
+ADD_POST alpha_user_255 "Hello world"
+DEGREES_OF_SEPARATION gamma_user_350 gamma_user_131
+LIST_FRIENDS beta_user_79
+ADD_POST alpha_user_39 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS gamma_user_98 9
+ADD_POST alpha_user_273 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION beta_user_43 beta_user_412
+LIST_FRIENDS beta_user_157
+SUGGEST_FRIENDS gamma_user_200 9
+ADD_FRIEND gamma_user_107 beta_user_376
+OUTPUT_POSTS beta_user_163 14
+LIST_FRIENDS beta_user_166
+LIST_FRIENDS alpha_user_462
+DEGREES_OF_SEPARATION alpha_user_324 gamma_user_233
+ADD_FRIEND gamma_user_260 alpha_user_60
+LIST_FRIENDS gamma_user_212
+LIST_FRIENDS gamma_user_125
+ADD_FRIEND gamma_user_479 gamma_user_104
+OUTPUT_POSTS alpha_user_456 13
+ADD_POST alpha_user_63 "Hello world"
+DEGREES_OF_SEPARATION alpha_user_12 beta_user_169
+OUTPUT_POSTS gamma_user_449 11
+ADD_FRIEND gamma_user_197 beta_user_370
+OUTPUT_POSTS gamma_user_308 12
+ADD_FRIEND alpha_user_105 beta_user_112
+DEGREES_OF_SEPARATION alpha_user_138 beta_user_277
+SUGGEST_FRIENDS gamma_user_122 8
+OUTPUT_POSTS beta_user_142 13
+OUTPUT_POSTS alpha_user_54 11
+ADD_FRIEND beta_user_475 beta_user_154
+SUGGEST_FRIENDS gamma_user_122 4
+LIST_FRIENDS alpha_user_129
+OUTPUT_POSTS gamma_user_323 14
+ADD_FRIEND alpha_user_270 alpha_user_333
+ADD_FRIEND gamma_user_128 beta_user_76
+ADD_FRIEND gamma_user_107 beta_user_304
+ADD_POST gamma_user_77 "A long post with multiple words to test parsing."
+OUTPUT_POSTS alpha_user_9 11
+ADD_FRIEND gamma_user_185 gamma_user_488
+LIST_FRIENDS gamma_user_101
+DEGREES_OF_SEPARATION alpha_user_171 gamma_user_278
+DEGREES_OF_SEPARATION beta_user_34 alpha_user_321
+SUGGEST_FRIENDS beta_user_223 9
+OUTPUT_POSTS beta_user_457 2
+OUTPUT_POSTS gamma_user_218 11
+ADD_FRIEND beta_user_280 gamma_user_71
+ADD_FRIEND gamma_user_284 beta_user_406
+OUTPUT_POSTS beta_user_130 8
+ADD_FRIEND beta_user_391 alpha_user_237
+ADD_POST gamma_user_446 "Just finished the COL106 assignment!"
+ADD_POST gamma_user_317 "My AVL tree is perfectly balanced."
+ADD_FRIEND gamma_user_398 alpha_user_369
+DEGREES_OF_SEPARATION alpha_user_432 alpha_user_321
+DEGREES_OF_SEPARATION beta_user_358 beta_user_406
+SUGGEST_FRIENDS alpha_user_210 2
+ADD_POST alpha_user_15 "random thoughts 123 !@#"
+ADD_FRIEND gamma_user_350 gamma_user_437
+ADD_FRIEND gamma_user_419 alpha_user_372
+ADD_FRIEND alpha_user_198 alpha_user_90
+ADD_POST alpha_user_186 "Just finished the COL106 assignment!"
+DEGREES_OF_SEPARATION gamma_user_161 beta_user_106
+DEGREES_OF_SEPARATION alpha_user_297 gamma_user_248
+SUGGEST_FRIENDS beta_user_229 5
+ADD_POST beta_user_184 "Thinking about degrees of separation."
+OUTPUT_POSTS beta_user_217 14
+LIST_FRIENDS alpha_user_405
+DEGREES_OF_SEPARATION beta_user_64 gamma_user_125
+DEGREES_OF_SEPARATION alpha_user_63 gamma_user_143
+OUTPUT_POSTS gamma_user_62 8
+LIST_FRIENDS alpha_user_489
+ADD_FRIEND alpha_user_441 beta_user_223
+ADD_POST alpha_user_6 "This is a test post."
+SUGGEST_FRIENDS alpha_user_468 6
+OUTPUT_POSTS alpha_user_156 15
+SUGGEST_FRIENDS beta_user_148 4
+SUGGEST_FRIENDS gamma_user_347 2
+SUGGEST_FRIENDS beta_user_328 3
+OUTPUT_POSTS beta_user_403 3
+ADD_FRIEND beta_user_250 gamma_user_29
+ADD_FRIEND gamma_user_59 gamma_user_401
+LIST_FRIENDS alpha_user_96
+OUTPUT_POSTS alpha_user_219 5
+ADD_FRIEND gamma_user_377 beta_user_445
+OUTPUT_POSTS beta_user_142 5
+ADD_POST alpha_user_288 "This is a test post."
+LIST_FRIENDS gamma_user_395
+OUTPUT_POSTS alpha_user_138 8
+ADD_FRIEND gamma_user_425 alpha_user_183
+ADD_FRIEND alpha_user_246 gamma_user_266
+OUTPUT_POSTS alpha_user_261 13
+DEGREES_OF_SEPARATION gamma_user_143 alpha_user_3
+OUTPUT_POSTS alpha_user_201 6
+OUTPUT_POSTS beta_user_334 11
+SUGGEST_FRIENDS beta_user_181 4
+DEGREES_OF_SEPARATION alpha_user_216 alpha_user_177
+OUTPUT_POSTS gamma_user_239 7
+LIST_FRIENDS gamma_user_29
+DEGREES_OF_SEPARATION beta_user_358 gamma_user_320
+ADD_FRIEND beta_user_298 beta_user_274
+OUTPUT_POSTS gamma_user_305 4
+ADD_POST beta_user_433 "Suggesting friends is a cool feature."
+ADD_POST beta_user_490 "Hello world"
+LIST_FRIENDS gamma_user_320
+LIST_FRIENDS gamma_user_257
+DEGREES_OF_SEPARATION gamma_user_92 beta_user_130
+OUTPUT_POSTS alpha_user_237 9
+ADD_POST alpha_user_360 "My AVL tree is perfectly balanced."
+LIST_FRIENDS beta_user_244
+SUGGEST_FRIENDS gamma_user_215 4
+DEGREES_OF_SEPARATION beta_user_451 alpha_user_279
+LIST_FRIENDS beta_user_292
+OUTPUT_POSTS beta_user_265 8
+SUGGEST_FRIENDS alpha_user_360 8
+ADD_FRIEND beta_user_328 gamma_user_29
+ADD_FRIEND gamma_user_80 alpha_user_216
+DEGREES_OF_SEPARATION beta_user_295 gamma_user_365
+ADD_FRIEND beta_user_310 beta_user_82
+ADD_FRIEND alpha_user_168 gamma_user_47
+SUGGEST_FRIENDS gamma_user_452 2
+ADD_FRIEND gamma_user_176 gamma_user_80
+ADD_POST alpha_user_225 "Graphs are fascinating data structures."
+LIST_FRIENDS alpha_user_252
+OUTPUT_POSTS gamma_user_236 8
+ADD_POST beta_user_154 "Just finished the COL106 assignment!"
+SUGGEST_FRIENDS beta_user_31 7
+ADD_FRIEND beta_user_442 gamma_user_419
+ADD_POST alpha_user_435 "Thinking about degrees of separation."
+ADD_FRIEND gamma_user_203 gamma_user_131
+SUGGEST_FRIENDS alpha_user_267 9
+ADD_FRIEND alpha_user_3 beta_user_163
+ADD_FRIEND alpha_user_39 gamma_user_386
+ADD_POST alpha_user_60 "This is a test post."
+ADD_FRIEND gamma_user_356 gamma_user_116
+ADD_FRIEND beta_user_106 gamma_user_455
+LIST_FRIENDS alpha_user_282
+LIST_FRIENDS beta_user_307
+ADD_FRIEND beta_user_460 gamma_user_326
+ADD_FRIEND beta_user_118 beta_user_133
+OUTPUT_POSTS beta_user_460 14
+OUTPUT_POSTS beta_user_289 14
+ADD_POST alpha_user_333 "random thoughts 123 !@#"
+DEGREES_OF_SEPARATION alpha_user_342 gamma_user_434
+ADD_FRIEND gamma_user_17 beta_user_214
+OUTPUT_POSTS beta_user_226 1
+ADD_FRIEND alpha_user_399 alpha_user_294
+ADD_FRIEND alpha_user_258 gamma_user_422
+ADD_POST gamma_user_131 "Just finished the COL106 assignment!"
+LIST_FRIENDS beta_user_397
+OUTPUT_POSTS alpha_user_408 12
+DEGREES_OF_SEPARATION beta_user_475 alpha_user_111
+LIST_FRIENDS alpha_user_312
+OUTPUT_POSTS alpha_user_372 4
+SUGGEST_FRIENDS gamma_user_329 4
+OUTPUT_POSTS alpha_user_234 8
+LIST_FRIENDS gamma_user_233
+LIST_FRIENDS gamma_user_71
+ADD_POST beta_user_64 "A long post with multiple words to test parsing."
+OUTPUT_POSTS beta_user_208 10
+SUGGEST_FRIENDS alpha_user_276 5
+DEGREES_OF_SEPARATION beta_user_7 gamma_user_200
+OUTPUT_POSTS beta_user_265 14
+ADD_FRIEND gamma_user_332 alpha_user_333
+ADD_POST beta_user_79 "My AVL tree is perfectly balanced."
+OUTPUT_POSTS gamma_user_461 8
+OUTPUT_POSTS beta_user_406 12
+SUGGEST_FRIENDS alpha_user_465 3
+OUTPUT_POSTS gamma_user_44 11
+OUTPUT_POSTS alpha_user_123 11
+OUTPUT_POSTS alpha_user_201 8
+OUTPUT_POSTS beta_user_112 12
+DEGREES_OF_SEPARATION beta_user_79 beta_user_352
+DEGREES_OF_SEPARATION gamma_user_80 gamma_user_371
+ADD_POST beta_user_211 "random thoughts 123 !@#"
+ADD_FRIEND gamma_user_152 alpha_user_414
+ADD_POST alpha_user_90 "My AVL tree is perfectly balanced."
+DEGREES_OF_SEPARATION gamma_user_161 alpha_user_27
 EXIT

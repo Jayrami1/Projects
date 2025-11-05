@@ -36,15 +36,9 @@ class Graph
         void addUser(string name)
         {
             if(userExists(name)){cout << "User Already Exists." << endl; return;}
-            for(auto &i :userlist)
-            {
-                if(i.first == name)
-                {
-                    return;
-                }
-            }
             userlist[name] = new User(name);
             frnd[name] = {};
+            cout << "User Added"<<endl;
             return;
         }
 
@@ -54,6 +48,11 @@ class Graph
             {
                 frnd[u1].insert(u2);
                 frnd[u2].insert(u1);
+                cout << u1 << " and " << u2 << " are now friends."<<endl;
+            }
+            else if(u1 == u2)
+            {
+                cout << "Same usernames given." << endl;
             }
             else
             {
@@ -148,7 +147,7 @@ class Graph
             {
                 ans.push_back(ppl[i]);
             }
-            if(ans.empty()){cout << "No Suggestions" << endl;}
+            if(ans.empty()){cout << "No Suggestions";}
             return ans;
         }
         int degreesOfSeparation(string u1, string u2)

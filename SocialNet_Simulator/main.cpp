@@ -11,7 +11,7 @@ class SocialNet
         string toLower(string s) 
         {
             for (char &c : s)
-                if (c >= 'A' && c <= 'Z')
+                if (c >= 'A' && c <= 'Z' && c!=' ')
                     c = c - 'A' + 'a';
             return s;
         }
@@ -46,6 +46,7 @@ class SocialNet
                 string post;
                 user = toLower(user);
                 getline(l>>ws,post);
+                post = toLower(post);
                 Net.addPost(user,post);
             }
             else if(cmd == "LIST_FRIENDS")
@@ -54,10 +55,12 @@ class SocialNet
                 l >> user;
                 user = toLower(user);
                 vector<string> frnds = Net.frndlist(user);
+                cout << "Friends List: ";
                 for(auto &f: frnds)
                 {
-                    cout << f << endl;
+                    cout  << f << " ";
                 }
+                cout << endl;
             }
             else if(cmd == "SUGGEST_FRIENDS")
             {
@@ -65,21 +68,21 @@ class SocialNet
                 int n;
                 l >> user >> n;
                 user = toLower(user);
+                cout << "Suggested Friends: ";
                 vector<string> suggest = Net.suggest_frnds(user,n);
                 for(auto &sug : suggest)
                 {
-                    cout << sug << endl;
+                    cout << sug <<" ";
                 }
+                cout << endl;
             }
             else if(cmd == "DEGREES_OF_SEPARATION")
             {
-                string t1,t2;
-                l >> t1 >> t2;
                 string u1,u2;
                 l >> u1 >> u2;
                 u1 = toLower(u1);
                 u2 = toLower(u2);
-                cout << Net.degreesOfSeparation(u1,u2) << endl;
+                cout << "Degree Of Separation: " << Net.degreesOfSeparation(u1,u2) << endl;
             }
             else if(cmd == "OUTPUT_POSTS")
             {
