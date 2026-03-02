@@ -1,0 +1,9 @@
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/assign1.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/edit_cache.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/rebuild_cache.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/list_install_components.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/install.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/install/local.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/install/strip.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/assign1_autogen_timestamp_deps.dir
+/mnt/ntfs/coding/Qt/assign1/CMakeFiles/assign1_autogen.dir
