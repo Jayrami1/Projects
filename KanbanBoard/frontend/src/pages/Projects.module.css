@@ -1,0 +1,313 @@
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-main); /* Integrates global background */
+  color: var(--text-main);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin: 10px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  margin-right: 900px;
+  font-size: 2rem;
+  color: var(--text-main) !important; /* Defeats Edge inversion */
+  text-align: left;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.projectCard {
+  background-color: var(--bg-card) !important; /* Force card background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  text-align: left;
+}
+
+.projectCard:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for dark mode */
+}
+
+/* Primary Button */
+.createBtn {
+  background-color: var(--accent-blue);
+  color: #ffffff !important;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createBtn:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Destructive Button (Logout) */
+.logoutBtn {
+  background-color: transparent;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background-color: var(--danger-color);
+  color: #ffffff !important;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: var(--bg-panel) !important;
+  color: var(--text-main) !important;
+  padding: 2.5rem;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modalInput {
+  padding: 0.8rem;
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modalInput:focus {
+  border-color: var(--accent-blue);
+  outline: none;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.projectInfo {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.projectInfo h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-main) !important;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: var(--danger-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--danger-color);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: var(--danger-color);
+  color: #ffffff !important;
+}
+
+.cardLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.profileBtn {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all 0.2s ease;
+}
+
+.profileBtn:hover {
+  background-color: var(--bg-main);
+}
+.archiveBtn {
+  background-color: transparent;
+  color: #d97008;
+  border: 1px solid #d97008;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.archiveBtn:hover {
+  background-color: #d97008;
+  color: #ffffff !important;
+}
+
+.projectActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profileAvatarWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.profileAvatarWrapper:hover {
+  transform: scale(1.05);
+}
+
+.headerAvatarImg {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  background-color: var(--bg-panel);
+}
+
+.headerAvatarPlaceholder {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.archiveToggleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.activeProjectsHeader {
+  margin-bottom: 20px;
+  color: var(--text-main) !important;
+}
+
+.toggleArchiveBtn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.toggleArchiveBtn:hover {
+  background-color: var(--bg-main);
+}
+
+.unarchiveBtn {
+  background-color: transparent;
+  color: #28a745;
+  border: 1px solid #28a745;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.unarchiveBtn:hover {
+  background-color: #28a745;
+  color: #ffffff !important;
+}
+
+.modalActions button:not(.createBtn) {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modalActions button:not(.createBtn):hover {
+  background-color: var(--bg-main);
+}

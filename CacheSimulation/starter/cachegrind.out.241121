@@ -1,0 +1,245 @@
+desc: I1 cache:         32768 B, 512 B, 8-way associative
+desc: D1 cache:         32768 B, 512 B, 8-way associative
+desc: LL cache:         1048576 B, 512 B, 16-way associative
+cmd: ./graph_bench --impl=csr --graph=data/tuning_er_n10000_deg8.txt --source=0 --repeat=25
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw 
+fl=???
+fn=(below main)
+0 84 3 3 22 2 0 19 0 0
+fn=???
+0 85675565 469 366 20247528 59217 5450 13398743 6740 5299
+fn=_Exit
+0 5 1 1 1 0 0 0 0 0
+fn=_IO_default_finish
+0 20 0 0 7 0 0 2 0 0
+fn=_IO_default_uflow
+0 2323 1 1 707 0 0 404 0 0
+fn=_IO_default_xsputn
+0 114 1 1 23 0 0 21 0 0
+fn=_IO_do_write
+0 19 2 2 4 0 0 3 0 0
+fn=_IO_doallocbuf
+0 46 2 2 12 0 0 6 0 0
+fn=_IO_file_close
+0 3 0 0 1 0 0 0 0 0
+fn=_IO_file_close_it
+0 93 2 2 19 1 0 16 0 0
+fn=_IO_file_doallocate
+0 98 2 2 26 0 0 14 1 1
+fn=_IO_file_finish
+0 5 1 1 1 0 0 0 0 0
+fn=_IO_file_fopen
+0 64 3 3 13 1 0 9 0 0
+fn=_IO_file_open
+0 37 1 1 6 0 0 7 0 0
+fn=_IO_file_overflow
+0 72 3 3 17 0 0 14 0 0
+fn=_IO_file_read
+0 505 0 0 202 0 0 0 0 0
+fn=_IO_file_seek
+0 6 0 0 2 0 0 0 0 0
+fn=_IO_file_seekoff
+0 62 3 3 19 0 0 8 0 0
+fn=_IO_file_setbuf
+0 18 1 1 4 0 0 6 0 0
+fn=_IO_file_stat
+0 6 1 1 2 0 0 0 0 0
+fn=_IO_file_sync
+0 21 1 1 8 0 0 3 0 0
+fn=_IO_file_underflow
+0 5360 3 2 1719 0 0 1213 0 0
+fn=_IO_file_write
+0 39 1 1 10 0 0 6 0 0
+fn=_IO_file_xsputn
+0 61 2 2 14 0 0 8 0 0
+fn=_IO_flush_all
+0 195 3 3 69 5 5 33 0 0
+fn=_IO_link_in
+0 92 2 2 27 0 0 25 0 0
+fn=_IO_setb
+0 70 0 0 18 0 0 17 0 0
+fn=_IO_sputbackc
+0 4140046 1 1 1260014 0 0 720008 0 0
+fn=_IO_switch_to_get_mode
+0 2222 2 1 707 0 0 606 0 0
+fn=_IO_un_link
+0 8 1 1 3 0 0 0 0 0
+fn=_IO_unsave_markers
+0 6 1 1 3 0 0 0 0 0
+fn=__call_tls_dtors
+0 13 1 1 6 0 0 3 0 0
+fn=__close_nocancel
+0 6 1 1 1 0 0 0 0 0
+fn=__ctype_init
+0 17 1 1 10 4 0 3 0 0
+fn=__cxa_atexit
+0 3 1 1 0 0 0 0 0 0
+fn=__cxa_finalize
+0 116 1 1 32 1 1 14 0 0
+fn=__default_morecore
+0 250 2 1 75 5 1 50 0 0
+fn=__isoc99_fscanf
+0 2430027 1 1 450005 1 0 990011 0 0
+fn=__libc_alloca_cutoff
+0 11 1 1 2 1 1 0 0 0
+fn=__libc_early_init
+0 53 2 2 11 2 0 13 3 3
+fn=__memcpy_chk
+0 24 1 1 4 0 0 0 0 0
+fn=__memmove_chk
+0 24 1 1 4 0 0 0 0 0
+fn=__mempcpy_chk
+0 24 0 0 4 0 0 0 0 0
+fn=__memset_chk
+0 25 1 1 4 0 0 0 0 0
+fn=__sigsetjmp
+0 22 0 0 5 0 0 8 0 0
+fn=__strtol_internal
+0 450005 0 0 180002 0 0 0 0 0
+fn=__tunable_get_val
+0 588 9 4 133 14 5 34 0 0
+fn=__uflow
+0 3333 4 2 1111 101 0 202 0 0
+fn=_dl_allocate_tls_init
+0 107 2 1 35 3 0 20 0 0
+fn=_dl_audit_preinit
+0 5 1 1 2 0 0 0 0 0
+fn=_dl_catch_exception
+0 132 1 1 33 0 0 39 2 2
+fn=_dl_debug_state
+0 4 0 0 2 0 0 0 0 0
+fn=_setjmp
+0 3 1 1 0 0 0 0 0 0
+fn=bcmp
+0 25 1 1 5 0 0 0 0 0
+fn=bfs_csr
+0 19735200 1 1 5245950 1382026 509 499775 6700 77
+fn=brk
+0 207 3 2 46 0 0 23 0 0
+fn=calloc
+0 16 2 2 1 0 0 0 0 0
+fn=clock_gettime
+0 22 1 1 6 1 0 0 0 0
+fn=convert_to_csr
+0 1060055 1 1 260009 10317 10315 90014 705 705
+fn=exit
+0 7 1 1 0 0 0 2 0 0
+fn=fclose
+0 77 2 2 25 0 0 12 0 0
+fn=fopen
+0 3 1 1 0 0 0 0 0 0
+fn=free
+0 2880685 3 3 560122 59 4 68 0 0
+fn=free_csr
+0 11 0 0 3 0 0 3 0 0
+fn=free_graph
+0 480018 1 1 110005 160 159 80004 0 0
+fn=fstat
+0 12 2 2 2 0 0 0 0 0
+fn=get_arg_value
+0 184 0 0 34 0 0 34 0 0
+fn=getrlimit
+0 10 1 1 1 0 0 0 0 0
+fn=index
+0 21 0 0 4 0 0 0 0 0
+fn=load_graph
+0 2310058 2 2 360013 1 1 430018 1979 98
+fn=lseek
+0 12 1 1 2 0 0 0 0 0
+fn=main
+0 56 0 0 5 0 0 11 0 0
+fn=malloc
+0 1760396 6 3 320042 20585 3 0 0 0
+fn=memchr
+0 21 0 0 4 0 0 0 0 0
+fn=memcpy
+0 24 1 1 4 0 0 0 0 0
+fn=memmove
+0 24 1 1 4 0 0 0 0 0
+fn=mempcpy
+0 24 1 1 4 0 0 0 0 0
+fn=memrchr
+0 25 0 0 5 0 0 0 0 0
+fn=memset
+0 50 2 2 8 1 1 0 0 0
+fn=mmap
+0 26 1 1 4 0 0 3 0 0
+fn=munmap
+0 6 1 1 1 0 0 0 0 0
+fn=open
+0 29 1 1 5 0 0 5 0 0
+fn=printf
+0 72 1 1 14 1 1 32 0 0
+fn=pthread_mutex_lock
+0 38 1 1 10 1 1 4 0 0
+fn=pthread_mutex_unlock
+0 3 1 1 0 0 0 0 0 0
+fn=read
+0 1212 1 1 202 0 0 303 0 0
+fn=rindex
+0 25 1 1 5 0 0 0 0 0
+fn=run_benchmark
+0 306 2 2 26 1 1 51 0 0
+fn=sbrk
+0 610 5 4 150 45 6 71 0 0
+fn=stpcpy
+0 19 1 1 4 0 0 0 0 0
+fn=stpncpy
+0 21 0 0 4 0 0 0 0 0
+fn=strcasecmp
+0 22 0 0 6 0 0 0 0 0
+fn=strcasecmp_l
+0 22 1 1 6 0 0 0 0 0
+fn=strcat
+0 19 1 1 4 0 0 0 0 0
+fn=strchrnul
+0 25 0 0 5 0 0 0 0 0
+fn=strcmp
+0 40 3 3 12 0 0 0 0 0
+fn=strcpy
+0 19 0 0 4 0 0 0 0 0
+fn=strcspn
+0 7 1 1 3 0 0 0 0 0
+fn=strlen
+0 50 2 1 10 0 0 0 0 0
+fn=strncasecmp
+0 22 1 1 6 0 0 0 0 0
+fn=strncasecmp_l
+0 22 0 0 6 0 0 0 0 0
+fn=strncmp
+0 44 2 0 12 0 0 0 0 0
+fn=strncpy
+0 21 0 0 4 0 0 0 0 0
+fn=strnlen
+0 50 1 1 10 0 0 0 0 0
+fn=strpbrk
+0 7 0 0 3 0 0 0 0 0
+fn=strspn
+0 7 0 0 3 0 0 0 0 0
+fn=strtol
+0 12 1 1 4 0 0 0 0 0
+fn=wcpncpy
+0 18 1 1 4 0 0 0 0 0
+fn=wcscat
+0 18 1 1 4 0 0 0 0 0
+fn=wcschr
+0 50 0 0 10 0 0 0 0 0
+fn=wcscmp
+0 25 1 1 5 0 0 0 0 0
+fn=wcscpy
+0 17 1 1 4 0 0 0 0 0
+fn=wcslen
+0 20 1 1 6 0 0 0 0 0
+fn=wcsncpy
+0 18 1 1 4 0 0 0 0 0
+fn=wcsnlen
+0 20 0 0 6 0 0 0 0 0
+fn=wmemchr
+0 42 0 0 8 0 0 0 0 0
+fn=wmemcmp
+0 25 1 1 5 0 0 0 0 0
+fn=wmemset
+0 38 1 1 8 0 0 0 0 0
+fn=write
+0 12 1 1 2 0 0 3 0 0
+summary: 120942359 617 495 28999582 1472556 16464 16212024 16130 6185

@@ -1,0 +1,17 @@
+.toggleButton {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  opacity: 0.8;
+}

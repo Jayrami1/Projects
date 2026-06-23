@@ -1,0 +1,267 @@
+.pageContainer {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-main, #121212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 750px;
+  background: linear-gradient(
+    to bottom,
+    #38a394 0%,
+    #38a394 220px,
+    #eef7f6 220px,
+    #eef7f6 100%
+  );
+  border-radius: 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.contentWrapper h1,
+.contentWrapper h2 {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.backBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.profileCard {
+  background-color: white;
+  padding: 0 2rem 1.5rem 2rem;
+  border-radius: 40px 40px 16px 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+
+.loadingContainer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.avatarWrapper {
+  margin-right: 0;
+  margin-top: -45px;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.avatarImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eef7f6;
+}
+
+.avatarPlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #38a394;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border: 2px solid #eef7f6;
+}
+
+.nameText {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.emailText {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  margin-bottom: 2rem;
+}
+
+.editContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputField {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: #f8fafa !important;
+  color: #172b4d !important;
+  -webkit-text-fill-color: #172b4d !important;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.inputField:focus {
+  border-color: #38a394;
+}
+
+.avatarInputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.avatarLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.actionGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.bottomActions,
+.passwordSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  width: 100%;
+}
+.primaryBtn {
+  background-color: #38a394;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primaryBtn:hover {
+  background-color: #2b8073;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 163, 148, 0.3);
+}
+
+.cancelBtn {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #888;
+  border: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.cancelBtn:hover {
+  color: #333;
+}
+
+.outlineBtn {
+  background-color: transparent;
+  color: #38a394;
+  border: 2px solid #38a394;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.outlineBtn:hover {
+  background-color: #eef7f6;
+}
+
+.logoutBtn {
+  background-color: #eef7f6;
+  color: #2b8073;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logoutBtn:hover {
+  background-color: #dcedeb;
+}
+
+.passwordForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 350px;
+}
+
+.passwordTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.passwordActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}

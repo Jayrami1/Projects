@@ -1,0 +1,28 @@
+# Layer 0: Interposer
+
+0
+Y
+N
+1.75e6
+0.01
+0.00010
+input/input1/interposer.flp
+
+# Layer 1: Active Layer
+
+1
+Y
+Y
+1.75e6
+0.01
+0.00005
+input/input1/layer1_active.flp
+
+# Layer 2: Top Shim Layer
+2
+Y
+N
+1.75e6
+0.01
+0.00045
+input/input1/layer2_shim.flp

@@ -1,0 +1,8 @@
+/mnt/ntfs/LvlDB/build/CMakeFiles/leveldb.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/leveldbutil.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/edit_cache.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/rebuild_cache.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/list_install_components.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/install.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/install/local.dir
+/mnt/ntfs/LvlDB/build/CMakeFiles/install/strip.dir

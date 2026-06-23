@@ -1,0 +1,2 @@
+Standard input values for the 2.5D architecture involving Silicon Shim (support).
+No lateral flow is allowed for both interposer and Shim

@@ -1,0 +1,139 @@
+================================================================
+A3_TESTCASES
+================================================================
+
+General instructions:
+- You may use your own AST, closures, variable names, and constructors.
+- Run each test on:
+  (1) Krivine machine
+  (2) SECD machine
+- Print final results using:
+  - "unpack" (Krivine)
+  - final value reconstruction (SECD)
+- Print lambda terms clearly (e.g. \x.x, (\x.\y.x), etc.)
+
+----------------------------------------------------------------
+3.1 Identity and basic application
+
+Run:
+- (λx.x) (λy.y)
+
+----------------------------------------------------------------
+3.2 Constant function (K combinator)
+
+Run:
+- (λx.λy.x) (λz.z) (λa.λb.a)
+
+----------------------------------------------------------------
+3.3 Pair encoding — fst
+
+Let:
+- pair = λa.λb.λs. s a b
+- fst  = λp. p (λx.λy.x)
+
+Run:
+- fst (pair (λx.x) (λx.λy.x))
+
+----------------------------------------------------------------
+3.4 Pair encoding — snd
+
+Let:
+- snd = λp. p (λx.λy.y)
+
+Run:
+- snd (pair (λx.x) (λx.λy.x))
+
+----------------------------------------------------------------
+3.5 Boolean encoding — true branch
+
+Let:
+- tru = λt.λf.t
+- if  = λc.λt.λe. (c t e)
+
+Run:
+- if tru (λx.x) (λx.λy.x)
+
+----------------------------------------------------------------
+3.6 Boolean encoding — false branch
+
+Let:
+- fls = λt.λf.f
+
+Run:
+- if fls (λx.x) (λx.λy.x)
+
+----------------------------------------------------------------
+3.7 Church numerals (successor)
+
+Let:
+- church(1) = λs.λz. s z
+- succ = λn.λs.λz. s (n s z)
+
+Run:
+- succ (church(1))
+
+----------------------------------------------------------------
+3.8 Nested scoping
+
+Run:
+- (λx.λy.x) (λz.z) (λa.λb.a)
+
+----------------------------------------------------------------
+3.9 Call-by-Name laziness test
+
+Let:
+- Ω = (λx.x x) (λx.x x)
+
+Run:
+- (λx.λy.y) Ω (λz.z)
+
+----------------------------------------------------------------
+3.10 Call-by-Value strictness test
+
+Run:
+- (λx.λy.y) Ω (λz.z)
+
+----------------------------------------------------------------
+3.11 Closure capture
+
+Run:
+- (λx.(λy.x)) (λz.z) (λw.w)
+
+----------------------------------------------------------------
+3.12 Variable shadowing
+
+Run:
+- (λx.λx.x) (λy.y)
+
+----------------------------------------------------------------
+3.13 SECD compilation sanity
+
+Run:
+- compile(λx.x)
+- compile((λx.x) y)
+
+----------------------------------------------------------------
+3.14 SECD execution
+
+Run:
+- (λx.x) (λy.y)
+
+----------------------------------------------------------------
+3.15 Cross-machine consistency
+
+Run:
+- (λx.x) (λy.y)
+- (λx.λy.x) a b
+
+----------------------------------------------------------------
+3.16 Extended language (if implemented)
+
+Run:
+- 1 + 2
+- if (2 < 3) then 42 else 0
+
+----------------------------------------------------------------
+3.17 Let binding (if implemented)
+
+Run:
+- let x = 10 in x + x

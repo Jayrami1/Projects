@@ -1,0 +1,101 @@
+/* Make sure the wrapper takes up the full screen to show the gradient */
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* CRITICAL: Fills the whole screen */
+  background: linear-gradient(135deg, #6a3093, #a044ff, #2193b0, #6dd5ed);
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginContainer {
+  background: linear-gradient(
+    to bottom,
+    #74ebd5,
+    #acb6e5
+  ); /* The inner card gradient */
+  padding: 3rem 4rem;
+  /* THE LEAF SHAPE: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+  border-radius: 120px 20px 20px 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loginContainer h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.input {
+  padding: 1rem 1.5rem;
+  border: 3px solid #333;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder {
+  color: #555;
+}
+
+.submitBtn {
+  background-color: #2c2c2c;
+  color: #3498db;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+}
+
+.toggleText {
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 0.9rem;
+  cursor: default;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #e0e0e0;
+}

@@ -1,0 +1,142 @@
+;;;; ==========================================
+;;;; LITHP COMPREHENSIVE TEST SUITE
+;;;; ==========================================
+
+;;; -------------------------------------------
+;;; 1. Basic Atoms & Types
+;;; -------------------------------------------
+10510
+-42
+99999999999999999999999999999999999999
+t
+()
+foo_bar.
+
+;;; -------------------------------------------
+;;; 2. Lists and Quotes
+;;; -------------------------------------------
+(quote a)
+(quote (a b c d e))
+'(short quote)
+'(1 2 3)
+
+;;; -------------------------------------------
+;;; 3. Arithmetic Operators (Should return [Int])
+;;; -------------------------------------------
+(+ 10 20)
+(+ 1 2 3 4 5)
+(- 100 45)
+(* 2 3 4)
+(div 100 3)
+(mod 100 3)
+(+ (* 2 3) (- 10 (div 15 4)))
+
+;;; -------------------------------------------
+;;; 4. Comparison Operators (Should return [Bool])
+;;; -------------------------------------------
+(= 10 10)
+(> 50 20)
+(< 5 100)
+(>= 10 10)
+(<= 4 5)
+(=/= 10 5)
+
+;;; -------------------------------------------
+;;; 5. Boolean Logic Operators (Part D)
+;;; -------------------------------------------
+(and t ())
+(or () t)
+(not t)
+(not ())
+(and (> 5 3) (not (= 1 2)))
+
+;;; -------------------------------------------
+;;; 6. Core Lisp Type Checkers
+;;; -------------------------------------------
+(atom a)
+(atom '(1 2 3))
+(eq a b)
+(eq 1 1)
+
+;;; -------------------------------------------
+;;; 7. List Manipulations (car, cdr, cons)
+;;; -------------------------------------------
+(car '(x y z))
+(cdr '(x y z))
+(cons 1 '(2 3))
+(cons '(a b) '(c d))
+(cons 5 ())
+
+;;; -------------------------------------------
+;;; 8. Regex Matches (c[ad]+r)
+;;; -------------------------------------------
+(cadr '(1 2 3))
+(cddr '(1 2 3))
+(caddr '(1 2 3 4))
+(caadaar lst)
+
+;;; -------------------------------------------
+;;; 9. Control Flow (cond) & Weak Typing!
+;;; -------------------------------------------
+; Strong typing return: Both branches are Int
+(cond ((> 10 5) 100) (t 200))
+
+; WEAK TYPING TEST: First branch is Int, second is Bool/List(0)
+(cond ((> 10 5) 100) (t ()))
+
+; Multi-line formatting test
+(cond 
+    ((= 1 2) 10)
+    ((= 3 4) 20)
+    (t       30))
+
+;;; -------------------------------------------
+;;; 10. Functions & Recursion
+;;; -------------------------------------------
+; Anonymous function evaluation
+((lambda (x y) (+ x y)) 100 200)
+; Function definition (Defun)
+(defun square (x) (* x x))
+((lambda (f x) (f x)) square 5)
+; Recursive function using label (Factorial)
+(label fact (lambda (n) (cond ((= n 0) 1) (t (* n (fact (- n 1)))))))
+
+;;; 1. Define a function 'square' intended for Integers
+(defun square (x) (* x x))
+
+;;; 2. Apply it correctly (Int -> Int)
+(square 5)
+
+;;; 3. Apply it with a mismatched type (Bool -> Int)
+(square ())
+
+;;; -------------------------------------------
+;;; 11. INTENTIONAL ERRORS (Watch these fail gracefully!)
+;;; -------------------------------------------
+
+; Arithmetic Error: Adding Int and Bool
+(+ 10 a)
+
+; Comparison Error: Comparing Bool and Int
+(> t 5)
+
+; List Error 1: Getting car of an empty list
+(car ())
+
+; List Error 2: Getting cdr of an empty list
+(cdr ())
+
+; List Error 3: Consing to a non-list
+(cons 1 2)
+
+; Cond Error: Condition is an Int, not a Bool
+(cond (5 10) (t 20))
+
+; Logic Error: using 'and' on an Int
+(and t 5)
+
+; Function Error 1: Wrong number of arguments
+((lambda (x y) (+ x y)) 10)
+
+; Function Error 2: Calling a non-function
+(5 10 20)

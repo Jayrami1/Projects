@@ -1,0 +1,521 @@
+.container {
+  padding: 2rem 4rem;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.headerLeftColumn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headerCenterColumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headerRightColumn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.dashboardLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.mainTitle {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-main) !important;
+}
+
+.projectSubtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.pageTitle {
+  margin-top: 5px;
+}
+
+/* BUTTONS */
+.backBtn,
+.addBtn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backBtn {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+.backBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+.addBtn {
+  background-color: var(--accent-blue);
+  color: #121212 !important;
+}
+
+.addBtn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: #de350b;
+  border: 1px solid #de350b;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #de350b;
+  color: #ffffff !important;
+}
+
+.editProjectBtn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.editProjectBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+/* PROJECT DESCRIPTION */
+.toggleDescContainer {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggleDescBtn {
+  background: none;
+  border: none;
+  color: var(--accent-blue);
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggleDescBtn:hover {
+  text-decoration: underline;
+}
+
+.expandedDesc {
+  margin-top: 12px;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  max-width: 600px;
+  line-height: 1.6;
+  background-color: var(--bg-panel);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectDescription {
+  margin: 8px 0 0 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.storiesSection {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.storiesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.storiesHeader h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main) !important;
+}
+
+.storiesContainer {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.storyCard {
+  min-width: 260px;
+  padding: 1.2rem;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-blue);
+  color: var(--text-main);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.storyCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  border-color: var(--text-muted);
+}
+
+.storyCard h3 {
+  margin: 0;
+  color: var(--text-main) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.statusText {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  letter-spacing: 0.5px;
+}
+
+.childTasksText {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main) !important;
+}
+
+.boardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.boardCard {
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-blue);
+  color: var(--text-main);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boardCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+/* Modal Styles */
+
+.modal {
+  background-color: var(--bg-panel, #22272b) !important;
+  color: var(--text-main, #ffffff) !important;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 500px; /* Gives the modal a consistent width */
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  font-family: 'Inter', sans-serif;
+  border: 1px solid var(--border-color, #38414a);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modalLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: -0.5rem;
+  margin-top: 0.5rem;
+}
+
+.textAreaSpacing {
+  margin-top: 10px;
+}
+
+.editDescriptionArea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.emptyText {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.closeBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--text-muted, #8c9bab);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-main, #ffffff);
+}
+
+.childTaskCard {
+  background-color: var(--bg-main, #101214);
+  border: 1px solid var(--border-color, #38414a);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: border-color 0.2s;
+  margin-bottom: 0.8rem;
+}
+
+.childTaskCard:hover {
+  border-color: var(--text-muted, #8c9bab);
+}
+
+.taskHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.taskTypeBadge {
+  background-color: var(--border-color, #38414a);
+  color: var(--text-main, #ffffff);
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.taskTitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main, #ffffff);
+}
+
+.taskStatusBadge {
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.taskLocation {
+  font-size: 0.8rem;
+  color: var(--text-muted, #8c9bab);
+  font-weight: 500;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.statusSection {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-muted, #8c9bab);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.statusBadge {
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.statusToDo {
+  background-color: rgba(140, 155, 171, 0.15);
+  color: #a6b6c8;
+  border-color: rgba(140, 155, 171, 0.3);
+}
+
+.statusInProgress {
+  background-color: rgba(87, 157, 255, 0.15);
+  color: #579dff;
+  border-color: rgba(87, 157, 255, 0.3);
+}
+
+.statusReview {
+  background-color: rgba(255, 171, 0, 0.15);
+  color: #ffab00;
+  border-color: rgba(255, 171, 0, 0.3);
+}
+
+.statusDone {
+  background-color: rgba(54, 179, 126, 0.15);
+  color: #36b37e;
+  border-color: rgba(54, 179, 126, 0.3);
+}

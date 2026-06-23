@@ -1,0 +1,190 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+//DEFINING THE ENUMS
+// Types for different tasks 
+enum TaskType {
+  STORY
+  TASK
+  BUG
+}
+
+// Enum types for project roles
+enum Role {
+  PROJECT_ADMIN
+  PROJECT_MEMBER
+  PROJECT_VIEWER
+}
+
+// Enum type for task priority
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+//Enum type for column statuses
+enum Status {
+  TO_DO
+  IN_PROGRESS
+  REVIEW
+  DONE
+}
+
+//DEFINING THE MODELS
+
+model User {
+  id             String          @id @default(uuid())
+  name           String
+  email          String          @unique
+  avatarLink     String?
+  user_password  String
+  isGLOBAL_ADMIN Boolean         @default(false)
+  // Relations
+  projectMembers Project_Group[] // A user can be part of multiple projects with different roles
+  refreshTokens  RefreshToken[] // A user can have multiple refresh tokens for different sessions
+  notifications  Notification[] // A user can have multiple notifications
+  comments       Comment[] // A user can make multiple comments
+  assignedTasks  Task[]          @relation("assignee") // A user can be assigned to multiple tasks
+  reportedTasks  Task[]          @relation("reporter") // A user can report multiple tasks
+  auditLogs      AuditLog[] //Audit log needs user to track assignee changes
+}
+
+model Project {
+  id             String          @id @default(uuid())
+  name           String
+  description    String? // optional project description
+  workflow       Json?          // added support for customizable workflow
+  createdAt      DateTime        @default(now()) // Automatically set when the project is created
+  updatedAt      DateTime        @updatedAt // automatically updated whenever the project is modified
+  isArchived     Boolean         @default(false) // Archive functionality added   
+  //relationships with project members and boards
+  projectMembers Project_Group[] // A project can have multiple members with different roles
+  boards         Board[] // each project can have multiple boards
+  tasks          Task[]
+}
+
+//m-n relation between users and projects  
+model Project_Group {
+  //while also storing the role of each user within the project
+  id        String  @id @default(uuid())
+  role      Role    @default(PROJECT_VIEWER) //default to the lowest priority role
+  //relations
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  projectId String
+
+  @@unique([userId, projectId]) // ensure a user is only added to a project once
+}
+
+model Board {
+  id        String   @id @default(uuid())
+  name      String
+  // Relations
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade) // each board belongs to one project
+  projectId String // foreign key to the project it belongs to
+  columns   Column[] // each board can have multiple columns
+}
+
+model Column {
+  id       String @id @default(uuid())
+  name     String
+  wipLimit Int? // Optional work in progress limit for the column
+  order    Int // to maintain the order of columns within a board 
+  cStatus  Status // to map the custom column to a strict enum
+  // Relations
+  board    Board  @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  boardId  String // foreign key to the board it belongs to
+  tasks    Task[] // each column can have multiple tasks/issues
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique //  each token is unique
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  // Relation
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Task {
+  id          String    @id @default(uuid())
+  title       String
+  description String?
+  type        TaskType  @default(TASK)
+  priority    Priority  @default(MEDIUM)
+  status      Status    @default(TO_DO)
+  dueDate     DateTime? // Optional due date for the task
+  createdAt   DateTime  @default(now()) //
+  updatedAt   DateTime  @updatedAt
+  resolvedAt  DateTime?
+  closedAt    DateTime?
+  order       Int // to maintain the order of tasks within a column
+  // self relations for subtasks and parent tasks
+  parent      Task?     @relation("Hierarchy", fields: [parentId], references: [id])
+  parentId    String?
+  subtasks    Task[]    @relation("Hierarchy")
+
+  // other relations
+  columnId      String?
+  column        Column?        @relation(fields: [columnId], references: [id])
+  projectId     String?
+  project       Project?       @relation(fields: [projectId], references: [id])
+  assigneeId    String?
+  assignee      User?          @relation("assignee", fields: [assigneeId], references: [id])
+  reporterId    String
+  reporter      User           @relation("reporter", fields: [reporterId], references: [id])
+  comments      Comment[]
+  auditLogs     AuditLog[]
+  notifications Notification[]
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  // Relations
+  issue     Task     @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  issueId   String
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  String
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  action    String
+  oldValue  String?   // Asked for both old and new videos
+  newValue  String?
+  timestamp DateTime @default(now())
+
+  // Relations
+  issueId String
+  issue   Task   @relation(fields: [issueId], references: [id], onDelete: Cascade)
+
+  // ADD THESE TWO LINES TO TRACK THE USER
+  userId    String?  
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  type      String
+  message   String    // Notification description
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  // Relations
+  userId  String
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  issueId String? // optional because some notifications might not be tied to a specific issue
+  issue   Task?   @relation(fields: [issueId], references: [id], onDelete: Cascade)
+}

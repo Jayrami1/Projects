@@ -1,0 +1,84 @@
+================================================================
+A4_TESTCASES
+================================================================
+
+General instructions:
+- Use your own AST and constructors for lam / comb.
+- Pipeline for each test:
+    lam → translate → comb → wnf(c, [])
+- Print final result using comb_to_string (or equivalent).
+- Output format:
+    variables: x, y, z, f, etc.
+    application: (a b)
+
+----------------------------------------------------------------
+4.1 Variable
+
+Run:
+- V "y"
+
+----------------------------------------------------------------
+4.2 Identity application
+
+Run:
+- (λx.x) y
+
+----------------------------------------------------------------
+4.3 Church numeral 0
+
+Let:
+- church(0) = λf.λx.x
+
+Run:
+- (church 0) f x
+
+----------------------------------------------------------------
+4.4 Church numeral 1
+
+Let:
+- church(1) = λf.λx.f x
+
+Run:
+- (church 1) f x
+
+----------------------------------------------------------------
+4.5 Church numeral 2
+
+Let:
+- church(2) = λf.λx.f (f x)
+
+Run:
+- (church 2) f x
+
+----------------------------------------------------------------
+4.6 Church numeral 3
+
+Let:
+- church(3) = λf.λx.f (f (f x))
+
+Run:
+- (church 3) f x
+
+----------------------------------------------------------------
+4.7 K combinator behavior
+
+Run:
+- (λx.λy.x) u v
+
+----------------------------------------------------------------
+4.8 K* combinator behavior
+
+Run:
+- (λx.λy.y) u v
+
+----------------------------------------------------------------
+4.9 Nested application
+
+Run:
+- ((λx.x) (λy.y)) z
+
+----------------------------------------------------------------
+4.10 Constant function (free variable body)
+
+Run:
+- (λx.w) y

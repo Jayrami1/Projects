@@ -1,0 +1,53 @@
+# Layer 0: Active Base Die (Silicon)
+0
+Y
+N
+1.75e6
+0.01
+0.00010
+input/input6/base_die.flp
+
+# Layer 1: Interposer (Silicon)
+1
+N
+Y
+1.75e6
+0.01
+0.00010
+input/input6/interposer.flp
+
+# Layer 2: Active Layer (CPU + HBM)
+2
+Y
+Y
+1.75e6
+0.01
+0.00005
+input/input6/layer1_active.flp
+
+# Layer 3: Top Shim Layer (Silicon)
+3
+Y
+Y
+1.75e6
+0.01
+0.00045
+input/input6/layer2_shim.flp
+
+# Layer 4: Thermal Interface Material (Thermal Paste)
+4
+N
+Y
+4.00e6
+0.25
+0.00002
+input/input6/tim.flp
+
+# Layer 5: Heatsink (Copper)
+5
+Y
+Y
+3.55e6
+0.0025
+0.00200
+input/input6/heatsink.flp

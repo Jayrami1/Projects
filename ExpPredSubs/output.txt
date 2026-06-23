@@ -1,0 +1,32 @@
+--- PART 1: check_sig ---
+1: true
+2: true
+3: false
+4: false
+5: true
+6: true
+
+--- PART 2A: wfexp ---
+1: true
+2: false
+3: false
+4: false
+5: false
+
+--- PART 2B: ht, size, vars ---
+1. ht: 2
+2. size: 4
+3. vars: [x; y]
+
+--- PART 3: subst, compose, edit, inplace_subst ---
+1. Substitution: Node (("fn", 3), [| Node (("g", 1), [| Node (("h", 2), [| Node (("b", 0), [||]); V "y" |]) |]); Node (("h", 2), [| Node (("h", 2), [| Node (("b", 0), [||]); V "y" |]); Node (("g", 1), [| Node (("a", 0), [||]) |]) |]); V "z" |])
+2. Composition: Node (("h", 2), [| Node (("g", 1), [| Node (("h", 2), [| Node (("a", 0), [||]); Node (("b", 0), [||]) |]) |]); Node (("a", 0), [||]) |])
+3. Edit: Node (("fn", 3), [| Node (("g", 1), [| V "x" |]); Node (("c", 0), [||]); Node (("h", 2), [| Node (("b", 0), [||]); Node (("g", 1), [| Node (("c", 0), [||]) |]) |]) |])
+4. In-place substitution: Node (("f", 2), [| Node (("g", 1), [| Node (("b", 0), [||]) |]); Node (("g", 1), [| Node (("g", 1), [| Node (("b", 0), [||]) |]) |]) |])
+
+--- PART 5: wff, psubst, wp ---
+1. wff T: true
+1. wff F: true
+1. wff Pred R(a): false
+2. Predicate substitution: Or (Pred (("Q", 1), [| Node (("h", 2), [| Node (("b", 0), [||]); V "y" |]) |]), Pred (("P", 2), [| Node (("h", 2), [| Node (("b", 0), [||]); V "y" |]); Node (("g", 1), [| Node (("a", 0), [||]) |]) |]))
+3. Weakest precondition: And (Not (Pred (("P", 2), [| Node (("g", 1), [| Node (("b", 0), [||]) |]); V "y" |])), Pred (("Q", 1), [| Node (("g", 1), [| Node (("b", 0), [||]) |]) |]))

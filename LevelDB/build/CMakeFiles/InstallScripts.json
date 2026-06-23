@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/ntfs/LvlDB/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
